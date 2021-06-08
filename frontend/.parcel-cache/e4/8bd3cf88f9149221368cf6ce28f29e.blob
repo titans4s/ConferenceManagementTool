@@ -1,0 +1,438 @@
+var helpers = require("../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+class Research1 extends _react.Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            authorname: "",
+            papertitle: "",
+            email: "",
+            Designatition: "",
+            noofauthors: 0,
+            researchfield: "",
+            referedby: "",
+            noofpages: "",
+            url: "",
+            abstract: "",
+            state: ""
+        };
+    }
+    onChange(e) {
+        this.setState({
+            ['e.target.name']: e.target.value
+        });
+    }
+    onSubmit(e) {
+        e.preventDefault();
+        let research = {
+            authorname: this.state.authorname,
+            papertitle: this.state.papertitle,
+            email: this.state.email,
+            Designatition: this.state.Designatition,
+            noofauthors: this.state.noofauthors,
+            researchfield: this.state.researchfield,
+            referedby: this.state.referedby,
+            noofpages: this.state.noofpages,
+            url: this.state.url,
+            abstract: this.state.abstract,
+            state: this.state.state
+        };
+        console.log('Data to send', research);
+    }
+    render() {
+        return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "container card p-1 black",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 47
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("h3", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 48
+            },
+            __self: this
+        }, "Use the form below to submit your paper for publication."), /*#__PURE__*/ _reactDefault.default.createElement("form", {
+            class: "row g-3 ",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 50
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "col-md-6 ",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 51
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+            for: "inputEmail4",
+            class: "form-label",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 52
+            },
+            __self: this
+        }, "AuthorName"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+            type: "email",
+            class: "form-control",
+            id: "inputEmail4",
+            name: "authorname",
+            value: this.state.authorname,
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 53
+            },
+            __self: this
+        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "col-md-6",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 55
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+            for: "inputEmail4",
+            class: "form-label",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 56
+            },
+            __self: this
+        }, "Email"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+            type: "email",
+            class: "form-control",
+            id: "inputEmail4",
+            name: "email",
+            value: this.state.email,
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 57
+            },
+            __self: this
+        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "col-12",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 59
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+            for: "inputAddress",
+            class: "form-label",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 60
+            },
+            __self: this
+        }, "Paper Title"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+            type: "text",
+            class: "form-control",
+            id: "inputAddress",
+            name: "authorname",
+            value: this.state.authorname,
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 61
+            },
+            __self: this
+        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "col-md-4",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 63
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+            for: "inputState",
+            class: "form-label",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 64
+            },
+            __self: this
+        }, "Research Field"), /*#__PURE__*/ _reactDefault.default.createElement("select", {
+            id: "inputState",
+            class: "form-select",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 65
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("option", {
+            selected: true,
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 66
+            },
+            __self: this
+        }, "Choose..."), /*#__PURE__*/ _reactDefault.default.createElement("option", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 67
+            },
+            __self: this
+        }, "..."))), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "col-md-4",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 70
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+            for: "inputEmail4",
+            class: "form-label",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 71
+            },
+            __self: this
+        }, "No of pages"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+            type: "Number",
+            class: "form-control",
+            id: "inputEmail4",
+            name: "noofpages",
+            value: this.state.noofpages,
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 72
+            },
+            __self: this
+        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "col-md-4",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 75
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+            for: "inputState",
+            class: "form-label",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 76
+            },
+            __self: this
+        }, "Designation"), /*#__PURE__*/ _reactDefault.default.createElement("select", {
+            id: "inputState",
+            class: "form-select",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 77
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("option", {
+            selected: true,
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 78
+            },
+            __self: this
+        }, "Choose..."), /*#__PURE__*/ _reactDefault.default.createElement("option", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 79
+            },
+            __self: this
+        }, "Student(Any degree)"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 80
+            },
+            __self: this
+        }, "Research Scholar"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 81
+            },
+            __self: this
+        }, "Assistant Professer"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 82
+            },
+            __self: this
+        }, " Professer"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 83
+            },
+            __self: this
+        }, " Doctrate Degree holder"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 84
+            },
+            __self: this
+        }, " Other"))), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "col-md-4",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 88
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+            for: "inputState",
+            class: "form-label",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 89
+            },
+            __self: this
+        }, "Refered By"), /*#__PURE__*/ _reactDefault.default.createElement("select", {
+            id: "inputState",
+            class: "form-select",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 90
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("option", {
+            selected: true,
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 91
+            },
+            __self: this
+        }, "Choose..."), /*#__PURE__*/ _reactDefault.default.createElement("option", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 92
+            },
+            __self: this
+        }, "Search Engines"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 93
+            },
+            __self: this
+        }, "From facebook"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 94
+            },
+            __self: this
+        }, "Friend or Guide"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 95
+            },
+            __self: this
+        }, "Already an Author"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 96
+            },
+            __self: this
+        }, "Other"))), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "col-md-4",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 100
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+            for: "inputEmail4",
+            class: "form-label",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 101
+            },
+            __self: this
+        }, "No of Authors"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+            type: "Number",
+            class: "form-control",
+            id: "inputEmail4",
+            name: "noofauthors",
+            value: this.state.noofauthors,
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 102
+            },
+            __self: this
+        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "form-floating",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 105
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("textarea", {
+            class: "form-control",
+            placeholder: "Leave a comment here",
+            id: "floatingTextarea",
+            name: "abstract",
+            value: this.state.abstract,
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 106
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement("label", {
+            for: "floatingTextarea",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 107
+            },
+            __self: this
+        }, "Paper abstract")), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "col-12",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 109
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+            for: "inputAddress",
+            class: "form-label",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 110
+            },
+            __self: this
+        }, "URL"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+            type: "text",
+            class: "form-control",
+            id: "inputAddress",
+            name: "url",
+            value: this.state.url,
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 111
+            },
+            __self: this
+        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "col-12",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 116
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("button", {
+            type: "submit",
+            class: "btn btn-primary",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 117
+            },
+            __self: this
+        }, "Submit")))));
+    }
+}
+exports.default = Research1;
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

@@ -1,0 +1,65 @@
+var helpers = require("../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _axios = require("axios");
+var _axiosDefault = parcelHelpers.interopDefault(_axios);
+class ResearchReviewer extends _react.Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            researches: []
+        };
+    }
+    componentDidMount() {
+        _axiosDefault.default.get('http://localhost:8085/research/get').then((response)=>{
+            this.setState({
+                researches: response.data.data
+            });
+            console.log(response.data);
+        });
+    }
+    render() {
+        return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Reviewer.js",
+                lineNumber: 22
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Reviewer.js",
+                lineNumber: 23
+            },
+            __self: this
+        }, "Research"), this.state.researches.length > 0 && this.state.researches.map((item, index)=>{
+            /*#__PURE__*/ _reactDefault.default.createElement("div", {
+                key: index,
+                __source: {
+                    fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Reviewer.js",
+                    lineNumber: 25
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+                __source: {
+                    fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Reviewer.js",
+                    lineNumber: 26
+                },
+                __self: this
+            }, item.Author_Name));
+        })));
+    }
+}
+exports.default = ResearchReviewer;
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
