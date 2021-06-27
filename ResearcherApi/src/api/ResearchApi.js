@@ -12,5 +12,8 @@ module.exports = function () {
     router.put('/update/:id', Controller.approval);
     router.put('/update/disapproved/:id', Controller.disapproval);
     router.delete('/delete/:id', Controller.ondelete);
+    router.get('/get/:email', Controller.findapproval);
+    router.put('/updatepayment/:id',Controller.updatepayment);
+ 
     return router;
 }

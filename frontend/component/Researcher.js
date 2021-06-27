@@ -17,7 +17,8 @@ class Researcher extends Component{
         noofpages: 0,
         url:'',
         abstract: '',
-        status:""
+          status: "",
+        paid:"not paid"
      
         }
 
@@ -40,7 +41,8 @@ onSubmit(e){
       noofpages: this.state.noofpages,
       url: this.state.url,
      abstract: this.state.abstract,
-     status:"null"
+     status: "null",
+     payment:this.state.paid
     
       
    } 
@@ -52,14 +54,24 @@ onSubmit(e){
        console.log(error.message);
        alert(error.message);
    })
+  
+  
 }
 
     render(){
-        return(
+      return (
+         
           <div className="container">
-                <h1>Create Subject</h1>
+            <div class="col-md-6 offset-md-3">
+                    
+            <br/>
+                  <div class="card card-outline-secondary p-3 mb-2 bg-secondary  text-white border-secondary mb-3" color="blue">
+                        <div class="card-body">
+                       
+                         
+                           
               
-            <h3>Use the form below to submit your paper for publication.</h3>
+            <h3>Use the form below to submit your paper for publication.</h3><hr/>
               
                         <form  onSubmit={this.onSubmit} class="row g-3 ">
                           <div class="col-md-6 ">
@@ -119,28 +131,29 @@ onSubmit(e){
                           <label for="inputEmail4" class="form-label">No of Authors</label>
                             <input type="Number" class="form-control" id="inputEmail4" name="noofauthors" value={this.state.noofauthors} onChange={this.onChange}/>
                                             </div>
-                                            
-                        <div class="form-floating">
+
+                                            <label for="floatingTextarea" >Paper abstract</label>
+                  <div class="form-floating">
+                 
                           <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" name="abstract" value={this.state.abstract} onChange={this.onChange}></textarea>
-                          <label for="floatingTextarea">Paper abstract</label>
+                          
                                             </div>
                                             <div class="col-12">
                             <label for="inputAddress" class="form-label">URL</label>
                             <input type="text" class="form-control" id="inputAddress" name="url" value={this.state.url} onChange={this.onChange}/>
               </div>
               
-              <div>
-              <label for="inputAddress" class="form-label">URL</label>
-                            <input type="hidden" class="form-control" id="inputAddress" name="url" value={this.state.status} onChange={this.onChange}/>
-                          </div>
-
+            
                          
-                          <div class="col-12">
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                  <div class="col-12">
+                  <div class="d-flex justify-content-center ">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
                           </div>
                         </form>
-                                    
-                    
+                </div>
+                </div>
+                    </div>
                 </div>
           
         )

@@ -5,6 +5,7 @@ const dotenv = require('dotenv');
 const bodyparser = require('body-parser');
 
 const ResearcherApi = require('./src/api/ResearchApi');
+const paymentApi = require('./src/api/paymentApi');
 
 
 dotenv.config();
@@ -38,6 +39,7 @@ app.route('/').get((req,res)=>{
 });
 
 app.use('/research', ResearcherApi());
+app.use('/payment',paymentApi());
 
 app.listen(PORT,() => {
     console.log('Server is up and running on ' + PORT);

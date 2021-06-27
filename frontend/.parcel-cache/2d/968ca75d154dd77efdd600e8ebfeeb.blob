@@ -1,0 +1,78 @@
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "styles", ()=>styles
+);
+var _extends = require("@babel/runtime/helpers/esm/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+var _objectWithoutProperties = require("@babel/runtime/helpers/esm/objectWithoutProperties");
+var _objectWithoutPropertiesDefault = parcelHelpers.interopDefault(_objectWithoutProperties);
+var _defineProperty = require("@babel/runtime/helpers/esm/defineProperty");
+var _definePropertyDefault = parcelHelpers.interopDefault(_defineProperty);
+var _react = require("react");
+var _propTypes = require("prop-types");
+var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
+var _clsx = require("clsx");
+var _clsxDefault = parcelHelpers.interopDefault(_clsx);
+var _withStyles = require("../styles/withStyles");
+var _withStylesDefault = parcelHelpers.interopDefault(_withStyles);
+var styles = function styles1(theme) {
+    return {
+        /* Styles applied to the root element. */ root: {
+            position: 'relative',
+            display: 'flex',
+            alignItems: 'center'
+        },
+        /* Styles applied to the root element if `disableGutters={false}`. */ gutters: _definePropertyDefault.default({
+            paddingLeft: theme.spacing(2),
+            paddingRight: theme.spacing(2)
+        }, theme.breakpoints.up('sm'), {
+            paddingLeft: theme.spacing(3),
+            paddingRight: theme.spacing(3)
+        }),
+        /* Styles applied to the root element if `variant="regular"`. */ regular: theme.mixins.toolbar,
+        /* Styles applied to the root element if `variant="dense"`. */ dense: {
+            minHeight: 48
+        }
+    };
+};
+var Toolbar = /*#__PURE__*/ _react.forwardRef(function Toolbar1(props, ref) {
+    var classes = props.classes, className = props.className, _props$component = props.component, Component = _props$component === void 0 ? 'div' : _props$component, _props$disableGutters = props.disableGutters, disableGutters = _props$disableGutters === void 0 ? false : _props$disableGutters, _props$variant = props.variant, variant = _props$variant === void 0 ? 'regular' : _props$variant, other = _objectWithoutPropertiesDefault.default(props, [
+        "classes",
+        "className",
+        "component",
+        "disableGutters",
+        "variant"
+    ]);
+    return(/*#__PURE__*/ _react.createElement(Component, _extendsDefault.default({
+        className: _clsxDefault.default(classes.root, classes[variant], className, !disableGutters && classes.gutters),
+        ref: ref
+    }, other)));
+});
+Toolbar.propTypes = {
+    /**
+   * Toolbar children, usually a mixture of `IconButton`, `Button` and `Typography`.
+   */ children: _propTypesDefault.default.node,
+    /**
+   * Override or extend the styles applied to the component.
+   * See [CSS API](#css) below for more details.
+   */ classes: _propTypesDefault.default.object.isRequired,
+    /**
+   * @ignore
+   */ className: _propTypesDefault.default.string,
+    /**
+   * The component used for the root node.
+   * Either a string to use a HTML element or a component.
+   */ component: _propTypesDefault.default/* @typescript-to-proptypes-ignore */ .elementType,
+    /**
+   * If `true`, disables gutter padding.
+   */ disableGutters: _propTypesDefault.default.bool,
+    /**
+   * The variant to use.
+   */ variant: _propTypesDefault.default.oneOf([
+        'regular',
+        'dense'
+    ])
+};
+exports.default = _withStylesDefault.default(styles, {
+    name: 'MuiToolbar'
+})(Toolbar);

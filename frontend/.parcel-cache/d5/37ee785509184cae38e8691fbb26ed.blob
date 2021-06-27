@@ -1,0 +1,6 @@
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>_menuItemDefault.default
+);
+var _menuItem = require("./MenuItem");
+var _menuItemDefault = parcelHelpers.interopDefault(_menuItem);

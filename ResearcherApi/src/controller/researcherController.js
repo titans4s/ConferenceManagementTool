@@ -12,6 +12,7 @@ const CreateResearcher = async (req, res) => {
             });
     }
 }
+
 const approval = async (req, res) => {
     if (req.params && req.params.id) {
         let userid = req.params.id;
@@ -26,6 +27,34 @@ const approval = async (req, res) => {
     }
    
 }
+
+const updatepayment = async (req, res) => {
+    if (req.params && req.params.id) {
+        let paperid = req.params.id;
+        
+        await Researcher.findByIdAndUpdate(paperid,{$set:{payment:'paid'}})
+            .then(data => {
+                res.status(200).send({status:"payment status approved"});
+            }).catch(error => {
+                console.log({ status: "Error with updating data", error: err.message });
+              })
+        
+    }
+}
+
+const findapproval = async (req, res) => {
+    if (req.params && req.params.email) {
+        const Email = req.params.email;
+        await Researcher.find({email:Email,status:"approved"})
+            .then(data => {
+                res.status(200).send({data:data});
+            }).catch((err) => {
+                console.log(err.message);
+            res.status(500).send({ status: "Error loading approved papers", error: err.message });
+        })
+    }
+}
+
 
 const ondelete = async (req, res) => {
     if (req.params && req.params.id) {
@@ -83,5 +112,7 @@ module.exports = {
     getOneSubjectResearch,
     approval,
     disapproval,
-    ondelete
+    ondelete,
+    findapproval,
+    updatepayment
 };

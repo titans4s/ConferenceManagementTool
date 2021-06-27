@@ -1,0 +1,8 @@
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _createSvgIcon = require("../../utils/createSvgIcon");
+var _createSvgIconDefault = parcelHelpers.interopDefault(_createSvgIcon);
+exports.default = _createSvgIconDefault.default(/*#__PURE__*/ _react.createElement("path", {
+    d: "M7 10l5 5 5-5z"
+}), 'ArrowDropDown');

@@ -1,0 +1,86 @@
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "styles", ()=>styles
+);
+var _extends = require("@babel/runtime/helpers/esm/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+var _defineProperty = require("@babel/runtime/helpers/esm/defineProperty");
+var _definePropertyDefault = parcelHelpers.interopDefault(_defineProperty);
+var _objectWithoutProperties = require("@babel/runtime/helpers/esm/objectWithoutProperties");
+var _objectWithoutPropertiesDefault = parcelHelpers.interopDefault(_objectWithoutProperties);
+var _react = require("react");
+var _propTypes = require("prop-types");
+var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
+var _clsx = require("clsx");
+var _clsxDefault = parcelHelpers.interopDefault(_clsx);
+var _withStyles = require("../styles/withStyles");
+var _withStylesDefault = parcelHelpers.interopDefault(_withStyles);
+var _capitalize = require("../utils/capitalize");
+var _capitalizeDefault = parcelHelpers.interopDefault(_capitalize);
+var _drawer = require("../Drawer/Drawer");
+var styles = function styles1(theme) {
+    return {
+        /* Styles applied to the root element. */ root: {
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            bottom: 0,
+            zIndex: theme.zIndex.drawer - 1
+        },
+        anchorLeft: {
+            right: 'auto'
+        },
+        anchorRight: {
+            left: 'auto',
+            right: 0
+        },
+        anchorTop: {
+            bottom: 'auto',
+            right: 0
+        },
+        anchorBottom: {
+            top: 'auto',
+            bottom: 0,
+            right: 0
+        }
+    };
+};
+/**
+ * @ignore - internal component.
+ */ var SwipeArea = /*#__PURE__*/ _react.forwardRef(function SwipeArea1(props, ref) {
+    var anchor = props.anchor, classes = props.classes, className = props.className, width = props.width, other = _objectWithoutPropertiesDefault.default(props, [
+        "anchor",
+        "classes",
+        "className",
+        "width"
+    ]);
+    return(/*#__PURE__*/ _react.createElement("div", _extendsDefault.default({
+        className: _clsxDefault.default(classes.root, classes["anchor".concat(_capitalizeDefault.default(anchor))], className),
+        ref: ref,
+        style: _definePropertyDefault.default({
+        }, _drawer.isHorizontal(anchor) ? 'width' : 'height', width)
+    }, other)));
+});
+SwipeArea.propTypes = {
+    /**
+   * Side on which to attach the discovery area.
+   */ anchor: _propTypesDefault.default.oneOf([
+        'left',
+        'top',
+        'right',
+        'bottom'
+    ]).isRequired,
+    /**
+   * @ignore
+   */ classes: _propTypesDefault.default.object.isRequired,
+    /**
+   * @ignore
+   */ className: _propTypesDefault.default.string,
+    /**
+   * The width of the left most (or right most) area in pixels where the
+   * drawer can be swiped open from.
+   */ width: _propTypesDefault.default.number.isRequired
+};
+exports.default = _withStylesDefault.default(styles, {
+    name: 'PrivateSwipeArea'
+})(SwipeArea);

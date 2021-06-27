@@ -1,0 +1,8 @@
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+function unsupportedProp(props, propName, componentName, location, propFullName) {
+    var propFullNameSafe = propFullName || propName;
+    if (typeof props[propName] !== 'undefined') return new Error("The prop `".concat(propFullNameSafe, "` is not supported. Please remove it."));
+    return null;
+}
+exports.default = unsupportedProp;

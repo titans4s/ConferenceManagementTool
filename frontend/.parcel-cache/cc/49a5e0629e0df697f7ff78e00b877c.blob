@@ -1,0 +1,13 @@
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _extends = require("@babel/runtime/helpers/esm/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+var _styles = require("@material-ui/styles");
+var _defaultTheme = require("./defaultTheme");
+var _defaultThemeDefault = parcelHelpers.interopDefault(_defaultTheme);
+function withStyles(stylesOrCreator, options) {
+    return _styles.withStyles(stylesOrCreator, _extendsDefault.default({
+        defaultTheme: _defaultThemeDefault.default
+    }, options));
+}
+exports.default = withStyles;

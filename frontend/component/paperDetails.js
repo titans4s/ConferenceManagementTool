@@ -63,26 +63,25 @@ class Paper extends Component{
 
     render() {
         return (
-            <div className="container">
+            <div className="container"><br/>
+                <div class="card bg-light mb-3">
+                        <div class="card-header"><h2>{this.state.Papers.papertitle}</h2></div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abstract</h5>
+                        <p class="card-text">{this.state.Papers.abstract}<br /><br/>
+                        <h3><a href={this.state.Papers.url}>View the paper</a></h3> </p>
+                        </div>
+                        </div>
                 
 
-                <h1>{this.state.Papers.papertitle}</h1>
+                <h1></h1>
               
-                <h3>Abstract</h3>
-                {this.state.Papers.abstract}<br></br>
-               <h2><a href={this.state.Papers.url}>View the paper</a></h2> 
+                <button type="button" class="btn btn-outline-dark" onClick={this.onUpdate}>Approve</button>&nbsp;&nbsp;&nbsp;
 
-                <div>
-                    <button onClick={this.onUpdate}>Approve</button>
-                </div>
+                <button type="button" class="btn btn-outline-dark" onClick={this.onUpdatenotapproval}>disApprove</button>&nbsp;&nbsp;&nbsp;
 
-                <div>
-                    <button onClick={this.onUpdatenotapproval}>disApprove</button>
-                </div>
-                <div>
-                <button onClick={this.onDelete}>Delete</button>
-                </div>
-                
+                <button type="button" class="btn btn-outline-dark" onClick={this.onDelete}>Delete</button>
+
             </div>
     )
     }

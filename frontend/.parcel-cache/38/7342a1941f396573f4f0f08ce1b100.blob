@@ -1,0 +1,62 @@
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _extends = require("@babel/runtime/helpers/esm/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+var _objectWithoutProperties = require("@babel/runtime/helpers/esm/objectWithoutProperties");
+var _objectWithoutPropertiesDefault = parcelHelpers.interopDefault(_objectWithoutProperties);
+var _react = require("react");
+var _propTypes = require("prop-types");
+var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
+var _withStyles = require("../styles/withStyles");
+var _withStylesDefault = parcelHelpers.interopDefault(_withStyles);
+var _colorManipulator = require("../styles/colorManipulator");
+var _moreHoriz = require("../internal/svg-icons/MoreHoriz");
+var _moreHorizDefault = parcelHelpers.interopDefault(_moreHoriz);
+var _buttonBase = require("../ButtonBase");
+var _buttonBaseDefault = parcelHelpers.interopDefault(_buttonBase);
+var styles = function styles1(theme) {
+    return {
+        root: {
+            display: 'flex',
+            marginLeft: theme.spacing(0.5),
+            marginRight: theme.spacing(0.5),
+            backgroundColor: theme.palette.grey[100],
+            color: theme.palette.grey[700],
+            borderRadius: 2,
+            cursor: 'pointer',
+            '&:hover, &:focus': {
+                backgroundColor: theme.palette.grey[200]
+            },
+            '&:active': {
+                boxShadow: theme.shadows[0],
+                backgroundColor: _colorManipulator.emphasize(theme.palette.grey[200], 0.12)
+            }
+        },
+        icon: {
+            width: 24,
+            height: 16
+        }
+    };
+};
+/**
+ * @ignore - internal component.
+ */ function BreadcrumbCollapsed(props) {
+    var classes = props.classes, other = _objectWithoutPropertiesDefault.default(props, [
+        "classes"
+    ]);
+    return(/*#__PURE__*/ _react.createElement(_buttonBaseDefault.default, _extendsDefault.default({
+        component: "li",
+        className: classes.root,
+        focusRipple: true
+    }, other), /*#__PURE__*/ _react.createElement(_moreHorizDefault.default, {
+        className: classes.icon
+    })));
+}
+BreadcrumbCollapsed.propTypes = {
+    /**
+   * @ignore
+   */ classes: _propTypesDefault.default.object.isRequired
+};
+exports.default = _withStylesDefault.default(styles, {
+    name: 'PrivateBreadcrumbCollapsed'
+})(BreadcrumbCollapsed);

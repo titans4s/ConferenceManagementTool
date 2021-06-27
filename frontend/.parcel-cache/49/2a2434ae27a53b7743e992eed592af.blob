@@ -1,0 +1,47 @@
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _defineProperty = require("@babel/runtime/helpers/esm/defineProperty");
+var _definePropertyDefault = parcelHelpers.interopDefault(_defineProperty);
+var _extends = require("@babel/runtime/helpers/esm/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+function createMixins(breakpoints, spacing, mixins) {
+    var _toolbar;
+    return _extendsDefault.default({
+        gutters: function gutters() {
+            var styles = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {
+            };
+            // To deprecate in v4.1
+            //       warning(
+            //         false,
+            //         [
+            //           'Material-UI: Theme.mixins.gutters() is deprecated.',
+            //           'You can use the source of the mixin directly:',
+            //           `
+            // paddingLeft: theme.spacing(2),
+            // paddingRight: theme.spacing(2),
+            // [theme.breakpoints.up('sm')]: {
+            //   paddingLeft: theme.spacing(3),
+            //   paddingRight: theme.spacing(3),
+            // },
+            // `,
+            //         ].join('\n'),
+            //       );
+            return _extendsDefault.default({
+                paddingLeft: spacing(2),
+                paddingRight: spacing(2)
+            }, styles, _definePropertyDefault.default({
+            }, breakpoints.up('sm'), _extendsDefault.default({
+                paddingLeft: spacing(3),
+                paddingRight: spacing(3)
+            }, styles[breakpoints.up('sm')])));
+        },
+        toolbar: (_toolbar = {
+            minHeight: 56
+        }, _definePropertyDefault.default(_toolbar, "".concat(breakpoints.up('xs'), " and (orientation: landscape)"), {
+            minHeight: 48
+        }), _definePropertyDefault.default(_toolbar, breakpoints.up('sm'), {
+            minHeight: 64
+        }), _toolbar)
+    }, mixins);
+}
+exports.default = createMixins;

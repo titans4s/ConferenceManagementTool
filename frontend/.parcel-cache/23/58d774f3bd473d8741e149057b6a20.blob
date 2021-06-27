@@ -1,0 +1,126 @@
+var helpers = require("../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _axios = require("axios");
+var _axiosDefault = parcelHelpers.interopDefault(_axios);
+class approved extends _react.Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            approvedPapers: []
+        };
+    }
+    navigateSubject(e, paperid) {
+        window.location = `/payment/${paperid}`;
+    }
+    componentDidMount() {
+        _axiosDefault.default.get(`http://localhost:9099/research/get/${this.props.match.params.email}`).then((response)=>{
+            this.setState({
+                approvedPapers: response.data.data
+            });
+            console.log(this.state.approvedPapers);
+        }).catch((error)=>{
+            alert('error.message');
+        });
+    }
+    render() {
+        return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\approved.js",
+                lineNumber: 30
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\approved.js",
+                lineNumber: 31
+            },
+            __self: this
+        }, "Approved research papers"), this.state.approvedPapers.length > 0 && this.state.approvedPapers.map((item, index)=>/*#__PURE__*/ _reactDefault.default.createElement("div", {
+                key: index,
+                className: "card mb-3",
+                __source: {
+                    fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\approved.js",
+                    lineNumber: 33
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+                class: "row",
+                __source: {
+                    fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\approved.js",
+                    lineNumber: 35
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+                class: "col-sm-6",
+                __source: {
+                    fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\approved.js",
+                    lineNumber: 36
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+                class: "card",
+                __source: {
+                    fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\approved.js",
+                    lineNumber: 37
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+                class: "card-body",
+                __source: {
+                    fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\approved.js",
+                    lineNumber: 38
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("h5", {
+                class: "card-title",
+                __source: {
+                    fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\approved.js",
+                    lineNumber: 39
+                },
+                __self: this
+            }, "Paper Title"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
+                class: "card-text",
+                __source: {
+                    fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\approved.js",
+                    lineNumber: 40
+                },
+                __self: this
+            }, item.papertitle), /*#__PURE__*/ _reactDefault.default.createElement("button", {
+                onClick: (e)=>this.navigateSubject(e, item._id)
+                ,
+                __source: {
+                    fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\approved.js",
+                    lineNumber: 41
+                },
+                __self: this
+            }, "make payment"))))), /*#__PURE__*/ _reactDefault.default.createElement("h5", {
+                __source: {
+                    fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\approved.js",
+                    lineNumber: 46
+                },
+                __self: this
+            }, item.papertitle), /*#__PURE__*/ _reactDefault.default.createElement("h5", {
+                __source: {
+                    fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\approved.js",
+                    lineNumber: 48
+                },
+                __self: this
+            }, item.payment))
+        )));
+    }
+}
+exports.default = approved;
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

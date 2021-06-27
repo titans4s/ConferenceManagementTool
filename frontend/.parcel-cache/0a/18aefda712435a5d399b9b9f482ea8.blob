@@ -1,0 +1,6 @@
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>_tableContainerDefault.default
+);
+var _tableContainer = require("./TableContainer");
+var _tableContainerDefault = parcelHelpers.interopDefault(_tableContainer);

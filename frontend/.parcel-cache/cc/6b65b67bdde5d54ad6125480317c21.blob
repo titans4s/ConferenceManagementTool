@@ -1,0 +1,60 @@
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "withThemeCreator", ()=>withThemeCreator
+); // Provide the theme object as a prop to the input component.
+var _extends = require("@babel/runtime/helpers/esm/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+var _objectWithoutProperties = require("@babel/runtime/helpers/esm/objectWithoutProperties");
+var _objectWithoutPropertiesDefault = parcelHelpers.interopDefault(_objectWithoutProperties);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _propTypes = require("prop-types");
+var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
+var _hoistNonReactStatics = require("hoist-non-react-statics");
+var _hoistNonReactStaticsDefault = parcelHelpers.interopDefault(_hoistNonReactStatics);
+var _utils = require("@material-ui/utils");
+var _useTheme = require("../useTheme");
+var _useThemeDefault = parcelHelpers.interopDefault(_useTheme);
+function withThemeCreator() {
+    var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {
+    };
+    var defaultTheme = options.defaultTheme;
+    var withTheme = function withTheme1(Component) {
+        if (Component === undefined) throw new Error([
+            'You are calling withTheme(Component) with an undefined component.',
+            'You may have forgotten to import it.'
+        ].join('\n'));
+        var WithTheme = /*#__PURE__*/ _reactDefault.default.forwardRef(function WithTheme1(props, ref) {
+            var innerRef = props.innerRef, other = _objectWithoutPropertiesDefault.default(props, [
+                "innerRef"
+            ]);
+            var theme = _useThemeDefault.default() || defaultTheme;
+            return(/*#__PURE__*/ _reactDefault.default.createElement(Component, _extendsDefault.default({
+                theme: theme,
+                ref: innerRef || ref
+            }, other)));
+        });
+        WithTheme.propTypes = {
+            /**
+       * Use that prop to pass a ref to the decorated component.
+       * @deprecated
+       */ innerRef: _utils.chainPropTypes(_propTypesDefault.default.oneOfType([
+                _propTypesDefault.default.func,
+                _propTypesDefault.default.object
+            ]), function(props) {
+                if (props.innerRef == null) return null;
+                return new Error("Material-UI: The `innerRef` prop is deprecated and will be removed in v5. Refs are now automatically forwarded to the inner component.");
+            })
+        };
+        WithTheme.displayName = "WithTheme(".concat(_utils.getDisplayName(Component), ")");
+        _hoistNonReactStaticsDefault.default(WithTheme, Component);
+        // Exposed for test purposes.
+        WithTheme.Naked = Component;
+        return WithTheme;
+    };
+    return withTheme;
+}
+// It's an alternative API to useTheme().
+// We encourage the usage of useTheme() where possible.
+var withTheme = withThemeCreator();
+exports.default = withTheme;

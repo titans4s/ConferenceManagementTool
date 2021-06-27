@@ -1,0 +1,63 @@
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "styles", ()=>styles
+);
+var _extends = require("@babel/runtime/helpers/esm/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+var _objectWithoutProperties = require("@babel/runtime/helpers/esm/objectWithoutProperties");
+var _objectWithoutPropertiesDefault = parcelHelpers.interopDefault(_objectWithoutProperties);
+var _react = require("react");
+var _propTypes = require("prop-types");
+var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
+var _clsx = require("clsx");
+var _clsxDefault = parcelHelpers.interopDefault(_clsx);
+var _withStyles = require("../styles/withStyles");
+var _withStylesDefault = parcelHelpers.interopDefault(_withStyles);
+var _listContext = require("../List/ListContext");
+var _listContextDefault = parcelHelpers.interopDefault(_listContext);
+var styles = function styles1(theme) {
+    return {
+        /* Styles applied to the root element. */ root: {
+            minWidth: 56,
+            color: theme.palette.action.active,
+            flexShrink: 0,
+            display: 'inline-flex'
+        },
+        /* Styles applied to the root element when the parent `ListItem` uses `alignItems="flex-start"`. */ alignItemsFlexStart: {
+            marginTop: 8
+        }
+    };
+};
+/**
+ * A simple wrapper to apply `List` styles to an `Icon` or `SvgIcon`.
+ */ var ListItemIcon = /*#__PURE__*/ _react.forwardRef(function ListItemIcon1(props, ref) {
+    var classes = props.classes, className = props.className, other = _objectWithoutPropertiesDefault.default(props, [
+        "classes",
+        "className"
+    ]);
+    var context = _react.useContext(_listContextDefault.default);
+    return(/*#__PURE__*/ _react.createElement("div", _extendsDefault.default({
+        className: _clsxDefault.default(classes.root, className, context.alignItems === 'flex-start' && classes.alignItemsFlexStart),
+        ref: ref
+    }, other)));
+});
+ListItemIcon.propTypes = {
+    // ----------------------------- Warning --------------------------------
+    // | These PropTypes are generated from the TypeScript type definitions |
+    // |     To update them edit the d.ts file and run "yarn proptypes"     |
+    // ----------------------------------------------------------------------
+    /**
+   * The content of the component, normally `Icon`, `SvgIcon`,
+   * or a `@material-ui/icons` SVG icon element.
+   */ children: _propTypesDefault.default.node,
+    /**
+   * Override or extend the styles applied to the component.
+   * See [CSS API](#css) below for more details.
+   */ classes: _propTypesDefault.default.object,
+    /**
+   * @ignore
+   */ className: _propTypesDefault.default.string
+};
+exports.default = _withStylesDefault.default(styles, {
+    name: 'MuiListItemIcon'
+})(ListItemIcon);

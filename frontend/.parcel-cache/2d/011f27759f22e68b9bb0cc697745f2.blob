@@ -1,0 +1,502 @@
+var helpers = require("../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _axios = require("axios");
+var _axiosDefault = parcelHelpers.interopDefault(_axios);
+class Payment extends _react.Component {
+    constructor(props){
+        super(props);
+        this.onChange = this.onChange.bind(this);
+        this.onSubmit = this.onSubmit.bind(this);
+        this.onUpdate = this.onUpdate.bind(this);
+        this.state = {
+            paperid: this.props.match.params.id,
+            email: "",
+            cardholder: "",
+            cardnumber: "",
+            month: "",
+            year: "",
+            cvc: ""
+        };
+    }
+    onUpdate() {
+        _axiosDefault.default.put(`http://localhost:9099/research/updatepayment/${this.props.match.params.id}`).then((response)=>{
+            alert('Payment status changed');
+        }).catch((error)=>{
+            console.log(error.message);
+            alert(error.message);
+        });
+    }
+    onSubmit(e) {
+        e.preventDefault();
+        let payment = {
+            paperid: this.state.paperid,
+            email: this.state.email,
+            cardholder: this.state.cardholder,
+            cardnumber: this.state.cardnumber,
+            month: this.state.month,
+            year: this.state.year,
+            cvc: this.state.cvc
+        };
+        console.log('Data to send', payment);
+        _axiosDefault.default.post('http://localhost:9099/payment/create', payment).then((response)=>{
+            alert('Payment Successful');
+        }).catch((error)=>{
+            console.log(error.message);
+            alert(error.message);
+        });
+        _axiosDefault.default.put(`http://localhost:9099/research/updatepayment/${this.props.match.params.id}`).then((response)=>{
+            alert('Payment status changed');
+        }).catch((error)=>{
+            console.log(error.message);
+            alert(error.message);
+        });
+    }
+    onChange(e) {
+        this.setState({
+            [e.target.name]: e.target.value
+        });
+    }
+    render() {
+        return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 69
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "col-md-6 offset-md-3",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 70
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("span", {
+            class: "anchor",
+            id: "formPayment",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 71
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement("hr", {
+            class: "my-5",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 72
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "card card-outline-secondary",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 74
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "card-body",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 75
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("h3", {
+            class: "text-center",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 76
+            },
+            __self: this
+        }, "Credit Card Payment"), /*#__PURE__*/ _reactDefault.default.createElement("hr", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 77
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "alert alert-info p-2 pb-3",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 78
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
+            class: "close font-weight-normal initialism",
+            "data-dismiss": "alert",
+            href: "#",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 79
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("samp", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 79
+            },
+            __self: this
+        }, "\xd7")), "CVC code is required."), /*#__PURE__*/ _reactDefault.default.createElement("form", {
+            class: "form",
+            role: "form",
+            onSubmit: this.onSubmit,
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 84
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "form-group",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 85
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+            for: "cc_name",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 86
+            },
+            __self: this
+        }, "Email address"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+            type: "email",
+            class: "form-control",
+            id: "email",
+            name: "email",
+            required: "required",
+            value: this.state.email,
+            onChange: this.onChange,
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 87
+            },
+            __self: this
+        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "form-group",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 90
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+            for: "cc_name",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 91
+            },
+            __self: this
+        }, "Card Holder's Name"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+            type: "text",
+            class: "form-control",
+            id: "cc_name",
+            name: "cardholder",
+            required: "required",
+            value: this.state.cardholder,
+            onChange: this.onChange,
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 92
+            },
+            __self: this
+        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "form-group",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 95
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 96
+            },
+            __self: this
+        }, "Card Number"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+            type: "text",
+            class: "form-control",
+            autocomplete: "off",
+            maxlength: "20",
+            name: "cardnumber",
+            required: "",
+            value: this.state.cardnumber,
+            onChange: this.onChange,
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 97
+            },
+            __self: this
+        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "form-group row",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 99
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+            class: "col-md-12",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 100
+            },
+            __self: this
+        }, "Card Exp. Date"), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "col-md-4",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 101
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("select", {
+            class: "form-control",
+            name: "month",
+            size: "0",
+            value: this.state.month,
+            onChange: this.onChange,
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 102
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("option", {
+            value: "01",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 103
+            },
+            __self: this
+        }, "01"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
+            value: "02",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 104
+            },
+            __self: this
+        }, "02"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
+            value: "03",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 105
+            },
+            __self: this
+        }, "03"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
+            value: "04",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 106
+            },
+            __self: this
+        }, "04"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
+            value: "05",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 107
+            },
+            __self: this
+        }, "05"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
+            value: "06",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 108
+            },
+            __self: this
+        }, "06"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
+            value: "07",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 109
+            },
+            __self: this
+        }, "07"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
+            value: "08",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 110
+            },
+            __self: this
+        }, "08"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
+            value: "09",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 111
+            },
+            __self: this
+        }, "09"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
+            value: "10",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 112
+            },
+            __self: this
+        }, "10"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
+            value: "11",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 113
+            },
+            __self: this
+        }, "11"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
+            value: "12",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 114
+            },
+            __self: this
+        }, "12"))), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "col-md-4",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 117
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("select", {
+            class: "form-control",
+            name: "year",
+            size: "0",
+            value: this.state.year,
+            onChange: this.onChange,
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 118
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("option", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 119
+            },
+            __self: this
+        }, "2018"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 120
+            },
+            __self: this
+        }, "2019"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 121
+            },
+            __self: this
+        }, "2020"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 122
+            },
+            __self: this
+        }, "2021"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 123
+            },
+            __self: this
+        }, "2022"))), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "col-md-4",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 126
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("input", {
+            type: "text",
+            class: "form-control",
+            name: "cvc",
+            autocomplete: "off",
+            maxlength: "3",
+            title: "Three digits at back of your card",
+            required: "",
+            placeholder: "CVC",
+            value: this.state.cvc,
+            onChange: this.onChange,
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 127
+            },
+            __self: this
+        }))), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "row",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 130
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+            class: "col-md-12",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 131
+            },
+            __self: this
+        }, "Amount")), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "form-row",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 134
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "col-md-12",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 135
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "form-control total btn btn-info",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 136
+            },
+            __self: this
+        }, "Total:", /*#__PURE__*/ _reactDefault.default.createElement("span", {
+            class: "amount",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 138
+            },
+            __self: this
+        }, "Rs.300")))), /*#__PURE__*/ _reactDefault.default.createElement("hr", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 143
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "form-group row",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 145
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "col-md-6",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 147
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("button", {
+            type: "submit",
+            class: "btn btn-success btn-lg btn-block",
+            onClick: this.onUpdate,
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 148
+            },
+            __self: this
+        }, "Submit")))))))));
+    }
+}
+exports.default = Payment;
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

@@ -1,0 +1,8 @@
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+/**
+ * @ignore - internal component.
+ */ var TableContext = _react.createContext();
+TableContext.displayName = 'TableContext';
+exports.default = TableContext;

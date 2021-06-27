@@ -28,11 +28,18 @@ class ResearchReviewer extends Component{
 
     render() {
         return (
-            <div className="container">
-                <h1>Research</h1>
+            <div className="container"><br/>
+                <h1>Research Papers to Review</h1><hr/><br/>
                 {this.state.researches.length > 0 && this.state.researches.map((item, index) => (
-                    <div key={index} className="card mb-3" onClick={e=>this.navigateSubject(e,item._id)}> 
-                        <h5>Paper_Title:{item.papertitle}</h5>
+                    <div key={index} className="card mb-3" onClick={e => this.navigateSubject(e, item._id)}>
+                        <div class="card text-white bg-secondary mb-3">
+                    <div class="card-header">Email:  {item.email }</div>
+                        <div class="card-body">
+                                
+                     <p class="card-text">Paper_Title:   {item.papertitle}</p>
+  </div>
+</div>
+                      
                         
                     </div>
                     

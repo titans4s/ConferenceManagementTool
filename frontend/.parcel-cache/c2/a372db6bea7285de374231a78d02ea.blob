@@ -1,0 +1,8 @@
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+/**
+ * @ignore - internal component.
+ */ var RadioGroupContext = _react.createContext();
+RadioGroupContext.displayName = 'RadioGroupContext';
+exports.default = RadioGroupContext;

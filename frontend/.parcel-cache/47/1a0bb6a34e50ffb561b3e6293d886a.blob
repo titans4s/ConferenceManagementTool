@@ -1,0 +1,13 @@
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _themeContext = require("./ThemeContext");
+var _themeContextDefault = parcelHelpers.interopDefault(_themeContext);
+function useTheme() {
+    var theme = _reactDefault.default.useContext(_themeContextDefault.default);
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    _reactDefault.default.useDebugValue(theme);
+    return theme;
+}
+exports.default = useTheme;

@@ -1,0 +1,6 @@
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>_selectDefault.default
+);
+var _select = require("./Select");
+var _selectDefault = parcelHelpers.interopDefault(_select);

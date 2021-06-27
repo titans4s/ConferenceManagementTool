@@ -1,0 +1,125 @@
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _classCallCheck = require("@babel/runtime/helpers/esm/classCallCheck");
+var _classCallCheckDefault = parcelHelpers.interopDefault(_classCallCheck);
+var _createClass = require("@babel/runtime/helpers/esm/createClass");
+var _createClassDefault = parcelHelpers.interopDefault(_createClass);
+var _inherits = require("@babel/runtime/helpers/esm/inherits");
+var _inheritsDefault = parcelHelpers.interopDefault(_inherits);
+var _possibleConstructorReturn = require("@babel/runtime/helpers/esm/possibleConstructorReturn");
+var _possibleConstructorReturnDefault = parcelHelpers.interopDefault(_possibleConstructorReturn);
+var _getPrototypeOf = require("@babel/runtime/helpers/esm/getPrototypeOf");
+var _getPrototypeOfDefault = parcelHelpers.interopDefault(_getPrototypeOf);
+var _react = require("react");
+var _reactDom = require("react-dom");
+var _propTypes = require("prop-types");
+var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
+var _utils = require("@material-ui/utils");
+var _setRef = require("../utils/setRef");
+var _setRefDefault = parcelHelpers.interopDefault(_setRef);
+function _createSuper(Derived) {
+    var hasNativeReflectConstruct = _isNativeReflectConstruct();
+    return function _createSuperInternal() {
+        var Super = _getPrototypeOfDefault.default(Derived), result;
+        if (hasNativeReflectConstruct) {
+            var NewTarget = _getPrototypeOfDefault.default(this).constructor;
+            result = Reflect.construct(Super, arguments, NewTarget);
+        } else result = Super.apply(this, arguments);
+        return _possibleConstructorReturnDefault.default(this, result);
+    };
+}
+function _isNativeReflectConstruct() {
+    if (typeof Reflect === "undefined" || !Reflect.construct) return false;
+    if (Reflect.construct.sham) return false;
+    if (typeof Proxy === "function") return true;
+    try {
+        Date.prototype.toString.call(Reflect.construct(Date, [], function() {
+        }));
+        return true;
+    } catch (e) {
+        return false;
+    }
+}
+/**
+ * ⚠️⚠️⚠️
+ * If you want the DOM element of a Material-UI component check out
+ * [FAQ: How can I access the DOM element?](/getting-started/faq/#how-can-i-access-the-dom-element)
+ * first.
+ *
+ * This component uses `findDOMNode` which is deprecated in React.StrictMode.
+ *
+ * Helper component to allow attaching a ref to a
+ * wrapped element to access the underlying DOM element.
+ *
+ * It's highly inspired by https://github.com/facebook/react/issues/11401#issuecomment-340543801.
+ * For example:
+ * ```jsx
+ * import React from 'react';
+ * import RootRef from '@material-ui/core/RootRef';
+ *
+ * function MyComponent() {
+ *   const domRef = React.useRef();
+ *
+ *   React.useEffect(() => {
+ *     console.log(domRef.current); // DOM node
+ *   }, []);
+ *
+ *   return (
+ *     <RootRef rootRef={domRef}>
+ *       <SomeChildComponent />
+ *     </RootRef>
+ *   );
+ * }
+ * ```
+ */ var RootRef1 = /*#__PURE__*/ function(_React$Component) {
+    _inheritsDefault.default(RootRef2, _React$Component);
+    var _super = _createSuper(RootRef2);
+    function RootRef2() {
+        _classCallCheckDefault.default(this, RootRef2);
+        return _super.apply(this, arguments);
+    }
+    _createClassDefault.default(RootRef2, [
+        {
+            key: "componentDidMount",
+            value: function componentDidMount() {
+                this.ref = _reactDom.findDOMNode(this);
+                _setRefDefault.default(this.props.rootRef, this.ref);
+            }
+        },
+        {
+            key: "componentDidUpdate",
+            value: function componentDidUpdate(prevProps) {
+                var ref = _reactDom.findDOMNode(this);
+                if (prevProps.rootRef !== this.props.rootRef || this.ref !== ref) {
+                    if (prevProps.rootRef !== this.props.rootRef) _setRefDefault.default(prevProps.rootRef, null);
+                    this.ref = ref;
+                    _setRefDefault.default(this.props.rootRef, this.ref);
+                }
+            }
+        },
+        {
+            key: "componentWillUnmount",
+            value: function componentWillUnmount() {
+                this.ref = null;
+                _setRefDefault.default(this.props.rootRef, null);
+            }
+        },
+        {
+            key: "render",
+            value: function render() {
+                return this.props.children;
+            }
+        }
+    ]);
+    return RootRef2;
+}(_react.Component);
+RootRef1.propTypes = {
+    /**
+   * The wrapped element.
+   */ children: _propTypesDefault.default.element.isRequired,
+    /**
+   * A ref that points to the first DOM node of the wrapped element.
+   */ rootRef: _utils.refType.isRequired
+};
+RootRef1.propTypes = _utils.exactProp(RootRef1.propTypes);
+exports.default = RootRef1;

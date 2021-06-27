@@ -1,0 +1,6 @@
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>_slideDefault.default
+);
+var _slide = require("./Slide");
+var _slideDefault = parcelHelpers.interopDefault(_slide);

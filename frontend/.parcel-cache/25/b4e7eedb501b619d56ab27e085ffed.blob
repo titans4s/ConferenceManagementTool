@@ -1,0 +1,6 @@
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>_iconButtonDefault.default
+);
+var _iconButton = require("./IconButton");
+var _iconButtonDefault = parcelHelpers.interopDefault(_iconButton);

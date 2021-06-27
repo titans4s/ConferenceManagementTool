@@ -1,0 +1,115 @@
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "styles", ()=>styles
+);
+var _extends = require("@babel/runtime/helpers/esm/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+var _objectWithoutProperties = require("@babel/runtime/helpers/esm/objectWithoutProperties");
+var _objectWithoutPropertiesDefault = parcelHelpers.interopDefault(_objectWithoutProperties);
+var _react = require("react");
+var _propTypes = require("prop-types");
+var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
+var _clsx = require("clsx");
+var _clsxDefault = parcelHelpers.interopDefault(_clsx);
+var _withStyles = require("../styles/withStyles");
+var _withStylesDefault = parcelHelpers.interopDefault(_withStyles);
+var _typography = require("../Typography");
+var _typographyDefault = parcelHelpers.interopDefault(_typography);
+var _listContext = require("../List/ListContext");
+var _listContextDefault = parcelHelpers.interopDefault(_listContext);
+var styles = {
+    /* Styles applied to the root element. */ root: {
+        flex: '1 1 auto',
+        minWidth: 0,
+        marginTop: 4,
+        marginBottom: 4
+    },
+    /* Styles applied to the `Typography` components if primary and secondary are set. */ multiline: {
+        marginTop: 6,
+        marginBottom: 6
+    },
+    /* Styles applied to the `Typography` components if dense. */ dense: {
+    },
+    /* Styles applied to the root element if `inset={true}`. */ inset: {
+        paddingLeft: 56
+    },
+    /* Styles applied to the primary `Typography` component. */ primary: {
+    },
+    /* Styles applied to the secondary `Typography` component. */ secondary: {
+    }
+};
+var ListItemText = /*#__PURE__*/ _react.forwardRef(function ListItemText1(props, ref) {
+    var children = props.children, classes = props.classes, className = props.className, _props$disableTypogra = props.disableTypography, disableTypography = _props$disableTypogra === void 0 ? false : _props$disableTypogra, _props$inset = props.inset, inset = _props$inset === void 0 ? false : _props$inset, primaryProp = props.primary, primaryTypographyProps = props.primaryTypographyProps, secondaryProp = props.secondary, secondaryTypographyProps = props.secondaryTypographyProps, other = _objectWithoutPropertiesDefault.default(props, [
+        "children",
+        "classes",
+        "className",
+        "disableTypography",
+        "inset",
+        "primary",
+        "primaryTypographyProps",
+        "secondary",
+        "secondaryTypographyProps"
+    ]);
+    var _React$useContext = _react.useContext(_listContextDefault.default), dense = _React$useContext.dense;
+    var primary = primaryProp != null ? primaryProp : children;
+    if (primary != null && primary.type !== _typographyDefault.default && !disableTypography) primary = /*#__PURE__*/ _react.createElement(_typographyDefault.default, _extendsDefault.default({
+        variant: dense ? 'body2' : 'body1',
+        className: classes.primary,
+        component: "span",
+        display: "block"
+    }, primaryTypographyProps), primary);
+    var secondary = secondaryProp;
+    if (secondary != null && secondary.type !== _typographyDefault.default && !disableTypography) secondary = /*#__PURE__*/ _react.createElement(_typographyDefault.default, _extendsDefault.default({
+        variant: "body2",
+        className: classes.secondary,
+        color: "textSecondary",
+        display: "block"
+    }, secondaryTypographyProps), secondary);
+    return(/*#__PURE__*/ _react.createElement("div", _extendsDefault.default({
+        className: _clsxDefault.default(classes.root, className, dense && classes.dense, inset && classes.inset, primary && secondary && classes.multiline),
+        ref: ref
+    }, other), primary, secondary));
+});
+ListItemText.propTypes = {
+    // ----------------------------- Warning --------------------------------
+    // | These PropTypes are generated from the TypeScript type definitions |
+    // |     To update them edit the d.ts file and run "yarn proptypes"     |
+    // ----------------------------------------------------------------------
+    /**
+   * Alias for the `primary` prop.
+   */ children: _propTypesDefault.default.node,
+    /**
+   * Override or extend the styles applied to the component.
+   * See [CSS API](#css) below for more details.
+   */ classes: _propTypesDefault.default.object,
+    /**
+   * @ignore
+   */ className: _propTypesDefault.default.string,
+    /**
+   * If `true`, the children won't be wrapped by a Typography component.
+   * This can be useful to render an alternative Typography variant by wrapping
+   * the `children` (or `primary`) text, and optional `secondary` text
+   * with the Typography component.
+   */ disableTypography: _propTypesDefault.default.bool,
+    /**
+   * If `true`, the children will be indented.
+   * This should be used if there is no left avatar or left icon.
+   */ inset: _propTypesDefault.default.bool,
+    /**
+   * The main content element.
+   */ primary: _propTypesDefault.default.node,
+    /**
+   * These props will be forwarded to the primary typography component
+   * (as long as disableTypography is not `true`).
+   */ primaryTypographyProps: _propTypesDefault.default.object,
+    /**
+   * The secondary content element.
+   */ secondary: _propTypesDefault.default.node,
+    /**
+   * These props will be forwarded to the secondary typography component
+   * (as long as disableTypography is not `true`).
+   */ secondaryTypographyProps: _propTypesDefault.default.object
+};
+exports.default = _withStylesDefault.default(styles, {
+    name: 'MuiListItemText'
+})(ListItemText);

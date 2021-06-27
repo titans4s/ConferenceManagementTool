@@ -1,0 +1,6 @@
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>_useScrollTriggerDefault.default
+);
+var _useScrollTrigger = require("./useScrollTrigger");
+var _useScrollTriggerDefault = parcelHelpers.interopDefault(_useScrollTrigger);

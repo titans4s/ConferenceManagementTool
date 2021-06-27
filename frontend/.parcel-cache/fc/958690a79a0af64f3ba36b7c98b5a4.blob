@@ -1,0 +1,55 @@
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "styles", ()=>styles
+);
+var _extends = require("@babel/runtime/helpers/esm/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+var _objectWithoutProperties = require("@babel/runtime/helpers/esm/objectWithoutProperties");
+var _objectWithoutPropertiesDefault = parcelHelpers.interopDefault(_objectWithoutProperties);
+var _react = require("react");
+var _propTypes = require("prop-types");
+var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
+var _clsx = require("clsx");
+var _clsxDefault = parcelHelpers.interopDefault(_clsx);
+var _withStyles = require("../styles/withStyles");
+var _withStylesDefault = parcelHelpers.interopDefault(_withStyles);
+var styles = {
+    /* Styles applied to the root element. */ root: {
+        position: 'absolute',
+        right: 16,
+        top: '50%',
+        transform: 'translateY(-50%)'
+    }
+};
+/**
+ * Must be used as the last child of ListItem to function properly.
+ */ var ListItemSecondaryAction = /*#__PURE__*/ _react.forwardRef(function ListItemSecondaryAction1(props, ref) {
+    var classes = props.classes, className = props.className, other = _objectWithoutPropertiesDefault.default(props, [
+        "classes",
+        "className"
+    ]);
+    return(/*#__PURE__*/ _react.createElement("div", _extendsDefault.default({
+        className: _clsxDefault.default(classes.root, className),
+        ref: ref
+    }, other)));
+});
+ListItemSecondaryAction.propTypes = {
+    // ----------------------------- Warning --------------------------------
+    // | These PropTypes are generated from the TypeScript type definitions |
+    // |     To update them edit the d.ts file and run "yarn proptypes"     |
+    // ----------------------------------------------------------------------
+    /**
+   * The content of the component, normally an `IconButton` or selection control.
+   */ children: _propTypesDefault.default.node,
+    /**
+   * Override or extend the styles applied to the component.
+   * See [CSS API](#css) below for more details.
+   */ classes: _propTypesDefault.default.object,
+    /**
+   * @ignore
+   */ className: _propTypesDefault.default.string
+};
+ListItemSecondaryAction.muiName = 'ListItemSecondaryAction';
+exports.default = _withStylesDefault.default(styles, {
+    name: 'MuiListItemSecondaryAction'
+})(ListItemSecondaryAction);

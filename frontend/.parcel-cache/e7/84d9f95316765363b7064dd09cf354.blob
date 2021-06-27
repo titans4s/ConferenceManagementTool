@@ -1,0 +1,126 @@
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "styles", ()=>styles
+);
+var _extends = require("@babel/runtime/helpers/esm/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+var _objectWithoutProperties = require("@babel/runtime/helpers/esm/objectWithoutProperties");
+var _objectWithoutPropertiesDefault = parcelHelpers.interopDefault(_objectWithoutProperties);
+var _react = require("react");
+var _propTypes = require("prop-types");
+var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
+var _clsx = require("clsx");
+var _clsxDefault = parcelHelpers.interopDefault(_clsx);
+var _withStyles = require("../styles/withStyles");
+var _withStylesDefault = parcelHelpers.interopDefault(_withStyles);
+var _buttonBase = require("../ButtonBase");
+var _buttonBaseDefault = parcelHelpers.interopDefault(_buttonBase);
+var _stepLabel = require("../StepLabel");
+var _stepLabelDefault = parcelHelpers.interopDefault(_stepLabel);
+var _isMuiElement = require("../utils/isMuiElement");
+var _isMuiElementDefault = parcelHelpers.interopDefault(_isMuiElement);
+var styles = {
+    /* Styles applied to the root element. */ root: {
+        width: '100%',
+        padding: '24px 16px',
+        margin: '-24px -16px',
+        boxSizing: 'content-box'
+    },
+    /* Styles applied to the root element if `orientation="horizontal"`. */ horizontal: {
+    },
+    /* Styles applied to the root element if `orientation="vertical"`. */ vertical: {
+        justifyContent: 'flex-start',
+        padding: '8px',
+        margin: '-8px'
+    },
+    /* Styles applied to the `ButtonBase` touch-ripple. */ touchRipple: {
+        color: 'rgba(0, 0, 0, 0.3)'
+    }
+};
+var StepButton = /*#__PURE__*/ _react.forwardRef(function StepButton1(props, ref) {
+    var active = props.active, alternativeLabel = props.alternativeLabel, children = props.children, classes = props.classes, className = props.className, completed = props.completed, disabled = props.disabled, expanded = props.expanded, icon = props.icon, last = props.last, optional = props.optional, orientation = props.orientation, other = _objectWithoutPropertiesDefault.default(props, [
+        "active",
+        "alternativeLabel",
+        "children",
+        "classes",
+        "className",
+        "completed",
+        "disabled",
+        "expanded",
+        "icon",
+        "last",
+        "optional",
+        "orientation"
+    ]);
+    var childProps = {
+        active: active,
+        alternativeLabel: alternativeLabel,
+        completed: completed,
+        disabled: disabled,
+        icon: icon,
+        optional: optional,
+        orientation: orientation
+    };
+    var child = _isMuiElementDefault.default(children, [
+        'StepLabel'
+    ]) ? /*#__PURE__*/ _react.cloneElement(children, childProps) : /*#__PURE__*/ _react.createElement(_stepLabelDefault.default, childProps, children);
+    return(/*#__PURE__*/ _react.createElement(_buttonBaseDefault.default, _extendsDefault.default({
+        focusRipple: true,
+        disabled: disabled,
+        TouchRippleProps: {
+            className: classes.touchRipple
+        },
+        className: _clsxDefault.default(classes.root, classes[orientation], className),
+        ref: ref
+    }, other), child));
+});
+StepButton.propTypes = {
+    /**
+   * @ignore
+   * Passed in via `Step` - passed through to `StepLabel`.
+   */ active: _propTypesDefault.default.bool,
+    /**
+   * @ignore
+   * Set internally by Stepper when it's supplied with the alternativeLabel property.
+   */ alternativeLabel: _propTypesDefault.default.bool,
+    /**
+   * Can be a `StepLabel` or a node to place inside `StepLabel` as children.
+   */ children: _propTypesDefault.default.node,
+    /**
+   * Override or extend the styles applied to the component.
+   * See [CSS API](#css) below for more details.
+   */ classes: _propTypesDefault.default.object.isRequired,
+    /**
+   * @ignore
+   */ className: _propTypesDefault.default.string,
+    /**
+   * @ignore
+   * Sets completed styling. Is passed to StepLabel.
+   */ completed: _propTypesDefault.default.bool,
+    /**
+   * @ignore
+   * Disables the button and sets disabled styling. Is passed to StepLabel.
+   */ disabled: _propTypesDefault.default.bool,
+    /**
+   * @ignore
+   * potentially passed from parent `Step`
+   */ expanded: _propTypesDefault.default.bool,
+    /**
+   * The icon displayed by the step label.
+   */ icon: _propTypesDefault.default.node,
+    /**
+   * @ignore
+   */ last: _propTypesDefault.default.bool,
+    /**
+   * The optional node to display.
+   */ optional: _propTypesDefault.default.node,
+    /**
+   * @ignore
+   */ orientation: _propTypesDefault.default.oneOf([
+        'horizontal',
+        'vertical'
+    ])
+};
+exports.default = _withStylesDefault.default(styles, {
+    name: 'MuiStepButton'
+})(StepButton);

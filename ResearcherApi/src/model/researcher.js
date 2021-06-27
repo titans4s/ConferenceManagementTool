@@ -19,7 +19,8 @@ const ReseacherSchema = new mongoose.Schema({
     noofpages:{ type: "Number", required: true, trim: true },
     url: { type: "string", required: true, trim: true },
     abstract: { type: "string", required: true, trim: true },
-    status: { type: "string", required: true, trim: true }
+    status: { type: "string", required: true, trim: true },
+    payment:{type: "string", required: true, trim: true}
   
     
     

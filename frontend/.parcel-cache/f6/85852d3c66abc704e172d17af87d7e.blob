@@ -1,0 +1,176 @@
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "styles", ()=>styles
+);
+var _extends = require("@babel/runtime/helpers/esm/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+var _objectWithoutProperties = require("@babel/runtime/helpers/esm/objectWithoutProperties");
+var _objectWithoutPropertiesDefault = parcelHelpers.interopDefault(_objectWithoutProperties);
+var _react = require("react");
+var _propTypes = require("prop-types");
+var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
+var _clsx = require("clsx");
+var _clsxDefault = parcelHelpers.interopDefault(_clsx);
+var _utils = require("@material-ui/utils");
+var _switchBase = require("../internal/SwitchBase");
+var _switchBaseDefault = parcelHelpers.interopDefault(_switchBase);
+var _radioButtonIcon = require("./RadioButtonIcon");
+var _radioButtonIconDefault = parcelHelpers.interopDefault(_radioButtonIcon);
+var _colorManipulator = require("../styles/colorManipulator");
+var _capitalize = require("../utils/capitalize");
+var _capitalizeDefault = parcelHelpers.interopDefault(_capitalize);
+var _createChainedFunction = require("../utils/createChainedFunction");
+var _createChainedFunctionDefault = parcelHelpers.interopDefault(_createChainedFunction);
+var _withStyles = require("../styles/withStyles");
+var _withStylesDefault = parcelHelpers.interopDefault(_withStyles);
+var _useRadioGroup = require("../RadioGroup/useRadioGroup");
+var _useRadioGroupDefault = parcelHelpers.interopDefault(_useRadioGroup);
+var styles = function styles1(theme) {
+    return {
+        /* Styles applied to the root element. */ root: {
+            color: theme.palette.text.secondary
+        },
+        /* Pseudo-class applied to the root element if `checked={true}`. */ checked: {
+        },
+        /* Pseudo-class applied to the root element if `disabled={true}`. */ disabled: {
+        },
+        /* Styles applied to the root element if `color="primary"`. */ colorPrimary: {
+            '&$checked': {
+                color: theme.palette.primary.main,
+                '&:hover': {
+                    backgroundColor: _colorManipulator.fade(theme.palette.primary.main, theme.palette.action.hoverOpacity),
+                    // Reset on touch devices, it doesn't add specificity
+                    '@media (hover: none)': {
+                        backgroundColor: 'transparent'
+                    }
+                }
+            },
+            '&$disabled': {
+                color: theme.palette.action.disabled
+            }
+        },
+        /* Styles applied to the root element if `color="secondary"`. */ colorSecondary: {
+            '&$checked': {
+                color: theme.palette.secondary.main,
+                '&:hover': {
+                    backgroundColor: _colorManipulator.fade(theme.palette.secondary.main, theme.palette.action.hoverOpacity),
+                    // Reset on touch devices, it doesn't add specificity
+                    '@media (hover: none)': {
+                        backgroundColor: 'transparent'
+                    }
+                }
+            },
+            '&$disabled': {
+                color: theme.palette.action.disabled
+            }
+        }
+    };
+};
+var defaultCheckedIcon = /*#__PURE__*/ _react.createElement(_radioButtonIconDefault.default, {
+    checked: true
+});
+var defaultIcon = /*#__PURE__*/ _react.createElement(_radioButtonIconDefault.default, null);
+var Radio = /*#__PURE__*/ _react.forwardRef(function Radio1(props, ref) {
+    var checkedProp = props.checked, classes = props.classes, _props$color = props.color, color = _props$color === void 0 ? 'secondary' : _props$color, nameProp = props.name, onChangeProp = props.onChange, _props$size = props.size, size = _props$size === void 0 ? 'medium' : _props$size, other = _objectWithoutPropertiesDefault.default(props, [
+        "checked",
+        "classes",
+        "color",
+        "name",
+        "onChange",
+        "size"
+    ]);
+    var radioGroup = _useRadioGroupDefault.default();
+    var checked = checkedProp;
+    var onChange = _createChainedFunctionDefault.default(onChangeProp, radioGroup && radioGroup.onChange);
+    var name = nameProp;
+    if (radioGroup) {
+        if (typeof checked === 'undefined') checked = radioGroup.value === props.value;
+        if (typeof name === 'undefined') name = radioGroup.name;
+    }
+    return(/*#__PURE__*/ _react.createElement(_switchBaseDefault.default, _extendsDefault.default({
+        color: color,
+        type: "radio",
+        icon: /*#__PURE__*/ _react.cloneElement(defaultIcon, {
+            fontSize: size === 'small' ? 'small' : 'default'
+        }),
+        checkedIcon: /*#__PURE__*/ _react.cloneElement(defaultCheckedIcon, {
+            fontSize: size === 'small' ? 'small' : 'default'
+        }),
+        classes: {
+            root: _clsxDefault.default(classes.root, classes["color".concat(_capitalizeDefault.default(color))]),
+            checked: classes.checked,
+            disabled: classes.disabled
+        },
+        name: name,
+        checked: checked,
+        onChange: onChange,
+        ref: ref
+    }, other)));
+});
+Radio.propTypes = {
+    // ----------------------------- Warning --------------------------------
+    // | These PropTypes are generated from the TypeScript type definitions |
+    // |     To update them edit the d.ts file and run "yarn proptypes"     |
+    // ----------------------------------------------------------------------
+    /**
+   * If `true`, the component is checked.
+   */ checked: _propTypesDefault.default.bool,
+    /**
+   * The icon to display when the component is checked.
+   */ checkedIcon: _propTypesDefault.default.node,
+    /**
+   * Override or extend the styles applied to the component.
+   * See [CSS API](#css) below for more details.
+   */ classes: _propTypesDefault.default.object,
+    /**
+   * The color of the component. It supports those theme colors that make sense for this component.
+   */ color: _propTypesDefault.default.oneOf([
+        'default',
+        'primary',
+        'secondary'
+    ]),
+    /**
+   * If `true`, the radio will be disabled.
+   */ disabled: _propTypesDefault.default.bool,
+    /**
+   * If `true`, the ripple effect will be disabled.
+   */ disableRipple: _propTypesDefault.default.bool,
+    /**
+   * The icon to display when the component is unchecked.
+   */ icon: _propTypesDefault.default.node,
+    /**
+   * The id of the `input` element.
+   */ id: _propTypesDefault.default.string,
+    /**
+   * [Attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#Attributes) applied to the `input` element.
+   */ inputProps: _propTypesDefault.default.object,
+    /**
+   * Pass a ref to the `input` element.
+   */ inputRef: _utils.refType,
+    /**
+   * Name attribute of the `input` element.
+   */ name: _propTypesDefault.default.string,
+    /**
+   * Callback fired when the state is changed.
+   *
+   * @param {object} event The event source of the callback.
+   * You can pull out the new value by accessing `event.target.value` (string).
+   * You can pull out the new checked state by accessing `event.target.checked` (boolean).
+   */ onChange: _propTypesDefault.default.func,
+    /**
+   * If `true`, the `input` element will be required.
+   */ required: _propTypesDefault.default.bool,
+    /**
+   * The size of the radio.
+   * `small` is equivalent to the dense radio styling.
+   */ size: _propTypesDefault.default.oneOf([
+        'medium',
+        'small'
+    ]),
+    /**
+   * The value of the component. The DOM API casts this to a string.
+   */ value: _propTypesDefault.default.any
+};
+exports.default = _withStylesDefault.default(styles, {
+    name: 'MuiRadio'
+})(Radio);

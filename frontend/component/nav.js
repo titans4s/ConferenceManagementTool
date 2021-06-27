@@ -18,7 +18,9 @@ class Navbar extends Component{
                         <div class="navbar-nav">
                             <a class="nav-link active" aria-current="page" href="/">Course</a>
                             <a class="nav-link" href="/create-researcher">CreateResearch</a>
-                            <a class="nav-link" href="/get-Reviewer">CreateReviewer</a>
+                               <a class="nav-link" href="/get-Reviewer">CreateReviewer</a>
+                               <a class="nav-link" href="/login">login</a>
+                               <a class="nav-link" href="/pay">payment</a>
                            
                             </div>
                             </div>

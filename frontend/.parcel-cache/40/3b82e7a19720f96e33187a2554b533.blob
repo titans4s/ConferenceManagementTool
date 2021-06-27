@@ -1,0 +1,6 @@
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>_formHelperTextDefault.default
+);
+var _formHelperText = require("./FormHelperText");
+var _formHelperTextDefault = parcelHelpers.interopDefault(_formHelperText);
