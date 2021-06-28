@@ -11,12 +11,15 @@ module.exports = function() {
     router.get('/conference', controller.getConferencedetails);
     router.put('/updatecd/:id', controller.updateConferencedetails);
     router.post('/createcon', controller.createConference);
+
     router.get('/getwcategory/:id', controller.getWorkshopsbyCategory);
     router.get('/wcategorytot/:id', controller.countWorkshopsbyCategory);
     router.get('/getrcategory/:id', controller.getResearchbyCategory);
     router.get('/rcategorytot/:id', controller.countResearchbyCategory);
+    router.get('/gettotpayment', controller.getTotPaid);
 
     router.post('/createworkshop', controller.createWorkshop);
+    router.post('/createresearcher', controller.CreateResearcher);
     router.post('/createpayment',controller.Createpayment);
 
 

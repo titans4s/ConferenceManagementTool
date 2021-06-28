@@ -1,8 +1,7 @@
 const Administrator = require('../models/administrators');
-const Research = require('../models/researcher');
 const Workshop = require('../models/workshop.models');
 const conferenceDetails = require('../models/conferenceDetails');
-const Researchers = require('../models/researcher');
+const Researcher = require('../models/researcher');
 const Payment = require('../models/payment');
 
 
@@ -125,7 +124,7 @@ const createWorkshop = async (req, res) => {
 // find by category
 const getWorkshopsbyCategory = async(req, res) => {
     let cid = req.params.id;
-    await Workshop.find({"status":{$eq:cid}})
+    await Workshop.find({"Status":{$eq:cid}})
         .then(data => {
             res.status(200).send({ data: data });
         }).catch(error => {
@@ -137,7 +136,7 @@ const getWorkshopsbyCategory = async(req, res) => {
 //count by category
 const countWorkshopsbyCategory = async(req, res) => {
     let cid = req.params.id;
-    await Workshop.find({"status":{$eq:cid}}).countDocuments()
+    await Workshop.find({"Status":{$eq:cid}}).countDocuments()
         .then(data => {
             res.status(200).send({ tot: data });
         }).catch(error => {
@@ -163,7 +162,7 @@ const CreateResearcher = async (req, res) => {
 // find by category
 const getResearchbyCategory = async(req, res) => {
     let cid = req.params.id;
-    await Researchers.find({"state":{$eq:cid}})
+    await Researcher.find({"status":{$eq:cid}})
         .then(data => {
             res.status(200).send({ data: data });
         }).catch(error => {
@@ -175,7 +174,7 @@ const getResearchbyCategory = async(req, res) => {
 //count by category
 const countResearchbyCategory = async(req, res) => {
     let cid = req.params.id;
-    await Researchers.find({"state":{$eq:cid}}).countDocuments()
+    await Researcher.find({"status":{$eq:cid}}).countDocuments()
         .then(data => {
             res.status(200).send({ tot: data });
         }).catch(error => {
@@ -198,6 +197,17 @@ const Createpayment = async (req, res) => {
     }
 }
 
+const getTotPaid = async(req, res) => {
+    let tot = 0;
+    const payments = await Payment.find({}).countDocuments()
+    console.log(payments)
+    tot= payments*2000;
+    console.log(tot)   
+    res.status(200).send({ tot: tot });
+        
+
+}
+
 
 module.exports = {
     createadministrator,
@@ -213,6 +223,8 @@ module.exports = {
     getResearchbyCategory,
     countResearchbyCategory,
     createWorkshop,
-    Createpayment
+    Createpayment,
+    CreateResearcher,
+    getTotPaid
 
 };
