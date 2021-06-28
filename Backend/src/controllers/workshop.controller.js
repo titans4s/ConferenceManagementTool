@@ -82,6 +82,32 @@ const getWorkshopById = async (req, res) => {
     }
   }
 
+  const getApproveWorkshopByEmail = async (req, res) => {
+    if (req.params && req.params.email) {
+      const Email = req.params.email;
+      await Workshop.find({email:Email,Status:'Approved'})
+      .then(data => {
+        res.status(200).send({data: data});
+      })
+      .catch(error => {
+        res.status(500).send({ error: error.message });
+      });
+    }
+  }
+
+
+  const getUnapproveWorkshopByEmail = async (req, res) => {
+    if (req.params && req.params.email) {
+      const Email = req.params.email;
+      await Workshop.find({email:Email,Status:'Unapproved'})
+      .then(data => {
+        res.status(200).send({data: data});
+      })
+      .catch(error => {
+        res.status(500).send({ error: error.message });
+      });
+    }
+  }
 
 
 
@@ -92,5 +118,7 @@ module.exports = {
     getUnapprovedWorkshops,
     getIdofworkshopsforApprove,
     getIdofworkshopsforUnapprove,
-    getWorkshopById
+    getWorkshopById,
+    getApproveWorkshopByEmail,
+    getUnapproveWorkshopByEmail
 };
