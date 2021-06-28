@@ -1,0 +1,24 @@
+const express = require('express');
+const router = express.Router();
+const controller = require('../controllers/administratorsController');
+
+module.exports = function() {
+    router.post('/create', controller.createadministrator);
+    router.get('/', controller.getAllAdministrators);
+    router.get('/gettot', controller.getTotalAdministrators);
+    router.delete('/delete/:id', controller.deleteAdministrators);
+    router.put('/update/:id', controller.updateAdministrator);
+    router.get('/conference', controller.getConferencedetails);
+    router.put('/updatecd/:id', controller.updateConferencedetails);
+    router.post('/createcon', controller.createConference);
+    router.get('/getwcategory/:id', controller.getWorkshopsbyCategory);
+    router.get('/wcategorytot/:id', controller.countWorkshopsbyCategory);
+    router.get('/getrcategory/:id', controller.getResearchbyCategory);
+    router.get('/rcategorytot/:id', controller.countResearchbyCategory);
+
+    router.post('/createworkshop', controller.createWorkshop);
+    router.post('/createpayment',controller.Createpayment);
+
+
+    return router;
+}
