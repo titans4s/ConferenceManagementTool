@@ -8,21 +8,28 @@ import MainPanel from './MainPanel';
 import {Box} from "@material-ui/core";
 import Grid from '@material-ui/core/Grid';
 import ChartsPage from './component/charts'
+import RevenuechartsPage from './component/revenueCharts'
+import UpdateAdministrator from './component/updateAdministrator'
 function App() {
     return(
         <div className="wrapper">         
             <Router> 
-            <Navbar/>
+            
             <div className="row">
              <div className="col col-lg-2"><AdminPanel/></div>
             <div className="col">
-            
+            <Navbar/>
             <Box width="100%">
+            <section>
+
             <Switch>
-             <span><Route path="/create-admin" component={AddAdministrator} /> </span>
-             <span><Route path="/view-admin" component={ViewAdministrator} /> </span>
-             {/* <span><Route path="/viewStats" component={ChartsPage} /> </span> */}
+             <Route path="/create-admin" component={AddAdministrator} exact /> 
+             <Route path="/view-admin" component={ViewAdministrator} exact /> 
+             <Route path="/update/:id" component={UpdateAdministrator} exact /> 
+             <Route path="/viewStats" component={ChartsPage} exact /> 
+             <Route path="/viewPayment" component={RevenuechartsPage} exact /> 
             </Switch>
+            </section>
             </Box>
             </div>
             </div>

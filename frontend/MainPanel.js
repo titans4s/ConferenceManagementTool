@@ -10,7 +10,7 @@ function MainPanel() {
     return(
         <div >
            
-            <Router>
+            {/* <Router>
             <div class="row">
             <div class="col-md-auto"><ViewAdministrator/></div>
              <div class="col-md-auto"><AddAdministrator/></div>
@@ -19,7 +19,7 @@ function MainPanel() {
 
             
             
-            </Router> 
+            </Router>  */}
             
            
         </div>

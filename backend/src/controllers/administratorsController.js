@@ -30,6 +30,18 @@ const getAllAdministrators = async(req, res) => {
 
 }
 
+const getAdminById = async(req, res) => {
+    if(req.params && req.params.id){
+        await Administrator.findById(req.params.id).populate('administrations', 'username password usertype')
+            .then(data => {
+                res.status(200).send({ data: data });
+            }).catch(error => {
+                res.status(500).send({ error: error.message });
+            });
+    }
+
+}
+
 const deleteAdministrators = async(req, res) => {
     let userid = req.params.id;
 
@@ -208,6 +220,18 @@ const getTotPaid = async(req, res) => {
 
 }
 
+const getpaidORnot = async(req, res) => {
+    let cid = req.params.id;
+    await Researcher.find({"payment":{$eq:cid}}).countDocuments()
+        .then(data => {
+            res.status(200).send({ tot: data });
+        }).catch(error => {
+            res.status(500).send({ error: error.message });
+        });
+
+}
+
+
 
 module.exports = {
     createadministrator,
@@ -225,6 +249,8 @@ module.exports = {
     createWorkshop,
     Createpayment,
     CreateResearcher,
-    getTotPaid
+    getTotPaid,
+    getAdminById,
+    getpaidORnot
 
 };

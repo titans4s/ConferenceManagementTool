@@ -5,6 +5,7 @@ const controller = require('../controllers/administratorsController');
 module.exports = function() {
     router.post('/create', controller.createadministrator);
     router.get('/', controller.getAllAdministrators);
+    router.get('/getadmin/:id', controller.getAdminById);
     router.get('/gettot', controller.getTotalAdministrators);
     router.delete('/delete/:id', controller.deleteAdministrators);
     router.put('/update/:id', controller.updateAdministrator);
@@ -16,6 +17,7 @@ module.exports = function() {
     router.get('/wcategorytot/:id', controller.countWorkshopsbyCategory);
     router.get('/getrcategory/:id', controller.getResearchbyCategory);
     router.get('/rcategorytot/:id', controller.countResearchbyCategory);
+    router.get('/rpayed/:id', controller.getpaidORnot);
     router.get('/gettotpayment', controller.getTotPaid);
 
     router.post('/createworkshop', controller.createWorkshop);
