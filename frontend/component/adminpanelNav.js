@@ -48,8 +48,8 @@ class AdminPanel extends Component {
                 <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Utilities:</h6>
-                        <a class="collapse-item" href="utilities-color.html">Colors</a>
+                        <h6 class="collapse-header">viewStatistics</h6>
+                        <a class="viewStatistics" href="#">viewStatistics</a>
                         <a class="collapse-item" href="utilities-border.html">Borders</a>
                         <a class="collapse-item" href="utilities-animation.html">Animations</a>
                         <a class="collapse-item" href="utilities-other.html">Other</a>
@@ -87,7 +87,8 @@ class AdminPanel extends Component {
             <li class="nav-item">
                 <a class="nav-link" href="tables.html">
                     <i class="fas fa-fw fa-table"></i>
-                    <span>Tables</span></a>
+                    <a class="collapse-item" href="/viewStats">viewStatistics</a>
+                    </a>
             </li>
             <hr class="sidebar-divider d-none d-md-block"/>
             
