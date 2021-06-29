@@ -12,7 +12,7 @@ import RevenuechartsPage from './component/revenueCharts';
 import UpdateAdministrator from './component/updateAdministrator';
 import ViewConfDetails from './component/viewConfDetails';
 import workshoptype from './component/viewWorkshops';
-import dashboard from './component/dashboard'
+import dashboardcp from './component/dashboard'
 function App() {
     return(
         <div className="wrapper">         
@@ -21,10 +21,11 @@ function App() {
             <div className="row">
              <div className="col col-lg-2"><AdminPanel/></div>
             <div className="col">
-            <Navbar/>
+            
+            
             <Box width="100%">
+               <Navbar/>
             <section>
-
             <Switch>
              <Route path="/create-admin" component={AddAdministrator} exact /> 
              <Route path="/view-admin" component={ViewAdministrator} exact /> 
@@ -33,7 +34,9 @@ function App() {
              <Route path="/viewPayment" component={RevenuechartsPage} exact /> 
              <Route path="/viewConference" component={ViewConfDetails} exact />
              <Route path="/viewWorkshop" component={workshoptype} exact /> 
-             <Route path="/dashboard" component={dashboard} exact /> 
+             <Route path="/dashboard" component={dashboardcp} exact /> 
+             <Route path="/" component={dashboardcp} exact /> 
+
 
             </Switch>
             </section>
