@@ -7,9 +7,12 @@ import AdminPanel from './component/adminpanelNav';
 import MainPanel from './MainPanel';
 import {Box} from "@material-ui/core";
 import Grid from '@material-ui/core/Grid';
-import ChartsPage from './component/charts'
-import RevenuechartsPage from './component/revenueCharts'
-import UpdateAdministrator from './component/updateAdministrator'
+import ChartsPage from './component/charts';
+import RevenuechartsPage from './component/revenueCharts';
+import UpdateAdministrator from './component/updateAdministrator';
+import ViewConfDetails from './component/viewConfDetails';
+import workshoptype from './component/viewWorkshops';
+import dashboard from './component/dashboard'
 function App() {
     return(
         <div className="wrapper">         
@@ -28,6 +31,10 @@ function App() {
              <Route path="/update/:id" component={UpdateAdministrator} exact /> 
              <Route path="/viewStats" component={ChartsPage} exact /> 
              <Route path="/viewPayment" component={RevenuechartsPage} exact /> 
+             <Route path="/viewConference" component={ViewConfDetails} exact />
+             <Route path="/viewWorkshop" component={workshoptype} exact /> 
+             <Route path="/dashboard" component={dashboard} exact /> 
+
             </Switch>
             </section>
             </Box>

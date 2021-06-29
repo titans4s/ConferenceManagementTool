@@ -92,19 +92,30 @@ const getConferencedetails = async(req, res) => {
 
 }
 
-const updateConferencedetails = async(req, res) => {
-    let cid = req.params.id;
-    const { status } = req.body;
-    const updateConferenceDetail = {
-        status
-    }
-    await conferenceDetails.findByIdAndUpdate(cid, updateConferenceDetail)
+const ApproveConferencedetails = async(req, res) => {
+    if (req.params && req.params.id) {
+        let cid = req.params.id;
+        await conferenceDetails.findByIdAndUpdate(cid,{$set:{status:'approved'}})
         .then(() => {
-            res.status(200).send({ status: "Conference details approved" })
+            res.status(200).send({ status: "Conference details approved" });
         }).catch((err) => {
             console.log(err);
             res.status(500).send({ status: "Error with approval", error: err.message });
         })
+    }
+}
+
+const DisapproveConferencedetails = async(req, res) => {
+    if (req.params && req.params.id) {
+        let cid = req.params.id;
+        await conferenceDetails.findByIdAndUpdate(cid,{$set:{status:'not approved'}})
+        .then(() => {
+            res.status(200).send({ status: "Conference details not approved" });
+        }).catch((err) => {
+            console.log(err);
+            res.status(500).send({ status: "Error with approval", error: err.message });
+        })
+    }
 }
 
 const createConference = async(req, res) => {
@@ -240,7 +251,8 @@ module.exports = {
     deleteAdministrators,
     updateAdministrator,
     getConferencedetails,
-    updateConferencedetails,
+    ApproveConferencedetails,
+    DisapproveConferencedetails,
     createConference,
     getWorkshopsbyCategory,
     countWorkshopsbyCategory,

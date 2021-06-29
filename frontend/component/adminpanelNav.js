@@ -17,7 +17,7 @@ class AdminPanel extends Component {
             </a>
             <hr class="sidebar-divider my-0"/>
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="/dashboard">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -40,13 +40,7 @@ class AdminPanel extends Component {
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/viewStats">
-                    <i class="far fa-newspaper"></i>
-                    <span>Researches</span>
-                    </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/viewStats">
+                <a class="nav-link" href="/viewWorkshop">
                     <i class="fas fa-landmark"></i>
                     <span>Workshops</span>
                     </a>
@@ -56,7 +50,7 @@ class AdminPanel extends Component {
                 Approve
             </div>
             <li class="nav-item">
-                <a class="nav-link" href="/viewStats">
+                <a class="nav-link" href="/viewConference">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Conference Details</span>
                     </a>

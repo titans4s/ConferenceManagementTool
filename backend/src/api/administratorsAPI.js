@@ -10,7 +10,8 @@ module.exports = function() {
     router.delete('/delete/:id', controller.deleteAdministrators);
     router.put('/update/:id', controller.updateAdministrator);
     router.get('/conference', controller.getConferencedetails);
-    router.put('/updatecd/:id', controller.updateConferencedetails);
+    router.put('/approvecd/:id', controller.ApproveConferencedetails);
+    router.put('/disapprovecd/:id', controller.DisapproveConferencedetails);
     router.post('/createcon', controller.createConference);
 
     router.get('/getwcategory/:id', controller.getWorkshopsbyCategory);
