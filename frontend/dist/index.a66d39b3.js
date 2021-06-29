@@ -21881,6 +21881,8 @@ var _paidallapproved = require("./component/paidallapproved");
 var _paidallapprovedDefault = parcelHelpers.interopDefault(_paidallapproved);
 var _onepaper = require("./component/onepaper");
 var _onepaperDefault = parcelHelpers.interopDefault(_onepaper);
+var _download = require("./component/Download");
+var _downloadDefault = parcelHelpers.interopDefault(_download);
 class App extends _reactDefault.default.Component {
     constructor(props){
         super(props);
@@ -21890,37 +21892,37 @@ class App extends _reactDefault.default.Component {
             className: "App",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\App.jsx",
-                lineNumber: 28
+                lineNumber: 29
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.BrowserRouter, {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\App.jsx",
-                lineNumber: 29
+                lineNumber: 30
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\App.jsx",
-                lineNumber: 30
+                lineNumber: 31
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement(_navDefault.default, {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\App.jsx",
-                lineNumber: 30
+                lineNumber: 31
             },
             __self: this
         })), /*#__PURE__*/ _reactDefault.default.createElement("section", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\App.jsx",
-                lineNumber: 33
+                lineNumber: 34
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Switch, {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\App.jsx",
-                lineNumber: 35
+                lineNumber: 36
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21928,7 +21930,7 @@ class App extends _reactDefault.default.Component {
             component: _loginnavDefault.default,
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\App.jsx",
-                lineNumber: 38
+                lineNumber: 39
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21936,7 +21938,7 @@ class App extends _reactDefault.default.Component {
             component: _loginnavDefault.default,
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\App.jsx",
-                lineNumber: 39
+                lineNumber: 40
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21944,7 +21946,7 @@ class App extends _reactDefault.default.Component {
             component: _loginnavDefault.default,
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\App.jsx",
-                lineNumber: 40
+                lineNumber: 41
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21952,7 +21954,7 @@ class App extends _reactDefault.default.Component {
             component: _loginnavDefault.default,
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\App.jsx",
-                lineNumber: 41
+                lineNumber: 42
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21960,7 +21962,7 @@ class App extends _reactDefault.default.Component {
             component: _loginDefault.default,
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\App.jsx",
-                lineNumber: 42
+                lineNumber: 43
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21968,7 +21970,15 @@ class App extends _reactDefault.default.Component {
             component: _paidallapprovedDefault.default,
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\App.jsx",
-                lineNumber: 43
+                lineNumber: 44
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
+            path: "/download",
+            component: _downloadDefault.default,
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\App.jsx",
+                lineNumber: 45
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21976,7 +21986,7 @@ class App extends _reactDefault.default.Component {
             component: _reviewerDefault.default,
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\App.jsx",
-                lineNumber: 44
+                lineNumber: 46
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21984,7 +21994,7 @@ class App extends _reactDefault.default.Component {
             component: _onepaperDefault.default,
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\App.jsx",
-                lineNumber: 47
+                lineNumber: 49
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21993,7 +22003,7 @@ class App extends _reactDefault.default.Component {
             exact: true,
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\App.jsx",
-                lineNumber: 48
+                lineNumber: 50
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -22002,7 +22012,7 @@ class App extends _reactDefault.default.Component {
             exact: true,
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\App.jsx",
-                lineNumber: 49
+                lineNumber: 51
             },
             __self: this
         }))))));
@@ -22015,7 +22025,7 @@ exports.default = App;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","./component/nav":"6WGfd","react-router-dom":"1PMSK","./component/Researcher":"5iH6s","./component/Reviewer":"32KJG","./component/paperDetails":"2C8vX","./component/normal":"YTJQu","./component/verticalnav":"2qtY8","./component/login":"1aVv2","./component/approved":"6C06a","./component/navbar1":"6AEJO","./component/paymentform":"55JIT","@material-ui/core":"6DoV9","./loginnav":"4Jrcf","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./component/retrievecookie":"69TXJ","./component/paidallapproved":"7IDXW","./component/onepaper":"2FbfE"}],"6WGfd":[function(require,module,exports) {
+},{"react":"3b2NM","./component/nav":"6WGfd","react-router-dom":"1PMSK","./component/Researcher":"5iH6s","./component/Reviewer":"32KJG","./component/paperDetails":"2C8vX","./component/normal":"YTJQu","./component/verticalnav":"2qtY8","./component/login":"1aVv2","./component/approved":"6C06a","./component/navbar1":"6AEJO","./component/paymentform":"55JIT","@material-ui/core":"6DoV9","./loginnav":"4Jrcf","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./component/retrievecookie":"69TXJ","./component/paidallapproved":"7IDXW","./component/onepaper":"2FbfE","./component/Download":"6aU2p"}],"6WGfd":[function(require,module,exports) {
 var helpers = require("../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -22141,7 +22151,7 @@ class Navbar extends _react.Component {
             __self: this
         }, "Research Papers"), /*#__PURE__*/ _reactDefault.default.createElement("a", {
             class: "dropdown-item",
-            href: "#",
+            href: "/download",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
                 lineNumber: 29
@@ -22221,51 +22231,73 @@ class Navbar extends _react.Component {
                 lineNumber: 43
             },
             __self: this
-        }, "Upload Workshop")))), /*#__PURE__*/ _reactDefault.default.createElement("form", {
+        }, "Upload Workshop"))), /*#__PURE__*/ _reactDefault.default.createElement("li", {
+            class: "nav-item active",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
+                lineNumber: 46
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
+            class: "nav-link",
+            href: "/get-Reviewer",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
+                lineNumber: 47
+            },
+            __self: this
+        }, "Reviewer ", /*#__PURE__*/ _reactDefault.default.createElement("span", {
+            class: "sr-only",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
+                lineNumber: 47
+            },
+            __self: this
+        }, "(current)")))), /*#__PURE__*/ _reactDefault.default.createElement("form", {
             class: "form-inline my-2 my-lg-0",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
-                lineNumber: 50
+                lineNumber: 53
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("li", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
-                lineNumber: 51
+                lineNumber: 54
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
             href: "#",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
-                lineNumber: 51
+                lineNumber: 54
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("span", {
             className: "glyphicon glyphicon-user",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
-                lineNumber: 51
+                lineNumber: 54
             },
             __self: this
         }), " Sign Up")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
-                lineNumber: 52
+                lineNumber: 55
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
             href: "/login",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
-                lineNumber: 52
+                lineNumber: 55
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("span", {
             className: "glyphicon glyphicon-log-in",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
-                lineNumber: 52
+                lineNumber: 55
             },
             __self: this
         }), " Login"))))));
@@ -69055,29 +69087,69 @@ class paidallapproved extends _react.Component {
                 lineNumber: 39
             },
             __self: this
-        }, this.state.name, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+        }, this.state.name, /*#__PURE__*/ _reactDefault.default.createElement("br", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paidallapproved.js",
                 lineNumber: 41
             },
             __self: this
-        }, "Approved research papers"), this.state.approvedPapers.length > 0 && this.state.approvedPapers.map((item, index)=>/*#__PURE__*/ _reactDefault.default.createElement("div", {
+        }), " ", /*#__PURE__*/ _reactDefault.default.createElement("br", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paidallapproved.js",
+                lineNumber: 41
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paidallapproved.js",
+                lineNumber: 42
+            },
+            __self: this
+        }, "Approved research papers"), /*#__PURE__*/ _reactDefault.default.createElement("hr", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paidallapproved.js",
+                lineNumber: 42
+            },
+            __self: this
+        }), this.state.approvedPapers.length > 0 && this.state.approvedPapers.map((item, index)=>/*#__PURE__*/ _reactDefault.default.createElement("div", {
                 key: index,
                 className: "card mb-3",
                 onClick: (e)=>this.navigateSubject(e, item._id)
                 ,
                 __source: {
                     fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paidallapproved.js",
-                    lineNumber: 43
-                },
-                __self: this
-            }, /*#__PURE__*/ _reactDefault.default.createElement("h5", {
-                __source: {
-                    fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paidallapproved.js",
                     lineNumber: 44
                 },
                 __self: this
-            }, item.papertitle))
+            }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+                class: "card text-white bg-secondary mb-3",
+                __source: {
+                    fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paidallapproved.js",
+                    lineNumber: 45
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+                class: "card-header",
+                __source: {
+                    fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paidallapproved.js",
+                    lineNumber: 46
+                },
+                __self: this
+            }, "Email: ", item.email), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+                class: "card-body",
+                __source: {
+                    fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paidallapproved.js",
+                    lineNumber: 47
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("p", {
+                class: "card-text",
+                __source: {
+                    fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paidallapproved.js",
+                    lineNumber: 49
+                },
+                __self: this
+            }, "Paper_Title: ", item.papertitle))))
         )));
     }
 }
@@ -69208,6 +69280,308 @@ class onepaper extends _react.Component {
     }
 }
 exports.default = onepaper;
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"3b2NM","axios":"7rA65","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"6aU2p":[function(require,module,exports) {
+var helpers = require("../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _axios = require("axios");
+var _axiosDefault = parcelHelpers.interopDefault(_axios);
+class Paper extends _react.Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            Papers: ''
+        };
+    }
+    render() {
+        return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
+                lineNumber: 18
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("br", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
+                lineNumber: 19
+            },
+            __self: this
+        }), " ", /*#__PURE__*/ _reactDefault.default.createElement("br", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
+                lineNumber: 19
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
+                lineNumber: 20
+            },
+            __self: this
+        }, "Research Paper Outline Templates"), " ", /*#__PURE__*/ _reactDefault.default.createElement("br", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
+                lineNumber: 20
+            },
+            __self: this
+        }), " ", /*#__PURE__*/ _reactDefault.default.createElement("br", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
+                lineNumber: 20
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "card-group",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
+                lineNumber: 21
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "card",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
+                lineNumber: 22
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("h2", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
+                lineNumber: 23
+            },
+            __self: this
+        }, "Career Research Paper Outline"), /*#__PURE__*/ _reactDefault.default.createElement("img", {
+            class: "card-img-top",
+            src: "https://images.template.net/wp-content/uploads/2017/06/Career-Research-Paper-Outline1.jpg?width=320/100px160",
+            alt: "Card image cap",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
+                lineNumber: 24
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "card-body",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
+                lineNumber: 25
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("h5", {
+            class: "card-title",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
+                lineNumber: 26
+            },
+            __self: this
+        }, "Details"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
+            class: "card-text",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
+                lineNumber: 27
+            },
+            __self: this
+        }, "File format : PDF"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
+            class: "card-text",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
+                lineNumber: 28
+            },
+            __self: this
+        }, "Size: 63KB"), /*#__PURE__*/ _reactDefault.default.createElement("a", {
+            href: "https://images.template.net/wp-content/uploads/2017/06/Career-Research-Paper-Outline1.zip",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
+                lineNumber: 29
+            },
+            __self: this
+        }, "Download"))), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "card",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
+                lineNumber: 32
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("h2", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
+                lineNumber: 33
+            },
+            __self: this
+        }, "Basic Research Paper Outline"), /*#__PURE__*/ _reactDefault.default.createElement("img", {
+            class: "card-img-top",
+            src: "https://images.template.net/wp-content/uploads/2017/06/Basic-Research-Paper-Outline.jpg?width=320/100px160",
+            alt: "Card image cap",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
+                lineNumber: 34
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "card-body",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
+                lineNumber: 35
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("h5", {
+            class: "card-title",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
+                lineNumber: 36
+            },
+            __self: this
+        }, "Details"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
+            class: "card-text",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
+                lineNumber: 37
+            },
+            __self: this
+        }, "File format : PDF"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
+            class: "card-text",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
+                lineNumber: 38
+            },
+            __self: this
+        }, "Size: 47KB"), /*#__PURE__*/ _reactDefault.default.createElement("a", {
+            href: "https://images.template.net/wp-content/uploads/2017/06/Basic-Research-Paper-Outline.zip",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
+                lineNumber: 39
+            },
+            __self: this
+        }, "Download"))), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "card",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
+                lineNumber: 42
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("h2", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
+                lineNumber: 43
+            },
+            __self: this
+        }, " Business Research Paper Outline"), /*#__PURE__*/ _reactDefault.default.createElement("img", {
+            class: "card-img-top",
+            src: "https://images.template.net/wp-content/uploads/2017/06/International-Business-Research-Paper.jpg?width=320/100px160",
+            alt: "Card image cap",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
+                lineNumber: 44
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "card-body",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
+                lineNumber: 45
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("h5", {
+            class: "card-title",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
+                lineNumber: 46
+            },
+            __self: this
+        }, "Details"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
+            class: "card-text",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
+                lineNumber: 47
+            },
+            __self: this
+        }, "File format : PDF"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
+            class: "card-text",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
+                lineNumber: 48
+            },
+            __self: this
+        }, "Size: 71KB"), /*#__PURE__*/ _reactDefault.default.createElement("a", {
+            href: "https://images.template.net/wp-content/uploads/2017/06/International-Business-Research-Paper.zip",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
+                lineNumber: 49
+            },
+            __self: this
+        }, "Download"))), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "card",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
+                lineNumber: 53
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("h2", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
+                lineNumber: 54
+            },
+            __self: this
+        }, " Business School Research Paper Outline"), /*#__PURE__*/ _reactDefault.default.createElement("img", {
+            class: "card-img-top",
+            src: "https://images.template.net/wp-content/uploads/2017/06/Business-School-Research-Paper1.jpg?width=320",
+            alt: "Card image cap",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
+                lineNumber: 55
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "card-body",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
+                lineNumber: 56
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("h5", {
+            class: "card-title",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
+                lineNumber: 57
+            },
+            __self: this
+        }, "Details"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
+            class: "card-text",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
+                lineNumber: 58
+            },
+            __self: this
+        }, "File format : PDF"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
+            class: "card-text",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
+                lineNumber: 59
+            },
+            __self: this
+        }, "Size: 61KB"), /*#__PURE__*/ _reactDefault.default.createElement("a", {
+            href: "https://images.template.net/wp-content/uploads/2017/06/Business-School-Research-Paper1.zip",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
+                lineNumber: 60
+            },
+            __self: this
+        }, "Download"))))));
+    }
+}
+exports.default = Paper;
 
   helpers.postlude(module);
 } finally {

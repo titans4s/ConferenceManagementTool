@@ -16,6 +16,7 @@ import loginnav from './loginnav';
 import Retrieve from './component/retrievecookie';
 import approvepaid from './component/paidallapproved';
 import onepaper from './component/onepaper';
+import download from './component/Download';
 
 
 
@@ -40,7 +41,8 @@ export default class App extends React.Component {
                              <Route path='/create-researcher' component={loginnav} />
                              <Route path='/notapprove/:email' component={loginnav} />
                              <Route path='/login' component={login} />
-                             <Route path='/approvedpaid' component={approvepaid} />
+                    <Route path='/approvedpaid' component={approvepaid} />
+                    <Route path='/download' component={download} />
                <Route path='/get-Reviewer' component={ResearchReviewer} />
          
                   

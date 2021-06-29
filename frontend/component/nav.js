@@ -26,7 +26,7 @@ class Navbar extends Component{
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="/approvedpaid">Research Papers</a>
-                <a class="dropdown-item" href="#">Download page</a>
+                <a class="dropdown-item" href="/download">Download page</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="/login">Upload Research papers</a>
               </div>
@@ -43,7 +43,10 @@ class Navbar extends Component{
                 <a class="dropdown-item" href="#">Upload Workshop</a>
               </div>
             </li>
-          
+            <li class="nav-item active">
+              <a class="nav-link" href="/get-Reviewer">Reviewer <span class="sr-only">(current)</span></a>
+            </li>
+               
            
              </ul>
             

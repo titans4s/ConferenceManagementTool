@@ -38,10 +38,17 @@ render() {
     return (
         <div>
             {this.state.name}
-            <h1>Approved research papers</h1>
+            <br/> <br/>
+            <h1>Approved research papers</h1><hr/>
             {this.state.approvedPapers.length > 0 && this.state.approvedPapers.map((item, index) => (
                 <div key={index} className="card mb-3"onClick={e=>this.navigateSubject(e,item._id)} >
-                    <h5>{item.papertitle}</h5>
+                    <div class="card text-white bg-secondary mb-3">
+                    <div class="card-header">Email:  {item.email }</div>
+                        <div class="card-body">
+                                
+                     <p class="card-text">Paper_Title:   {item.papertitle}</p>
+  </div>
+</div>
                   
                    
                   
