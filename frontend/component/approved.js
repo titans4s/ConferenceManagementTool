@@ -1,16 +1,29 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
+
+import { Cookies, useCookies } from 'react-cookie';
+
 class approved extends Component{
+   
     constructor(props) {
         super(props);
-
+        
+      
         this.state = {
-            approvedPapers:[]
-        }
+            name: '',
+            pwd: '',
+          
+         
+            approvedPapers: []
+        };
+       this.useCookies=['user']
      
     }
 
+   
+
+ 
     navigateSubject(e,paperid) {
         window.location=`/payment/${paperid}`
     }
@@ -27,29 +40,16 @@ class approved extends Component{
       
 render() {
     return (
-        <div><br/>
-            <h2>Approved research papers</h2><hr/>
+        <div>
+           
+            <h1>Approved research papers</h1>
+            {Cookies.Name}
             {this.state.approvedPapers.length > 0 && this.state.approvedPapers.map((item, index) => (
-                <div key={index}  >
-
-            <div class="row">
-            <div class="col-sm-6">
-                <div class="card">
-                <div class="card-body">
-                                    <h5 class="card-title">{item.papertitle}</h5>
-                                    
-                                    { item.payment.equals("not paid") } ? (
-                                        <button  onClick={e=>this.navigateSubject(e,item._id)}>make payment</button>
-                                    )
-                                    <p class="card-text"></p>
-                        
+                <div key={index} className="card mb-3" >
+                    <h5>{item.papertitle}</h5>
+                  
+                    <h5>{item.payment}</h5>
                     <button  onClick={e=>this.navigateSubject(e,item._id)}>make payment</button>
-                </div>
-                </div>
-            </div>
-           </div>
-                   
-                   
                 </div>
     ))}
             
@@ -67,3 +67,4 @@ render() {
 
 
 export default approved;
+

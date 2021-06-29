@@ -1,7 +1,0 @@
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var ThemeContext = _reactDefault.default.createContext(null);
-ThemeContext.displayName = 'ThemeContext';
-exports.default = ThemeContext;

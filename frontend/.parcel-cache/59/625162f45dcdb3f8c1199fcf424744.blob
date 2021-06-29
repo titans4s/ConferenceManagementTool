@@ -1,6 +1,0 @@
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>_portalDefault.default
-);
-var _portal = require("./Portal");
-var _portalDefault = parcelHelpers.interopDefault(_portal);

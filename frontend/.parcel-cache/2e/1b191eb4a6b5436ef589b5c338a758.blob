@@ -1,6 +1,0 @@
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>_withMobileDialogDefault.default
-);
-var _withMobileDialog = require("./withMobileDialog");
-var _withMobileDialogDefault = parcelHelpers.interopDefault(_withMobileDialog);

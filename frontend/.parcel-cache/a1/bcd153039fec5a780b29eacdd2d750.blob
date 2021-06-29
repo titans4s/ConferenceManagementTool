@@ -1,6 +1,0 @@
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>_dialogContentTextDefault.default
-);
-var _dialogContentText = require("./DialogContentText");
-var _dialogContentTextDefault = parcelHelpers.interopDefault(_dialogContentText);

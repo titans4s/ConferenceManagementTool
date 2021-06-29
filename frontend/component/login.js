@@ -1,43 +1,41 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
+import { useCookies } from 'react-cookie';
 
-class Login extends Component{
-    constructor(props) {
-        super(props)
-        this.onChange = this.onChange.bind(this);
+const Login = () => {
+   const [name, setName] = useState('');
+   const [pwd, setPwd] = useState('');
+   const [cookies, setCookie] = useCookies(['user']);
+
+    const navigate=(e, email)=> {
       
-        this.state = {
-            email:""
-        } 
-        
-    }
-
-    navigate(e,email) {
-        window.location=`/approve/${email}`
-    }
-    onChange(e) {
-        this.setState({ [e.target.name]: e.target.value });
-   }
-
-    render() {
-        return (
-            <div className="container">
-                <h1>nive</h1>
-                <h3>dharu</h3>
-            <form>
-                <div>
-                <label for="inputEmail4" class="form-label">Useremail</label>
-                        <input type="text" class="form-control" id="author" name="email" value={this.state.email} onChange={this.onChange}/>
-                    </div>
-                  
-                   
-                </form>
-                <button onClick={e=>this.navigate(e,this.state.email)}>Login</button>
-            </div>
-       
-           
-        )
-    }
-}
-
+    window.location=`/approve/${name}`
+    };
+   const handle = () => {
+      setCookie('Name', name, { path: '/' });
+      setCookie('Password', pwd, { path: '/' });
+      
+     
+   };
+   return (
+      <div className="App">
+      <h1>Name of the user:</h1>
+      <input
+         placeholder="name"
+         value={name}
+         onChange={(e) => setName(e.target.value)}
+      />
+      <h1>Password of the user:</h1>
+      <input
+         type="password"
+         placeholder="name"
+         value={pwd}
+         onChange={(e) => setPwd(e.target.value)}
+      />
+      <div>
+               <button onClick={handle}>Set Cookie</button>
+               <button onClick={e=>navigate(e,name)}>Login</button>
+      </div>
+   </div>
+   );
+};
 export default Login;
-

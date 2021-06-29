@@ -1,9 +1,0 @@
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _styles = require("@material-ui/styles");
-var _defaultTheme = require("./defaultTheme");
-var _defaultThemeDefault = parcelHelpers.interopDefault(_defaultTheme);
-var withTheme = _styles.withThemeCreator({
-    defaultTheme: _defaultThemeDefault.default
-});
-exports.default = withTheme;

@@ -1,6 +1,0 @@
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>_appBarDefault.default
-);
-var _appBar = require("./AppBar");
-var _appBarDefault = parcelHelpers.interopDefault(_appBar);

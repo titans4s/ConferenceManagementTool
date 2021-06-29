@@ -27,6 +27,14 @@ const approval = async (req, res) => {
     }
    
 }
+const getapprovedpaid = async (req, res) => {
+    await Researcher.find({ status: "approved",payment:"paid" })
+    .then(data => {
+        res.status(200).send({ data: data });
+    }).catch(error => {
+        console.log({ error: error.message });
+    });
+}
 
 const updatepayment = async (req, res) => {
     if (req.params && req.params.id) {
@@ -55,6 +63,18 @@ const findapproval = async (req, res) => {
     }
 }
 
+const findnotapproval = async (req, res) => {
+    if (req.params && req.params.email) {
+        const Email = req.params.email;
+        await Researcher.find({email:Email,status:"not approved"})
+            .then(data => {
+                res.status(200).send({data:data});
+            }).catch((err) => {
+                console.log(err.message);
+            res.status(500).send({ status: "Error loading not approved papers", error: err.message });
+        })
+    }
+}
 
 const ondelete = async (req, res) => {
     if (req.params && req.params.id) {
@@ -114,5 +134,7 @@ module.exports = {
     disapproval,
     ondelete,
     findapproval,
-    updatepayment
+    updatepayment,
+    findnotapproval,
+    getapprovedpaid
 };

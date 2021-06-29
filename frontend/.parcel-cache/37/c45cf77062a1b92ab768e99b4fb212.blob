@@ -1,6 +1,0 @@
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>_tabDefault.default
-);
-var _tab = require("./Tab");
-var _tabDefault = parcelHelpers.interopDefault(_tab);

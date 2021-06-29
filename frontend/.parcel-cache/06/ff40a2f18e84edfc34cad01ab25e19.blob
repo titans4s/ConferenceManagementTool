@@ -1,9 +1,0 @@
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _react = require("react");
-var _formControlContext = require("./FormControlContext");
-var _formControlContextDefault = parcelHelpers.interopDefault(_formControlContext);
-function useFormControl() {
-    return _react.useContext(_formControlContextDefault.default);
-}
-exports.default = useFormControl;

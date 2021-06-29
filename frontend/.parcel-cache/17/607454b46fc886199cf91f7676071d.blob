@@ -1,8 +1,0 @@
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _react = require("react");
-var _createSvgIcon = require("../../utils/createSvgIcon");
-var _createSvgIconDefault = parcelHelpers.interopDefault(_createSvgIcon);
-exports.default = _createSvgIconDefault.default(/*#__PURE__*/ _react.createElement("path", {
-    d: "M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"
-}), 'KeyboardArrowRight');

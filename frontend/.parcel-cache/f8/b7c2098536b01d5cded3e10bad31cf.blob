@@ -1,7 +1,0 @@
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _react = require("react");
-function isMuiElement(element, muiNames) {
-    return(/*#__PURE__*/ _react.isValidElement(element) && muiNames.indexOf(element.type.muiName) !== -1);
-}
-exports.default = isMuiElement;

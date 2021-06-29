@@ -1,6 +1,0 @@
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>_inputDefault.default
-);
-var _input = require("./Input");
-var _inputDefault = parcelHelpers.interopDefault(_input);

@@ -8,24 +8,35 @@ class Navbar extends Component{
     render(){
        return(
            <div>
-               <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="#">Sliit Af project</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                            <a class="nav-link active" aria-current="page" href="/">Course</a>
-                            <a class="nav-link" href="/create-researcher">CreateResearch</a>
-                               <a class="nav-link" href="/get-Reviewer">CreateReviewer</a>
-                               <a class="nav-link" href="/login">login</a>
-                               <a class="nav-link" href="/pay">payment</a>
-                           
-                            </div>
-                            </div>
-                        </div>
-                        </nav>
+               <nav className="navbar navbar-inverse">
+            <div className="container-fluid">
+              <ul className="nav navbar-nav">
+                <li className="active"><a href="#">Home</a></li>
+                <li className="dropdown">
+                  <a className="dropdown-toggle" data-toggle="dropdown" href="#">Workshop
+                  <span className="caret"></span></a>
+                  <ul className="dropdown-menu">
+                    <li><a href="#">Workshop details</a></li>
+                    <li><a href="#">Downloads Page</a></li>
+                    <li><a href="#">Upload Workshop</a></li>
+                  </ul>
+                </li>
+                <li className="dropdown">
+                  <a className="dropdown-toggle" data-toggle="dropdown" href="#">Researches
+                  <span className="caret"></span></a>
+                  <ul className="dropdown-menu">
+                    <li><a href="/approvedpaid">Research Papers</a></li>
+                    <li><a href="#">Downloads Page</a></li>
+                    <li><a href="/login">Upload Research Papers</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul className="nav navbar-nav navbar-right">
+                <li><a href="#"><span className="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="/login"><span className="glyphicon glyphicon-log-in"></span> Login</a></li>
+              </ul>
+            </div>
+          </nav>
                     </div>
        ) 
     }

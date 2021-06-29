@@ -1,7 +1,0 @@
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>_withWidthDefault.default
-);
-var _withWidth = require("./withWidth");
-var _withWidthDefault = parcelHelpers.interopDefault(_withWidth);
-parcelHelpers.exportAll(_withWidth, exports);

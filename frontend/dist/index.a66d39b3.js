@@ -891,7 +891,7 @@ _reactDom.render(/*#__PURE__*/ _reactDefault.default.createElement(_appDefault.d
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","react-dom":"2sg1U","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./App":"5HRlL"}],"3b2NM":[function(require,module,exports) {
+},{"react":"3b2NM","react-dom":"2sg1U","./App":"5HRlL","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"3b2NM":[function(require,module,exports) {
 'use strict';
 module.exports = require('./cjs/react.development.js');
 
@@ -21840,7 +21840,434 @@ module.exports = require('./cjs/scheduler-tracing.development.js');
     exports.unstable_wrap = unstable_wrap;
 })();
 
-},{}],"367CR":[function(require,module,exports) {
+},{}],"5HRlL":[function(require,module,exports) {
+var helpers = require("./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _nav = require("./component/nav");
+var _navDefault = parcelHelpers.interopDefault(_nav);
+var _reactRouterDom = require("react-router-dom");
+var _researcher = require("./component/Researcher");
+var _researcherDefault = parcelHelpers.interopDefault(_researcher);
+var _reviewer = require("./component/Reviewer");
+var _reviewerDefault = parcelHelpers.interopDefault(_reviewer);
+var _paperDetails = require("./component/paperDetails");
+var _paperDetailsDefault = parcelHelpers.interopDefault(_paperDetails);
+var _normal = require("./component/normal");
+var _normalDefault = parcelHelpers.interopDefault(_normal);
+var _verticalnav = require("./component/verticalnav");
+var _verticalnavDefault = parcelHelpers.interopDefault(_verticalnav);
+var _login = require("./component/login");
+var _loginDefault = parcelHelpers.interopDefault(_login);
+var _approved = require("./component/approved");
+var _approvedDefault = parcelHelpers.interopDefault(_approved);
+var _navbar1 = require("./component/navbar1");
+var _navbar1Default = parcelHelpers.interopDefault(_navbar1);
+var _paymentform = require("./component/paymentform");
+var _paymentformDefault = parcelHelpers.interopDefault(_paymentform);
+var _core = require("@material-ui/core");
+var _loginnav = require("./loginnav");
+var _loginnavDefault = parcelHelpers.interopDefault(_loginnav);
+var _retrievecookie = require("./component/retrievecookie");
+var _retrievecookieDefault = parcelHelpers.interopDefault(_retrievecookie);
+var _paidallapproved = require("./component/paidallapproved");
+var _paidallapprovedDefault = parcelHelpers.interopDefault(_paidallapproved);
+var _onepaper = require("./component/onepaper");
+var _onepaperDefault = parcelHelpers.interopDefault(_onepaper);
+class App extends _reactDefault.default.Component {
+    constructor(props){
+        super(props);
+    }
+    render() {
+        return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "App",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\App.jsx",
+                lineNumber: 28
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.BrowserRouter, {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\App.jsx",
+                lineNumber: 29
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\App.jsx",
+                lineNumber: 30
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement(_navDefault.default, {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\App.jsx",
+                lineNumber: 30
+            },
+            __self: this
+        })), /*#__PURE__*/ _reactDefault.default.createElement("section", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\App.jsx",
+                lineNumber: 33
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Switch, {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\App.jsx",
+                lineNumber: 35
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
+            path: "/approve/:email",
+            component: _loginnavDefault.default,
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\App.jsx",
+                lineNumber: 38
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
+            path: "/payment/:id",
+            component: _loginnavDefault.default,
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\App.jsx",
+                lineNumber: 39
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
+            path: "/create-researcher",
+            component: _loginnavDefault.default,
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\App.jsx",
+                lineNumber: 40
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
+            path: "/notapprove/:email",
+            component: _loginnavDefault.default,
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\App.jsx",
+                lineNumber: 41
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
+            path: "/login",
+            component: _loginDefault.default,
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\App.jsx",
+                lineNumber: 42
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
+            path: "/approvedpaid",
+            component: _paidallapprovedDefault.default,
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\App.jsx",
+                lineNumber: 43
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
+            path: "/get-Reviewer",
+            component: _reviewerDefault.default,
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\App.jsx",
+                lineNumber: 44
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
+            path: "/onepaper/:id",
+            component: _onepaperDefault.default,
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\App.jsx",
+                lineNumber: 47
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
+            path: "/:id",
+            component: _paperDetailsDefault.default,
+            exact: true,
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\App.jsx",
+                lineNumber: 48
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
+            path: "/",
+            component: _normalDefault.default,
+            exact: true,
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\App.jsx",
+                lineNumber: 49
+            },
+            __self: this
+        }))))));
+    }
+}
+exports.default = App;
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"3b2NM","./component/nav":"6WGfd","react-router-dom":"1PMSK","./component/Researcher":"5iH6s","./component/Reviewer":"32KJG","./component/paperDetails":"2C8vX","./component/normal":"YTJQu","./component/verticalnav":"2qtY8","./component/login":"1aVv2","./component/approved":"6C06a","./component/navbar1":"6AEJO","./component/paymentform":"55JIT","@material-ui/core":"6DoV9","./loginnav":"4Jrcf","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./component/retrievecookie":"69TXJ","./component/paidallapproved":"7IDXW","./component/onepaper":"2FbfE"}],"6WGfd":[function(require,module,exports) {
+var helpers = require("../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+class Navbar extends _react.Component {
+    constructor(props){
+        super(props);
+    }
+    render() {
+        return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
+                lineNumber: 10
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("nav", {
+            className: "navbar navbar-inverse",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
+                lineNumber: 11
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "container-fluid",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
+                lineNumber: 12
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("ul", {
+            className: "nav navbar-nav",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
+                lineNumber: 13
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("li", {
+            className: "active",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
+                lineNumber: 14
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
+            href: "#",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
+                lineNumber: 14
+            },
+            __self: this
+        }, "Home")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
+            className: "dropdown",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
+                lineNumber: 15
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
+            className: "dropdown-toggle",
+            "data-toggle": "dropdown",
+            href: "#",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
+                lineNumber: 16
+            },
+            __self: this
+        }, "Workshop", /*#__PURE__*/ _reactDefault.default.createElement("span", {
+            className: "caret",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
+                lineNumber: 17
+            },
+            __self: this
+        })), /*#__PURE__*/ _reactDefault.default.createElement("ul", {
+            className: "dropdown-menu",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
+                lineNumber: 18
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("li", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
+                lineNumber: 19
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
+            href: "#",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
+                lineNumber: 19
+            },
+            __self: this
+        }, "Workshop details")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
+                lineNumber: 20
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
+            href: "#",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
+                lineNumber: 20
+            },
+            __self: this
+        }, "Downloads Page")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
+                lineNumber: 21
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
+            href: "#",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
+                lineNumber: 21
+            },
+            __self: this
+        }, "Upload Workshop")))), /*#__PURE__*/ _reactDefault.default.createElement("li", {
+            className: "dropdown",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
+                lineNumber: 24
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
+            className: "dropdown-toggle",
+            "data-toggle": "dropdown",
+            href: "#",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
+                lineNumber: 25
+            },
+            __self: this
+        }, "Researches", /*#__PURE__*/ _reactDefault.default.createElement("span", {
+            className: "caret",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
+                lineNumber: 26
+            },
+            __self: this
+        })), /*#__PURE__*/ _reactDefault.default.createElement("ul", {
+            className: "dropdown-menu",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
+                lineNumber: 27
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("li", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
+                lineNumber: 28
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
+            href: "/approvedpaid",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
+                lineNumber: 28
+            },
+            __self: this
+        }, "Research Papers")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
+                lineNumber: 29
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
+            href: "#",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
+                lineNumber: 29
+            },
+            __self: this
+        }, "Downloads Page")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
+                lineNumber: 30
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
+            href: "/login",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
+                lineNumber: 30
+            },
+            __self: this
+        }, "Upload Research Papers"))))), /*#__PURE__*/ _reactDefault.default.createElement("ul", {
+            className: "nav navbar-nav navbar-right",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
+                lineNumber: 34
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("li", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
+                lineNumber: 35
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
+            href: "#",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
+                lineNumber: 35
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("span", {
+            className: "glyphicon glyphicon-user",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
+                lineNumber: 35
+            },
+            __self: this
+        }), " Sign Up")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
+                lineNumber: 36
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
+            href: "/login",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
+                lineNumber: 36
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("span", {
+            className: "glyphicon glyphicon-log-in",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
+                lineNumber: 36
+            },
+            __self: this
+        }), " Login")))))));
+    }
+}
+exports.default = Navbar;
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"3b2NM","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"367CR":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -21992,2167 +22419,7 @@ function registerExportsForReactRefresh(module) {
     }
 }
 
-},{"react-refresh/runtime":"592mh"}],"5HRlL":[function(require,module,exports) {
-var helpers = require("./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-helpers.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _nav = require("./component/nav");
-var _navDefault = parcelHelpers.interopDefault(_nav);
-var _reactRouterDom = require("react-router-dom");
-var _researcher = require("./component/Researcher");
-var _researcherDefault = parcelHelpers.interopDefault(_researcher);
-var _reviewer = require("./component/Reviewer");
-var _reviewerDefault = parcelHelpers.interopDefault(_reviewer);
-var _paperDetails = require("./component/paperDetails");
-var _paperDetailsDefault = parcelHelpers.interopDefault(_paperDetails);
-var _normal = require("./component/normal");
-var _normalDefault = parcelHelpers.interopDefault(_normal);
-var _verticalnav = require("./component/verticalnav");
-var _verticalnavDefault = parcelHelpers.interopDefault(_verticalnav);
-var _login = require("./component/login");
-var _loginDefault = parcelHelpers.interopDefault(_login);
-var _approved = require("./component/approved");
-var _approvedDefault = parcelHelpers.interopDefault(_approved);
-var _navbar1 = require("./component/navbar1");
-var _navbar1Default = parcelHelpers.interopDefault(_navbar1);
-var _paymentform = require("./component/paymentform");
-var _paymentformDefault = parcelHelpers.interopDefault(_paymentform);
-var _core = require("@material-ui/core");
-class App extends _reactDefault.default.Component {
-    constructor(props){
-        super(props);
-    }
-    render() {
-        return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
-            className: "App",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\App.jsx",
-                lineNumber: 23
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.BrowserRouter, {
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\App.jsx",
-                lineNumber: 24
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\App.jsx",
-                lineNumber: 25
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement(_navDefault.default, {
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\App.jsx",
-                lineNumber: 25
-            },
-            __self: this
-        })), /*#__PURE__*/ _reactDefault.default.createElement("section", {
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\App.jsx",
-                lineNumber: 28
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Switch, {
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\App.jsx",
-                lineNumber: 29
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
-            path: "/create-researcher",
-            component: _researcherDefault.default,
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\App.jsx",
-                lineNumber: 30
-            },
-            __self: this
-        }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
-            path: "/get-Reviewer",
-            component: _reviewerDefault.default,
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\App.jsx",
-                lineNumber: 31
-            },
-            __self: this
-        }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
-            path: "/payment/:id",
-            component: _paymentformDefault.default,
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\App.jsx",
-                lineNumber: 32
-            },
-            __self: this
-        }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
-            path: "/login",
-            component: _loginDefault.default,
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\App.jsx",
-                lineNumber: 33
-            },
-            __self: this
-        }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
-            path: "/approve/:email",
-            component: _approvedDefault.default,
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\App.jsx",
-                lineNumber: 34
-            },
-            __self: this
-        }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
-            path: "/:id",
-            component: _paperDetailsDefault.default,
-            exact: true,
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\App.jsx",
-                lineNumber: 36
-            },
-            __self: this
-        }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
-            path: "/",
-            component: _normalDefault.default,
-            exact: true,
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\App.jsx",
-                lineNumber: 37
-            },
-            __self: this
-        }))))));
-    }
-}
-exports.default = App;
-
-  helpers.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react":"3b2NM","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./component/nav":"6WGfd","./component/Researcher":"5iH6s","react-router-dom":"1PMSK","./component/Reviewer":"32KJG","./component/paperDetails":"2C8vX","./component/normal":"YTJQu","./component/verticalnav":"2qtY8","./component/login":"1aVv2","./component/approved":"6C06a","./component/paymentform":"55JIT","@material-ui/core":"6DoV9","./component/navbar1":"6AEJO"}],"6WGfd":[function(require,module,exports) {
-var helpers = require("../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-helpers.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-class Navbar extends _react.Component {
-    constructor(props){
-        super(props);
-    }
-    render() {
-        return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
-                lineNumber: 10
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("nav", {
-            class: "navbar navbar-expand-lg navbar-light bg-light",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
-                lineNumber: 11
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            class: "container-fluid",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
-                lineNumber: 12
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
-            class: "navbar-brand",
-            href: "#",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
-                lineNumber: 13
-            },
-            __self: this
-        }, "Sliit Af project"), /*#__PURE__*/ _reactDefault.default.createElement("button", {
-            class: "navbar-toggler",
-            type: "button",
-            "data-bs-toggle": "collapse",
-            "data-bs-target": "#navbarNavAltMarkup",
-            "aria-controls": "navbarNavAltMarkup",
-            "aria-expanded": "false",
-            "aria-label": "Toggle navigation",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
-                lineNumber: 14
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("span", {
-            class: "navbar-toggler-icon",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
-                lineNumber: 15
-            },
-            __self: this
-        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            class: "collapse navbar-collapse",
-            id: "navbarNavAltMarkup",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
-                lineNumber: 17
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            class: "navbar-nav",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
-                lineNumber: 18
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
-            class: "nav-link active",
-            "aria-current": "page",
-            href: "/",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
-                lineNumber: 19
-            },
-            __self: this
-        }, "Course"), /*#__PURE__*/ _reactDefault.default.createElement("a", {
-            class: "nav-link",
-            href: "/create-researcher",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
-                lineNumber: 20
-            },
-            __self: this
-        }, "CreateResearch"), /*#__PURE__*/ _reactDefault.default.createElement("a", {
-            class: "nav-link",
-            href: "/get-Reviewer",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
-                lineNumber: 21
-            },
-            __self: this
-        }, "CreateReviewer"), /*#__PURE__*/ _reactDefault.default.createElement("a", {
-            class: "nav-link",
-            href: "/login",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
-                lineNumber: 22
-            },
-            __self: this
-        }, "login"), /*#__PURE__*/ _reactDefault.default.createElement("a", {
-            class: "nav-link",
-            href: "/pay",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
-                lineNumber: 23
-            },
-            __self: this
-        }, "payment")))))));
-    }
-}
-exports.default = Navbar;
-
-  helpers.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react":"3b2NM","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"5iH6s":[function(require,module,exports) {
-var helpers = require("../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-helpers.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _axios = require("axios");
-var _axiosDefault = parcelHelpers.interopDefault(_axios);
-class Researcher extends _react.Component {
-    constructor(props){
-        super(props);
-        this.onChange = this.onChange.bind(this);
-        this.onSubmit = this.onSubmit.bind(this);
-        this.state = {
-            authorname: '',
-            papertitle: '',
-            email: '',
-            Designation: '',
-            noofauthors: 0,
-            researchfield: '',
-            referedby: '',
-            noofpages: 0,
-            url: '',
-            abstract: '',
-            status: "",
-            paid: "not paid"
-        };
-    }
-    onChange(e) {
-        this.setState({
-            [e.target.name]: e.target.value
-        });
-    }
-    onSubmit(e) {
-        e.preventDefault();
-        let subject = {
-            authorname: this.state.authorname,
-            papertitle: this.state.papertitle,
-            email: this.state.email,
-            Designation: this.state.Designation,
-            noofauthors: this.state.noofauthors,
-            researchfield: this.state.researchfield,
-            referedby: this.state.referedby,
-            noofpages: this.state.noofpages,
-            url: this.state.url,
-            abstract: this.state.abstract,
-            status: "null",
-            payment: this.state.paid
-        };
-        console.log('Data to send', subject);
-        _axiosDefault.default.post('http://localhost:9099/research/create', subject).then((response)=>{
-            alert('Data successfully inserted');
-        }).catch((error)=>{
-            console.log(error.message);
-            alert(error.message);
-        });
-    }
-    render() {
-        return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
-            className: "container",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 64
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            class: "col-md-6 offset-md-3",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 65
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("br", {
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 67
-            },
-            __self: this
-        }), /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            class: "card card-outline-secondary p-3 mb-2 bg-secondary  text-white border-secondary mb-3",
-            color: "blue",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 68
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            class: "card-body",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 69
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("h3", {
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 74
-            },
-            __self: this
-        }, "Use the form below to submit your paper for publication."), /*#__PURE__*/ _reactDefault.default.createElement("hr", {
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 74
-            },
-            __self: this
-        }), /*#__PURE__*/ _reactDefault.default.createElement("form", {
-            onSubmit: this.onSubmit,
-            class: "row g-3 ",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 76
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            class: "col-md-6 ",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 77
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
-            for: "inputEmail4",
-            class: "form-label",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 78
-            },
-            __self: this
-        }, "AuthorName"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
-            type: "text",
-            class: "form-control",
-            id: "author",
-            name: "authorname",
-            value: this.state.authorname,
-            onChange: this.onChange,
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 79
-            },
-            __self: this
-        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            class: "col-md-6",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 81
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
-            for: "inputEmail4",
-            class: "form-label",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 82
-            },
-            __self: this
-        }, "Email"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
-            type: "email",
-            class: "form-control",
-            id: "inputEmail4",
-            name: "email",
-            value: this.state.email,
-            onChange: this.onChange,
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 83
-            },
-            __self: this
-        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            class: "col-12",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 85
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
-            for: "inputAddress",
-            class: "form-label",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 86
-            },
-            __self: this
-        }, "Paper Title"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
-            type: "text",
-            class: "form-control",
-            id: "inputAddress",
-            name: "papertitle",
-            value: this.state.papertitle,
-            onChange: this.onChange,
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 87
-            },
-            __self: this
-        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            class: "col-md-4",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 89
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
-            for: "inputState",
-            class: "form-label",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 90
-            },
-            __self: this
-        }, "Research Field"), /*#__PURE__*/ _reactDefault.default.createElement("select", {
-            id: "inputState",
-            class: "form-select",
-            name: "researchfield",
-            value: this.state.researchfield,
-            onChange: this.onChange,
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 91
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("option", {
-            selected: true,
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 92
-            },
-            __self: this
-        }, "Choose..."), /*#__PURE__*/ _reactDefault.default.createElement("option", {
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 93
-            },
-            __self: this
-        }, "IT"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 94
-            },
-            __self: this
-        }, "Agriculture"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 95
-            },
-            __self: this
-        }, "BioTechnology"))), /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            class: "col-md-4",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 99
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
-            for: "inputEmail4",
-            class: "form-label",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 100
-            },
-            __self: this
-        }, "No of pages"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
-            type: "Number",
-            class: "form-control",
-            id: "inputEmail4",
-            name: "noofpages",
-            value: this.state.noofpages,
-            onChange: this.onChange,
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 101
-            },
-            __self: this
-        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            class: "col-md-4",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 104
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
-            for: "inputState",
-            class: "form-label",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 105
-            },
-            __self: this
-        }, "Designation"), /*#__PURE__*/ _reactDefault.default.createElement("select", {
-            id: "inputState",
-            class: "form-select",
-            name: "Designation",
-            value: this.state.Designation,
-            onChange: this.onChange,
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 106
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("option", {
-            selected: true,
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 107
-            },
-            __self: this
-        }, "Choose..."), /*#__PURE__*/ _reactDefault.default.createElement("option", {
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 108
-            },
-            __self: this
-        }, "Student(Any degree)"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 109
-            },
-            __self: this
-        }, "Research Scholar"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 110
-            },
-            __self: this
-        }, "Assistant Professer"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 111
-            },
-            __self: this
-        }, " Professer"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 112
-            },
-            __self: this
-        }, " Doctrate Degree holder"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 113
-            },
-            __self: this
-        }, " Other"))), /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            class: "col-md-4",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 118
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
-            for: "inputState",
-            class: "form-label",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 119
-            },
-            __self: this
-        }, "Refered By"), /*#__PURE__*/ _reactDefault.default.createElement("select", {
-            id: "inputState",
-            class: "form-select",
-            name: "referedby",
-            value: this.state.referedby,
-            onChange: this.onChange,
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 120
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("option", {
-            selected: true,
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 121
-            },
-            __self: this
-        }, "Choose..."), /*#__PURE__*/ _reactDefault.default.createElement("option", {
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 122
-            },
-            __self: this
-        }, "Search Engines"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 123
-            },
-            __self: this
-        }, "From facebook"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 124
-            },
-            __self: this
-        }, "Friend or Guide"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 125
-            },
-            __self: this
-        }, "Already an Author"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 126
-            },
-            __self: this
-        }, "Other"))), /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            class: "col-md-4",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 130
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
-            for: "inputEmail4",
-            class: "form-label",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 131
-            },
-            __self: this
-        }, "No of Authors"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
-            type: "Number",
-            class: "form-control",
-            id: "inputEmail4",
-            name: "noofauthors",
-            value: this.state.noofauthors,
-            onChange: this.onChange,
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 132
-            },
-            __self: this
-        })), /*#__PURE__*/ _reactDefault.default.createElement("label", {
-            for: "floatingTextarea",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 135
-            },
-            __self: this
-        }, "Paper abstract"), /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            class: "form-floating",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 136
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("textarea", {
-            class: "form-control",
-            placeholder: "Leave a comment here",
-            id: "floatingTextarea",
-            name: "abstract",
-            value: this.state.abstract,
-            onChange: this.onChange,
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 138
-            },
-            __self: this
-        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            class: "col-12",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 141
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
-            for: "inputAddress",
-            class: "form-label",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 142
-            },
-            __self: this
-        }, "URL"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
-            type: "text",
-            class: "form-control",
-            id: "inputAddress",
-            name: "url",
-            value: this.state.url,
-            onChange: this.onChange,
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 143
-            },
-            __self: this
-        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            class: "col-12",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 148
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            class: "d-flex justify-content-center ",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 149
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("button", {
-            type: "submit",
-            class: "btn btn-primary",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 150
-            },
-            __self: this
-        }, "Submit")))))))));
-    }
-}
-exports.default = Researcher;
-
-  helpers.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react":"3b2NM","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","axios":"7rA65"}],"7rA65":[function(require,module,exports) {
-module.exports = require('./lib/axios');
-
-},{"./lib/axios":"4qfhW"}],"4qfhW":[function(require,module,exports) {
-'use strict';
-var utils = require('./utils');
-var bind = require('./helpers/bind');
-var Axios = require('./core/Axios');
-var mergeConfig = require('./core/mergeConfig');
-var defaults = require('./defaults');
-/**
- * Create an instance of Axios
- *
- * @param {Object} defaultConfig The default config for the instance
- * @return {Axios} A new instance of Axios
- */ function createInstance(defaultConfig) {
-    var context = new Axios(defaultConfig);
-    var instance = bind(Axios.prototype.request, context);
-    // Copy axios.prototype to instance
-    utils.extend(instance, Axios.prototype, context);
-    // Copy context to instance
-    utils.extend(instance, context);
-    return instance;
-}
-// Create the default instance to be exported
-var axios = createInstance(defaults);
-// Expose Axios class to allow class inheritance
-axios.Axios = Axios;
-// Factory for creating new instances
-axios.create = function create(instanceConfig) {
-    return createInstance(mergeConfig(axios.defaults, instanceConfig));
-};
-// Expose Cancel & CancelToken
-axios.Cancel = require('./cancel/Cancel');
-axios.CancelToken = require('./cancel/CancelToken');
-axios.isCancel = require('./cancel/isCancel');
-// Expose all/spread
-axios.all = function all(promises) {
-    return Promise.all(promises);
-};
-axios.spread = require('./helpers/spread');
-// Expose isAxiosError
-axios.isAxiosError = require('./helpers/isAxiosError');
-module.exports = axios;
-// Allow use of default import syntax in TypeScript
-module.exports.default = axios;
-
-},{"./utils":"7J9rV","./helpers/bind":"78Fwk","./core/Axios":"26bz2","./core/mergeConfig":"42z1a","./defaults":"5j10E","./cancel/Cancel":"1Ql7i","./cancel/CancelToken":"hHamf","./cancel/isCancel":"3MAgn","./helpers/spread":"9FoXt","./helpers/isAxiosError":"1bzv8"}],"7J9rV":[function(require,module,exports) {
-'use strict';
-var bind = require('./helpers/bind');
-/*global toString:true*/ // utils is a library of generic helper functions non-specific to axios
-var toString = Object.prototype.toString;
-/**
- * Determine if a value is an Array
- *
- * @param {Object} val The value to test
- * @returns {boolean} True if value is an Array, otherwise false
- */ function isArray(val) {
-    return toString.call(val) === '[object Array]';
-}
-/**
- * Determine if a value is undefined
- *
- * @param {Object} val The value to test
- * @returns {boolean} True if the value is undefined, otherwise false
- */ function isUndefined(val) {
-    return typeof val === 'undefined';
-}
-/**
- * Determine if a value is a Buffer
- *
- * @param {Object} val The value to test
- * @returns {boolean} True if value is a Buffer, otherwise false
- */ function isBuffer(val) {
-    return val !== null && !isUndefined(val) && val.constructor !== null && !isUndefined(val.constructor) && typeof val.constructor.isBuffer === 'function' && val.constructor.isBuffer(val);
-}
-/**
- * Determine if a value is an ArrayBuffer
- *
- * @param {Object} val The value to test
- * @returns {boolean} True if value is an ArrayBuffer, otherwise false
- */ function isArrayBuffer(val) {
-    return toString.call(val) === '[object ArrayBuffer]';
-}
-/**
- * Determine if a value is a FormData
- *
- * @param {Object} val The value to test
- * @returns {boolean} True if value is an FormData, otherwise false
- */ function isFormData(val) {
-    return typeof FormData !== 'undefined' && val instanceof FormData;
-}
-/**
- * Determine if a value is a view on an ArrayBuffer
- *
- * @param {Object} val The value to test
- * @returns {boolean} True if value is a view on an ArrayBuffer, otherwise false
- */ function isArrayBufferView(val) {
-    var result;
-    if (typeof ArrayBuffer !== 'undefined' && ArrayBuffer.isView) result = ArrayBuffer.isView(val);
-    else result = val && val.buffer && val.buffer instanceof ArrayBuffer;
-    return result;
-}
-/**
- * Determine if a value is a String
- *
- * @param {Object} val The value to test
- * @returns {boolean} True if value is a String, otherwise false
- */ function isString(val) {
-    return typeof val === 'string';
-}
-/**
- * Determine if a value is a Number
- *
- * @param {Object} val The value to test
- * @returns {boolean} True if value is a Number, otherwise false
- */ function isNumber(val) {
-    return typeof val === 'number';
-}
-/**
- * Determine if a value is an Object
- *
- * @param {Object} val The value to test
- * @returns {boolean} True if value is an Object, otherwise false
- */ function isObject(val) {
-    return val !== null && typeof val === 'object';
-}
-/**
- * Determine if a value is a plain Object
- *
- * @param {Object} val The value to test
- * @return {boolean} True if value is a plain Object, otherwise false
- */ function isPlainObject(val) {
-    if (toString.call(val) !== '[object Object]') return false;
-    var prototype = Object.getPrototypeOf(val);
-    return prototype === null || prototype === Object.prototype;
-}
-/**
- * Determine if a value is a Date
- *
- * @param {Object} val The value to test
- * @returns {boolean} True if value is a Date, otherwise false
- */ function isDate(val) {
-    return toString.call(val) === '[object Date]';
-}
-/**
- * Determine if a value is a File
- *
- * @param {Object} val The value to test
- * @returns {boolean} True if value is a File, otherwise false
- */ function isFile(val) {
-    return toString.call(val) === '[object File]';
-}
-/**
- * Determine if a value is a Blob
- *
- * @param {Object} val The value to test
- * @returns {boolean} True if value is a Blob, otherwise false
- */ function isBlob(val) {
-    return toString.call(val) === '[object Blob]';
-}
-/**
- * Determine if a value is a Function
- *
- * @param {Object} val The value to test
- * @returns {boolean} True if value is a Function, otherwise false
- */ function isFunction(val) {
-    return toString.call(val) === '[object Function]';
-}
-/**
- * Determine if a value is a Stream
- *
- * @param {Object} val The value to test
- * @returns {boolean} True if value is a Stream, otherwise false
- */ function isStream(val) {
-    return isObject(val) && isFunction(val.pipe);
-}
-/**
- * Determine if a value is a URLSearchParams object
- *
- * @param {Object} val The value to test
- * @returns {boolean} True if value is a URLSearchParams object, otherwise false
- */ function isURLSearchParams(val) {
-    return typeof URLSearchParams !== 'undefined' && val instanceof URLSearchParams;
-}
-/**
- * Trim excess whitespace off the beginning and end of a string
- *
- * @param {String} str The String to trim
- * @returns {String} The String freed of excess whitespace
- */ function trim(str) {
-    return str.replace(/^\s*/, '').replace(/\s*$/, '');
-}
-/**
- * Determine if we're running in a standard browser environment
- *
- * This allows axios to run in a web worker, and react-native.
- * Both environments support XMLHttpRequest, but not fully standard globals.
- *
- * web workers:
- *  typeof window -> undefined
- *  typeof document -> undefined
- *
- * react-native:
- *  navigator.product -> 'ReactNative'
- * nativescript
- *  navigator.product -> 'NativeScript' or 'NS'
- */ function isStandardBrowserEnv() {
-    if (typeof navigator !== 'undefined' && (navigator.product === 'ReactNative' || navigator.product === 'NativeScript' || navigator.product === 'NS')) return false;
-    return typeof window !== 'undefined' && typeof document !== 'undefined';
-}
-/**
- * Iterate over an Array or an Object invoking a function for each item.
- *
- * If `obj` is an Array callback will be called passing
- * the value, index, and complete array for each item.
- *
- * If 'obj' is an Object callback will be called passing
- * the value, key, and complete object for each property.
- *
- * @param {Object|Array} obj The object to iterate
- * @param {Function} fn The callback to invoke for each item
- */ function forEach(obj, fn) {
-    // Don't bother if no value provided
-    if (obj === null || typeof obj === 'undefined') return;
-    // Force an array if not already something iterable
-    if (typeof obj !== 'object') /*eslint no-param-reassign:0*/ obj = [
-        obj
-    ];
-    if (isArray(obj)) // Iterate over array values
-    for(var i = 0, l = obj.length; i < l; i++)fn.call(null, obj[i], i, obj);
-    else {
-        // Iterate over object keys
-        for(var key in obj)if (Object.prototype.hasOwnProperty.call(obj, key)) fn.call(null, obj[key], key, obj);
-    }
-}
-/**
- * Accepts varargs expecting each argument to be an object, then
- * immutably merges the properties of each object and returns result.
- *
- * When multiple objects contain the same key the later object in
- * the arguments list will take precedence.
- *
- * Example:
- *
- * ```js
- * var result = merge({foo: 123}, {foo: 456});
- * console.log(result.foo); // outputs 456
- * ```
- *
- * @param {Object} obj1 Object to merge
- * @returns {Object} Result of all merge properties
- */ function merge() {
-    var result = {
-    };
-    function assignValue(val, key) {
-        if (isPlainObject(result[key]) && isPlainObject(val)) result[key] = merge(result[key], val);
-        else if (isPlainObject(val)) result[key] = merge({
-        }, val);
-        else if (isArray(val)) result[key] = val.slice();
-        else result[key] = val;
-    }
-    for(var i = 0, l = arguments.length; i < l; i++)forEach(arguments[i], assignValue);
-    return result;
-}
-/**
- * Extends object a by mutably adding to it the properties of object b.
- *
- * @param {Object} a The object to be extended
- * @param {Object} b The object to copy properties from
- * @param {Object} thisArg The object to bind function to
- * @return {Object} The resulting value of object a
- */ function extend(a, b, thisArg) {
-    forEach(b, function assignValue(val, key) {
-        if (thisArg && typeof val === 'function') a[key] = bind(val, thisArg);
-        else a[key] = val;
-    });
-    return a;
-}
-/**
- * Remove byte order marker. This catches EF BB BF (the UTF-8 BOM)
- *
- * @param {string} content with BOM
- * @return {string} content value without BOM
- */ function stripBOM(content) {
-    if (content.charCodeAt(0) === 65279) content = content.slice(1);
-    return content;
-}
-module.exports = {
-    isArray: isArray,
-    isArrayBuffer: isArrayBuffer,
-    isBuffer: isBuffer,
-    isFormData: isFormData,
-    isArrayBufferView: isArrayBufferView,
-    isString: isString,
-    isNumber: isNumber,
-    isObject: isObject,
-    isPlainObject: isPlainObject,
-    isUndefined: isUndefined,
-    isDate: isDate,
-    isFile: isFile,
-    isBlob: isBlob,
-    isFunction: isFunction,
-    isStream: isStream,
-    isURLSearchParams: isURLSearchParams,
-    isStandardBrowserEnv: isStandardBrowserEnv,
-    forEach: forEach,
-    merge: merge,
-    extend: extend,
-    trim: trim,
-    stripBOM: stripBOM
-};
-
-},{"./helpers/bind":"78Fwk"}],"78Fwk":[function(require,module,exports) {
-'use strict';
-module.exports = function bind(fn, thisArg) {
-    return function wrap() {
-        var args = new Array(arguments.length);
-        for(var i = 0; i < args.length; i++)args[i] = arguments[i];
-        return fn.apply(thisArg, args);
-    };
-};
-
-},{}],"26bz2":[function(require,module,exports) {
-'use strict';
-var utils = require('./../utils');
-var buildURL = require('../helpers/buildURL');
-var InterceptorManager = require('./InterceptorManager');
-var dispatchRequest = require('./dispatchRequest');
-var mergeConfig = require('./mergeConfig');
-/**
- * Create a new instance of Axios
- *
- * @param {Object} instanceConfig The default config for the instance
- */ function Axios(instanceConfig) {
-    this.defaults = instanceConfig;
-    this.interceptors = {
-        request: new InterceptorManager(),
-        response: new InterceptorManager()
-    };
-}
-/**
- * Dispatch a request
- *
- * @param {Object} config The config specific for this request (merged with this.defaults)
- */ Axios.prototype.request = function request(config) {
-    /*eslint no-param-reassign:0*/ // Allow for axios('example/url'[, config]) a la fetch API
-    if (typeof config === 'string') {
-        config = arguments[1] || {
-        };
-        config.url = arguments[0];
-    } else config = config || {
-    };
-    config = mergeConfig(this.defaults, config);
-    // Set config.method
-    if (config.method) config.method = config.method.toLowerCase();
-    else if (this.defaults.method) config.method = this.defaults.method.toLowerCase();
-    else config.method = 'get';
-    // Hook up interceptors middleware
-    var chain = [
-        dispatchRequest,
-        undefined
-    ];
-    var promise = Promise.resolve(config);
-    this.interceptors.request.forEach(function unshiftRequestInterceptors(interceptor) {
-        chain.unshift(interceptor.fulfilled, interceptor.rejected);
-    });
-    this.interceptors.response.forEach(function pushResponseInterceptors(interceptor) {
-        chain.push(interceptor.fulfilled, interceptor.rejected);
-    });
-    while(chain.length)promise = promise.then(chain.shift(), chain.shift());
-    return promise;
-};
-Axios.prototype.getUri = function getUri(config) {
-    config = mergeConfig(this.defaults, config);
-    return buildURL(config.url, config.params, config.paramsSerializer).replace(/^\?/, '');
-};
-// Provide aliases for supported request methods
-utils.forEach([
-    'delete',
-    'get',
-    'head',
-    'options'
-], function forEachMethodNoData(method) {
-    /*eslint func-names:0*/ Axios.prototype[method] = function(url, config) {
-        return this.request(mergeConfig(config || {
-        }, {
-            method: method,
-            url: url,
-            data: (config || {
-            }).data
-        }));
-    };
-});
-utils.forEach([
-    'post',
-    'put',
-    'patch'
-], function forEachMethodWithData(method) {
-    /*eslint func-names:0*/ Axios.prototype[method] = function(url, data, config) {
-        return this.request(mergeConfig(config || {
-        }, {
-            method: method,
-            url: url,
-            data: data
-        }));
-    };
-});
-module.exports = Axios;
-
-},{"./../utils":"7J9rV","../helpers/buildURL":"25KfR","./InterceptorManager":"33sRR","./dispatchRequest":"1mCjo","./mergeConfig":"42z1a"}],"25KfR":[function(require,module,exports) {
-'use strict';
-var utils = require('./../utils');
-function encode(val) {
-    return encodeURIComponent(val).replace(/%3A/gi, ':').replace(/%24/g, '$').replace(/%2C/gi, ',').replace(/%20/g, '+').replace(/%5B/gi, '[').replace(/%5D/gi, ']');
-}
-/**
- * Build a URL by appending params to the end
- *
- * @param {string} url The base of the url (e.g., http://www.google.com)
- * @param {object} [params] The params to be appended
- * @returns {string} The formatted url
- */ module.exports = function buildURL(url, params, paramsSerializer) {
-    /*eslint no-param-reassign:0*/ if (!params) return url;
-    var serializedParams;
-    if (paramsSerializer) serializedParams = paramsSerializer(params);
-    else if (utils.isURLSearchParams(params)) serializedParams = params.toString();
-    else {
-        var parts = [];
-        utils.forEach(params, function serialize(val, key) {
-            if (val === null || typeof val === 'undefined') return;
-            if (utils.isArray(val)) key = key + '[]';
-            else val = [
-                val
-            ];
-            utils.forEach(val, function parseValue(v) {
-                if (utils.isDate(v)) v = v.toISOString();
-                else if (utils.isObject(v)) v = JSON.stringify(v);
-                parts.push(encode(key) + '=' + encode(v));
-            });
-        });
-        serializedParams = parts.join('&');
-    }
-    if (serializedParams) {
-        var hashmarkIndex = url.indexOf('#');
-        if (hashmarkIndex !== -1) url = url.slice(0, hashmarkIndex);
-        url += (url.indexOf('?') === -1 ? '?' : '&') + serializedParams;
-    }
-    return url;
-};
-
-},{"./../utils":"7J9rV"}],"33sRR":[function(require,module,exports) {
-'use strict';
-var utils = require('./../utils');
-function InterceptorManager() {
-    this.handlers = [];
-}
-/**
- * Add a new interceptor to the stack
- *
- * @param {Function} fulfilled The function to handle `then` for a `Promise`
- * @param {Function} rejected The function to handle `reject` for a `Promise`
- *
- * @return {Number} An ID used to remove interceptor later
- */ InterceptorManager.prototype.use = function use(fulfilled, rejected) {
-    this.handlers.push({
-        fulfilled: fulfilled,
-        rejected: rejected
-    });
-    return this.handlers.length - 1;
-};
-/**
- * Remove an interceptor from the stack
- *
- * @param {Number} id The ID that was returned by `use`
- */ InterceptorManager.prototype.eject = function eject(id) {
-    if (this.handlers[id]) this.handlers[id] = null;
-};
-/**
- * Iterate over all the registered interceptors
- *
- * This method is particularly useful for skipping over any
- * interceptors that may have become `null` calling `eject`.
- *
- * @param {Function} fn The function to call for each interceptor
- */ InterceptorManager.prototype.forEach = function forEach(fn) {
-    utils.forEach(this.handlers, function forEachHandler(h) {
-        if (h !== null) fn(h);
-    });
-};
-module.exports = InterceptorManager;
-
-},{"./../utils":"7J9rV"}],"1mCjo":[function(require,module,exports) {
-'use strict';
-var utils = require('./../utils');
-var transformData = require('./transformData');
-var isCancel = require('../cancel/isCancel');
-var defaults = require('../defaults');
-/**
- * Throws a `Cancel` if cancellation has been requested.
- */ function throwIfCancellationRequested(config) {
-    if (config.cancelToken) config.cancelToken.throwIfRequested();
-}
-/**
- * Dispatch a request to the server using the configured adapter.
- *
- * @param {object} config The config that is to be used for the request
- * @returns {Promise} The Promise to be fulfilled
- */ module.exports = function dispatchRequest(config) {
-    throwIfCancellationRequested(config);
-    // Ensure headers exist
-    config.headers = config.headers || {
-    };
-    // Transform request data
-    config.data = transformData(config.data, config.headers, config.transformRequest);
-    // Flatten headers
-    config.headers = utils.merge(config.headers.common || {
-    }, config.headers[config.method] || {
-    }, config.headers);
-    utils.forEach([
-        'delete',
-        'get',
-        'head',
-        'post',
-        'put',
-        'patch',
-        'common'
-    ], function cleanHeaderConfig(method) {
-        delete config.headers[method];
-    });
-    var adapter = config.adapter || defaults.adapter;
-    return adapter(config).then(function onAdapterResolution(response) {
-        throwIfCancellationRequested(config);
-        // Transform response data
-        response.data = transformData(response.data, response.headers, config.transformResponse);
-        return response;
-    }, function onAdapterRejection(reason) {
-        if (!isCancel(reason)) {
-            throwIfCancellationRequested(config);
-            // Transform response data
-            if (reason && reason.response) reason.response.data = transformData(reason.response.data, reason.response.headers, config.transformResponse);
-        }
-        return Promise.reject(reason);
-    });
-};
-
-},{"./../utils":"7J9rV","./transformData":"1ueU6","../cancel/isCancel":"3MAgn","../defaults":"5j10E"}],"1ueU6":[function(require,module,exports) {
-'use strict';
-var utils = require('./../utils');
-/**
- * Transform the data for a request or a response
- *
- * @param {Object|String} data The data to be transformed
- * @param {Array} headers The headers for the request or response
- * @param {Array|Function} fns A single function or Array of functions
- * @returns {*} The resulting transformed data
- */ module.exports = function transformData(data, headers, fns) {
-    /*eslint no-param-reassign:0*/ utils.forEach(fns, function transform(fn) {
-        data = fn(data, headers);
-    });
-    return data;
-};
-
-},{"./../utils":"7J9rV"}],"3MAgn":[function(require,module,exports) {
-'use strict';
-module.exports = function isCancel(value) {
-    return !!(value && value.__CANCEL__);
-};
-
-},{}],"5j10E":[function(require,module,exports) {
-var process = require("process");
-'use strict';
-var utils = require('./utils');
-var normalizeHeaderName = require('./helpers/normalizeHeaderName');
-var DEFAULT_CONTENT_TYPE = {
-    'Content-Type': 'application/x-www-form-urlencoded'
-};
-function setContentTypeIfUnset(headers, value) {
-    if (!utils.isUndefined(headers) && utils.isUndefined(headers['Content-Type'])) headers['Content-Type'] = value;
-}
-function getDefaultAdapter() {
-    var adapter;
-    if (typeof XMLHttpRequest !== 'undefined') // For browsers use XHR adapter
-    adapter = require('./adapters/xhr');
-    else if (typeof process !== 'undefined' && Object.prototype.toString.call(process) === '[object process]') // For node use HTTP adapter
-    adapter = require('./adapters/http');
-    return adapter;
-}
-var defaults = {
-    adapter: getDefaultAdapter(),
-    transformRequest: [
-        function transformRequest(data, headers) {
-            normalizeHeaderName(headers, 'Accept');
-            normalizeHeaderName(headers, 'Content-Type');
-            if (utils.isFormData(data) || utils.isArrayBuffer(data) || utils.isBuffer(data) || utils.isStream(data) || utils.isFile(data) || utils.isBlob(data)) return data;
-            if (utils.isArrayBufferView(data)) return data.buffer;
-            if (utils.isURLSearchParams(data)) {
-                setContentTypeIfUnset(headers, 'application/x-www-form-urlencoded;charset=utf-8');
-                return data.toString();
-            }
-            if (utils.isObject(data)) {
-                setContentTypeIfUnset(headers, 'application/json;charset=utf-8');
-                return JSON.stringify(data);
-            }
-            return data;
-        }
-    ],
-    transformResponse: [
-        function transformResponse(data) {
-            /*eslint no-param-reassign:0*/ if (typeof data === 'string') try {
-                data = JSON.parse(data);
-            } catch (e) {
-            }
-            return data;
-        }
-    ],
-    /**
-   * A timeout in milliseconds to abort a request. If set to 0 (default) a
-   * timeout is not created.
-   */ timeout: 0,
-    xsrfCookieName: 'XSRF-TOKEN',
-    xsrfHeaderName: 'X-XSRF-TOKEN',
-    maxContentLength: -1,
-    maxBodyLength: -1,
-    validateStatus: function validateStatus(status) {
-        return status >= 200 && status < 300;
-    }
-};
-defaults.headers = {
-    common: {
-        'Accept': 'application/json, text/plain, */*'
-    }
-};
-utils.forEach([
-    'delete',
-    'get',
-    'head'
-], function forEachMethodNoData(method) {
-    defaults.headers[method] = {
-    };
-});
-utils.forEach([
-    'post',
-    'put',
-    'patch'
-], function forEachMethodWithData(method) {
-    defaults.headers[method] = utils.merge(DEFAULT_CONTENT_TYPE);
-});
-module.exports = defaults;
-
-},{"process":"7AgFc","./utils":"7J9rV","./helpers/normalizeHeaderName":"5yMqL","./adapters/xhr":"6pJqL","./adapters/http":"6pJqL"}],"7AgFc":[function(require,module,exports) {
-// shim for using process in browser
-var process = module.exports = {
-};
-// cached from whatever global is present so that test runners that stub it
-// don't break things.  But we need to wrap it in a try catch in case it is
-// wrapped in strict mode code which doesn't define any globals.  It's inside a
-// function because try/catches deoptimize in certain engines.
-var cachedSetTimeout;
-var cachedClearTimeout;
-function defaultSetTimout() {
-    throw new Error('setTimeout has not been defined');
-}
-function defaultClearTimeout() {
-    throw new Error('clearTimeout has not been defined');
-}
-(function() {
-    try {
-        if (typeof setTimeout === 'function') cachedSetTimeout = setTimeout;
-        else cachedSetTimeout = defaultSetTimout;
-    } catch (e) {
-        cachedSetTimeout = defaultSetTimout;
-    }
-    try {
-        if (typeof clearTimeout === 'function') cachedClearTimeout = clearTimeout;
-        else cachedClearTimeout = defaultClearTimeout;
-    } catch (e) {
-        cachedClearTimeout = defaultClearTimeout;
-    }
-})();
-function runTimeout(fun) {
-    if (cachedSetTimeout === setTimeout) //normal enviroments in sane situations
-    return setTimeout(fun, 0);
-    // if setTimeout wasn't available but was latter defined
-    if ((cachedSetTimeout === defaultSetTimout || !cachedSetTimeout) && setTimeout) {
-        cachedSetTimeout = setTimeout;
-        return setTimeout(fun, 0);
-    }
-    try {
-        // when when somebody has screwed with setTimeout but no I.E. maddness
-        return cachedSetTimeout(fun, 0);
-    } catch (e) {
-        try {
-            // When we are in I.E. but the script has been evaled so I.E. doesn't trust the global object when called normally
-            return cachedSetTimeout.call(null, fun, 0);
-        } catch (e1) {
-            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error
-            return cachedSetTimeout.call(this, fun, 0);
-        }
-    }
-}
-function runClearTimeout(marker) {
-    if (cachedClearTimeout === clearTimeout) //normal enviroments in sane situations
-    return clearTimeout(marker);
-    // if clearTimeout wasn't available but was latter defined
-    if ((cachedClearTimeout === defaultClearTimeout || !cachedClearTimeout) && clearTimeout) {
-        cachedClearTimeout = clearTimeout;
-        return clearTimeout(marker);
-    }
-    try {
-        // when when somebody has screwed with setTimeout but no I.E. maddness
-        return cachedClearTimeout(marker);
-    } catch (e) {
-        try {
-            // When we are in I.E. but the script has been evaled so I.E. doesn't  trust the global object when called normally
-            return cachedClearTimeout.call(null, marker);
-        } catch (e1) {
-            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error.
-            // Some versions of I.E. have different rules for clearTimeout vs setTimeout
-            return cachedClearTimeout.call(this, marker);
-        }
-    }
-}
-var queue = [];
-var draining = false;
-var currentQueue;
-var queueIndex = -1;
-function cleanUpNextTick() {
-    if (!draining || !currentQueue) return;
-    draining = false;
-    if (currentQueue.length) queue = currentQueue.concat(queue);
-    else queueIndex = -1;
-    if (queue.length) drainQueue();
-}
-function drainQueue() {
-    if (draining) return;
-    var timeout = runTimeout(cleanUpNextTick);
-    draining = true;
-    var len = queue.length;
-    while(len){
-        currentQueue = queue;
-        queue = [];
-        while((++queueIndex) < len)if (currentQueue) currentQueue[queueIndex].run();
-        queueIndex = -1;
-        len = queue.length;
-    }
-    currentQueue = null;
-    draining = false;
-    runClearTimeout(timeout);
-}
-process.nextTick = function(fun) {
-    var args = new Array(arguments.length - 1);
-    if (arguments.length > 1) for(var i = 1; i < arguments.length; i++)args[i - 1] = arguments[i];
-    queue.push(new Item(fun, args));
-    if (queue.length === 1 && !draining) runTimeout(drainQueue);
-};
-// v8 likes predictible objects
-function Item(fun, array) {
-    this.fun = fun;
-    this.array = array;
-}
-Item.prototype.run = function() {
-    this.fun.apply(null, this.array);
-};
-process.title = 'browser';
-process.browser = true;
-process.env = {
-};
-process.argv = [];
-process.version = ''; // empty string to avoid regexp issues
-process.versions = {
-};
-function noop() {
-}
-process.on = noop;
-process.addListener = noop;
-process.once = noop;
-process.off = noop;
-process.removeListener = noop;
-process.removeAllListeners = noop;
-process.emit = noop;
-process.prependListener = noop;
-process.prependOnceListener = noop;
-process.listeners = function(name) {
-    return [];
-};
-process.binding = function(name) {
-    throw new Error('process.binding is not supported');
-};
-process.cwd = function() {
-    return '/';
-};
-process.chdir = function(dir) {
-    throw new Error('process.chdir is not supported');
-};
-process.umask = function() {
-    return 0;
-};
-
-},{}],"5yMqL":[function(require,module,exports) {
-'use strict';
-var utils = require('../utils');
-module.exports = function normalizeHeaderName(headers, normalizedName) {
-    utils.forEach(headers, function processHeader(value, name) {
-        if (name !== normalizedName && name.toUpperCase() === normalizedName.toUpperCase()) {
-            headers[normalizedName] = value;
-            delete headers[name];
-        }
-    });
-};
-
-},{"../utils":"7J9rV"}],"6pJqL":[function(require,module,exports) {
-'use strict';
-var utils = require('./../utils');
-var settle = require('./../core/settle');
-var cookies = require('./../helpers/cookies');
-var buildURL = require('./../helpers/buildURL');
-var buildFullPath = require('../core/buildFullPath');
-var parseHeaders = require('./../helpers/parseHeaders');
-var isURLSameOrigin = require('./../helpers/isURLSameOrigin');
-var createError = require('../core/createError');
-module.exports = function xhrAdapter(config) {
-    return new Promise(function dispatchXhrRequest(resolve, reject) {
-        var requestData = config.data;
-        var requestHeaders = config.headers;
-        if (utils.isFormData(requestData)) delete requestHeaders['Content-Type']; // Let the browser set it
-        var request = new XMLHttpRequest();
-        // HTTP basic authentication
-        if (config.auth) {
-            var username = config.auth.username || '';
-            var password = config.auth.password ? unescape(encodeURIComponent(config.auth.password)) : '';
-            requestHeaders.Authorization = 'Basic ' + btoa(username + ':' + password);
-        }
-        var fullPath = buildFullPath(config.baseURL, config.url);
-        request.open(config.method.toUpperCase(), buildURL(fullPath, config.params, config.paramsSerializer), true);
-        // Set the request timeout in MS
-        request.timeout = config.timeout;
-        // Listen for ready state
-        request.onreadystatechange = function handleLoad() {
-            if (!request || request.readyState !== 4) return;
-            // The request errored out and we didn't get a response, this will be
-            // handled by onerror instead
-            // With one exception: request that using file: protocol, most browsers
-            // will return status as 0 even though it's a successful request
-            if (request.status === 0 && !(request.responseURL && request.responseURL.indexOf('file:') === 0)) return;
-            // Prepare the response
-            var responseHeaders = 'getAllResponseHeaders' in request ? parseHeaders(request.getAllResponseHeaders()) : null;
-            var responseData = !config.responseType || config.responseType === 'text' ? request.responseText : request.response;
-            var response = {
-                data: responseData,
-                status: request.status,
-                statusText: request.statusText,
-                headers: responseHeaders,
-                config: config,
-                request: request
-            };
-            settle(resolve, reject, response);
-            // Clean up request
-            request = null;
-        };
-        // Handle browser request cancellation (as opposed to a manual cancellation)
-        request.onabort = function handleAbort() {
-            if (!request) return;
-            reject(createError('Request aborted', config, 'ECONNABORTED', request));
-            // Clean up request
-            request = null;
-        };
-        // Handle low level network errors
-        request.onerror = function handleError() {
-            // Real errors are hidden from us by the browser
-            // onerror should only fire if it's a network error
-            reject(createError('Network Error', config, null, request));
-            // Clean up request
-            request = null;
-        };
-        // Handle timeout
-        request.ontimeout = function handleTimeout() {
-            var timeoutErrorMessage = 'timeout of ' + config.timeout + 'ms exceeded';
-            if (config.timeoutErrorMessage) timeoutErrorMessage = config.timeoutErrorMessage;
-            reject(createError(timeoutErrorMessage, config, 'ECONNABORTED', request));
-            // Clean up request
-            request = null;
-        };
-        // Add xsrf header
-        // This is only done if running in a standard browser environment.
-        // Specifically not if we're in a web worker, or react-native.
-        if (utils.isStandardBrowserEnv()) {
-            // Add xsrf header
-            var xsrfValue = (config.withCredentials || isURLSameOrigin(fullPath)) && config.xsrfCookieName ? cookies.read(config.xsrfCookieName) : undefined;
-            if (xsrfValue) requestHeaders[config.xsrfHeaderName] = xsrfValue;
-        }
-        // Add headers to the request
-        if ('setRequestHeader' in request) utils.forEach(requestHeaders, function setRequestHeader(val, key) {
-            if (typeof requestData === 'undefined' && key.toLowerCase() === 'content-type') // Remove Content-Type if data is undefined
-            delete requestHeaders[key];
-            else // Otherwise add header to the request
-            request.setRequestHeader(key, val);
-        });
-        // Add withCredentials to request if needed
-        if (!utils.isUndefined(config.withCredentials)) request.withCredentials = !!config.withCredentials;
-        // Add responseType to request if needed
-        if (config.responseType) try {
-            request.responseType = config.responseType;
-        } catch (e) {
-            // Expected DOMException thrown by browsers not compatible XMLHttpRequest Level 2.
-            // But, this can be suppressed for 'json' type as it can be parsed by default 'transformResponse' function.
-            if (config.responseType !== 'json') throw e;
-        }
-        // Handle progress if needed
-        if (typeof config.onDownloadProgress === 'function') request.addEventListener('progress', config.onDownloadProgress);
-        // Not all browsers support upload events
-        if (typeof config.onUploadProgress === 'function' && request.upload) request.upload.addEventListener('progress', config.onUploadProgress);
-        if (config.cancelToken) // Handle cancellation
-        config.cancelToken.promise.then(function onCanceled(cancel) {
-            if (!request) return;
-            request.abort();
-            reject(cancel);
-            // Clean up request
-            request = null;
-        });
-        if (!requestData) requestData = null;
-        // Send the request
-        request.send(requestData);
-    });
-};
-
-},{"./../utils":"7J9rV","./../core/settle":"72M6J","./../helpers/cookies":"1m0F1","./../helpers/buildURL":"25KfR","../core/buildFullPath":"5fWja","./../helpers/parseHeaders":"1KizL","./../helpers/isURLSameOrigin":"6Gtz3","../core/createError":"7ETv1"}],"72M6J":[function(require,module,exports) {
-'use strict';
-var createError = require('./createError');
-/**
- * Resolve or reject a Promise based on response status.
- *
- * @param {Function} resolve A function that resolves the promise.
- * @param {Function} reject A function that rejects the promise.
- * @param {object} response The response.
- */ module.exports = function settle(resolve, reject, response) {
-    var validateStatus = response.config.validateStatus;
-    if (!response.status || !validateStatus || validateStatus(response.status)) resolve(response);
-    else reject(createError('Request failed with status code ' + response.status, response.config, null, response.request, response));
-};
-
-},{"./createError":"7ETv1"}],"7ETv1":[function(require,module,exports) {
-'use strict';
-var enhanceError = require('./enhanceError');
-/**
- * Create an Error with the specified message, config, error code, request and response.
- *
- * @param {string} message The error message.
- * @param {Object} config The config.
- * @param {string} [code] The error code (for example, 'ECONNABORTED').
- * @param {Object} [request] The request.
- * @param {Object} [response] The response.
- * @returns {Error} The created error.
- */ module.exports = function createError(message, config, code, request, response) {
-    var error = new Error(message);
-    return enhanceError(error, config, code, request, response);
-};
-
-},{"./enhanceError":"2O2Ud"}],"2O2Ud":[function(require,module,exports) {
-'use strict';
-/**
- * Update an Error with the specified config, error code, and response.
- *
- * @param {Error} error The error to update.
- * @param {Object} config The config.
- * @param {string} [code] The error code (for example, 'ECONNABORTED').
- * @param {Object} [request] The request.
- * @param {Object} [response] The response.
- * @returns {Error} The error.
- */ module.exports = function enhanceError(error, config, code, request, response) {
-    error.config = config;
-    if (code) error.code = code;
-    error.request = request;
-    error.response = response;
-    error.isAxiosError = true;
-    error.toJSON = function toJSON() {
-        return {
-            // Standard
-            message: this.message,
-            name: this.name,
-            // Microsoft
-            description: this.description,
-            number: this.number,
-            // Mozilla
-            fileName: this.fileName,
-            lineNumber: this.lineNumber,
-            columnNumber: this.columnNumber,
-            stack: this.stack,
-            // Axios
-            config: this.config,
-            code: this.code
-        };
-    };
-    return error;
-};
-
-},{}],"1m0F1":[function(require,module,exports) {
-'use strict';
-var utils = require('./../utils');
-module.exports = utils.isStandardBrowserEnv() ? // Standard browser envs support document.cookie
-(function standardBrowserEnv() {
-    return {
-        write: function write(name, value, expires, path, domain, secure) {
-            var cookie = [];
-            cookie.push(name + '=' + encodeURIComponent(value));
-            if (utils.isNumber(expires)) cookie.push('expires=' + new Date(expires).toGMTString());
-            if (utils.isString(path)) cookie.push('path=' + path);
-            if (utils.isString(domain)) cookie.push('domain=' + domain);
-            if (secure === true) cookie.push('secure');
-            document.cookie = cookie.join('; ');
-        },
-        read: function read(name) {
-            var match = document.cookie.match(new RegExp('(^|;\\s*)(' + name + ')=([^;]*)'));
-            return match ? decodeURIComponent(match[3]) : null;
-        },
-        remove: function remove(name) {
-            this.write(name, '', Date.now() - 86400000);
-        }
-    };
-})() : // Non standard browser env (web workers, react-native) lack needed support.
-(function nonStandardBrowserEnv() {
-    return {
-        write: function write() {
-        },
-        read: function read() {
-            return null;
-        },
-        remove: function remove() {
-        }
-    };
-})();
-
-},{"./../utils":"7J9rV"}],"5fWja":[function(require,module,exports) {
-'use strict';
-var isAbsoluteURL = require('../helpers/isAbsoluteURL');
-var combineURLs = require('../helpers/combineURLs');
-/**
- * Creates a new URL by combining the baseURL with the requestedURL,
- * only when the requestedURL is not already an absolute URL.
- * If the requestURL is absolute, this function returns the requestedURL untouched.
- *
- * @param {string} baseURL The base URL
- * @param {string} requestedURL Absolute or relative URL to combine
- * @returns {string} The combined full path
- */ module.exports = function buildFullPath(baseURL, requestedURL) {
-    if (baseURL && !isAbsoluteURL(requestedURL)) return combineURLs(baseURL, requestedURL);
-    return requestedURL;
-};
-
-},{"../helpers/isAbsoluteURL":"4FcN1","../helpers/combineURLs":"qMap4"}],"4FcN1":[function(require,module,exports) {
-'use strict';
-/**
- * Determines whether the specified URL is absolute
- *
- * @param {string} url The URL to test
- * @returns {boolean} True if the specified URL is absolute, otherwise false
- */ module.exports = function isAbsoluteURL(url) {
-    // A URL is considered absolute if it begins with "<scheme>://" or "//" (protocol-relative URL).
-    // RFC 3986 defines scheme name as a sequence of characters beginning with a letter and followed
-    // by any combination of letters, digits, plus, period, or hyphen.
-    return /^([a-z][a-z\d\+\-\.]*:)?\/\//i.test(url);
-};
-
-},{}],"qMap4":[function(require,module,exports) {
-'use strict';
-/**
- * Creates a new URL by combining the specified URLs
- *
- * @param {string} baseURL The base URL
- * @param {string} relativeURL The relative URL
- * @returns {string} The combined URL
- */ module.exports = function combineURLs(baseURL, relativeURL) {
-    return relativeURL ? baseURL.replace(/\/+$/, '') + '/' + relativeURL.replace(/^\/+/, '') : baseURL;
-};
-
-},{}],"1KizL":[function(require,module,exports) {
-'use strict';
-var utils = require('./../utils');
-// Headers whose duplicates are ignored by node
-// c.f. https://nodejs.org/api/http.html#http_message_headers
-var ignoreDuplicateOf = [
-    'age',
-    'authorization',
-    'content-length',
-    'content-type',
-    'etag',
-    'expires',
-    'from',
-    'host',
-    'if-modified-since',
-    'if-unmodified-since',
-    'last-modified',
-    'location',
-    'max-forwards',
-    'proxy-authorization',
-    'referer',
-    'retry-after',
-    'user-agent'
-];
-/**
- * Parse headers into an object
- *
- * ```
- * Date: Wed, 27 Aug 2014 08:58:49 GMT
- * Content-Type: application/json
- * Connection: keep-alive
- * Transfer-Encoding: chunked
- * ```
- *
- * @param {String} headers Headers needing to be parsed
- * @returns {Object} Headers parsed into an object
- */ module.exports = function parseHeaders(headers) {
-    var parsed = {
-    };
-    var key;
-    var val;
-    var i;
-    if (!headers) return parsed;
-    utils.forEach(headers.split('\n'), function parser(line) {
-        i = line.indexOf(':');
-        key = utils.trim(line.substr(0, i)).toLowerCase();
-        val = utils.trim(line.substr(i + 1));
-        if (key) {
-            if (parsed[key] && ignoreDuplicateOf.indexOf(key) >= 0) return;
-            if (key === 'set-cookie') parsed[key] = (parsed[key] ? parsed[key] : []).concat([
-                val
-            ]);
-            else parsed[key] = parsed[key] ? parsed[key] + ', ' + val : val;
-        }
-    });
-    return parsed;
-};
-
-},{"./../utils":"7J9rV"}],"6Gtz3":[function(require,module,exports) {
-'use strict';
-var utils = require('./../utils');
-module.exports = utils.isStandardBrowserEnv() ? // Standard browser envs have full support of the APIs needed to test
-// whether the request URL is of the same origin as current location.
-(function standardBrowserEnv() {
-    var msie = /(msie|trident)/i.test(navigator.userAgent);
-    var urlParsingNode = document.createElement('a');
-    var originURL;
-    /**
-    * Parse a URL to discover it's components
-    *
-    * @param {String} url The URL to be parsed
-    * @returns {Object}
-    */ function resolveURL(url) {
-        var href = url;
-        if (msie) {
-            // IE needs attribute set twice to normalize properties
-            urlParsingNode.setAttribute('href', href);
-            href = urlParsingNode.href;
-        }
-        urlParsingNode.setAttribute('href', href);
-        // urlParsingNode provides the UrlUtils interface - http://url.spec.whatwg.org/#urlutils
-        return {
-            href: urlParsingNode.href,
-            protocol: urlParsingNode.protocol ? urlParsingNode.protocol.replace(/:$/, '') : '',
-            host: urlParsingNode.host,
-            search: urlParsingNode.search ? urlParsingNode.search.replace(/^\?/, '') : '',
-            hash: urlParsingNode.hash ? urlParsingNode.hash.replace(/^#/, '') : '',
-            hostname: urlParsingNode.hostname,
-            port: urlParsingNode.port,
-            pathname: urlParsingNode.pathname.charAt(0) === '/' ? urlParsingNode.pathname : '/' + urlParsingNode.pathname
-        };
-    }
-    originURL = resolveURL(window.location.href);
-    /**
-    * Determine if a URL shares the same origin as the current location
-    *
-    * @param {String} requestURL The URL to test
-    * @returns {boolean} True if URL shares the same origin, otherwise false
-    */ return function isURLSameOrigin(requestURL) {
-        var parsed = utils.isString(requestURL) ? resolveURL(requestURL) : requestURL;
-        return parsed.protocol === originURL.protocol && parsed.host === originURL.host;
-    };
-})() : // Non standard browser envs (web workers, react-native) lack needed support.
-(function nonStandardBrowserEnv() {
-    return function isURLSameOrigin() {
-        return true;
-    };
-})();
-
-},{"./../utils":"7J9rV"}],"42z1a":[function(require,module,exports) {
-'use strict';
-var utils = require('../utils');
-/**
- * Config-specific merge-function which creates a new config-object
- * by merging two configuration objects together.
- *
- * @param {Object} config1
- * @param {Object} config2
- * @returns {Object} New object resulting from merging config2 to config1
- */ module.exports = function mergeConfig(config1, config2) {
-    // eslint-disable-next-line no-param-reassign
-    config2 = config2 || {
-    };
-    var config = {
-    };
-    var valueFromConfig2Keys = [
-        'url',
-        'method',
-        'data'
-    ];
-    var mergeDeepPropertiesKeys = [
-        'headers',
-        'auth',
-        'proxy',
-        'params'
-    ];
-    var defaultToConfig2Keys = [
-        'baseURL',
-        'transformRequest',
-        'transformResponse',
-        'paramsSerializer',
-        'timeout',
-        'timeoutMessage',
-        'withCredentials',
-        'adapter',
-        'responseType',
-        'xsrfCookieName',
-        'xsrfHeaderName',
-        'onUploadProgress',
-        'onDownloadProgress',
-        'decompress',
-        'maxContentLength',
-        'maxBodyLength',
-        'maxRedirects',
-        'transport',
-        'httpAgent',
-        'httpsAgent',
-        'cancelToken',
-        'socketPath',
-        'responseEncoding'
-    ];
-    var directMergeKeys = [
-        'validateStatus'
-    ];
-    function getMergedValue(target, source) {
-        if (utils.isPlainObject(target) && utils.isPlainObject(source)) return utils.merge(target, source);
-        else if (utils.isPlainObject(source)) return utils.merge({
-        }, source);
-        else if (utils.isArray(source)) return source.slice();
-        return source;
-    }
-    function mergeDeepProperties(prop) {
-        if (!utils.isUndefined(config2[prop])) config[prop] = getMergedValue(config1[prop], config2[prop]);
-        else if (!utils.isUndefined(config1[prop])) config[prop] = getMergedValue(undefined, config1[prop]);
-    }
-    utils.forEach(valueFromConfig2Keys, function valueFromConfig2(prop) {
-        if (!utils.isUndefined(config2[prop])) config[prop] = getMergedValue(undefined, config2[prop]);
-    });
-    utils.forEach(mergeDeepPropertiesKeys, mergeDeepProperties);
-    utils.forEach(defaultToConfig2Keys, function defaultToConfig2(prop) {
-        if (!utils.isUndefined(config2[prop])) config[prop] = getMergedValue(undefined, config2[prop]);
-        else if (!utils.isUndefined(config1[prop])) config[prop] = getMergedValue(undefined, config1[prop]);
-    });
-    utils.forEach(directMergeKeys, function merge(prop) {
-        if (prop in config2) config[prop] = getMergedValue(config1[prop], config2[prop]);
-        else if (prop in config1) config[prop] = getMergedValue(undefined, config1[prop]);
-    });
-    var axiosKeys = valueFromConfig2Keys.concat(mergeDeepPropertiesKeys).concat(defaultToConfig2Keys).concat(directMergeKeys);
-    var otherKeys = Object.keys(config1).concat(Object.keys(config2)).filter(function filterAxiosKeys(key) {
-        return axiosKeys.indexOf(key) === -1;
-    });
-    utils.forEach(otherKeys, mergeDeepProperties);
-    return config;
-};
-
-},{"../utils":"7J9rV"}],"1Ql7i":[function(require,module,exports) {
-'use strict';
-/**
- * A `Cancel` is an object that is thrown when an operation is canceled.
- *
- * @class
- * @param {string=} message The message.
- */ function Cancel(message) {
-    this.message = message;
-}
-Cancel.prototype.toString = function toString() {
-    return 'Cancel' + (this.message ? ': ' + this.message : '');
-};
-Cancel.prototype.__CANCEL__ = true;
-module.exports = Cancel;
-
-},{}],"hHamf":[function(require,module,exports) {
-'use strict';
-var Cancel = require('./Cancel');
-/**
- * A `CancelToken` is an object that can be used to request cancellation of an operation.
- *
- * @class
- * @param {Function} executor The executor function.
- */ function CancelToken(executor) {
-    if (typeof executor !== 'function') throw new TypeError('executor must be a function.');
-    var resolvePromise;
-    this.promise = new Promise(function promiseExecutor(resolve) {
-        resolvePromise = resolve;
-    });
-    var token = this;
-    executor(function cancel(message) {
-        if (token.reason) // Cancellation has already been requested
-        return;
-        token.reason = new Cancel(message);
-        resolvePromise(token.reason);
-    });
-}
-/**
- * Throws a `Cancel` if cancellation has been requested.
- */ CancelToken.prototype.throwIfRequested = function throwIfRequested() {
-    if (this.reason) throw this.reason;
-};
-/**
- * Returns an object that contains a new `CancelToken` and a function that, when called,
- * cancels the `CancelToken`.
- */ CancelToken.source = function source() {
-    var cancel;
-    var token = new CancelToken(function executor(c) {
-        cancel = c;
-    });
-    return {
-        token: token,
-        cancel: cancel
-    };
-};
-module.exports = CancelToken;
-
-},{"./Cancel":"1Ql7i"}],"9FoXt":[function(require,module,exports) {
-'use strict';
-/**
- * Syntactic sugar for invoking a function and expanding an array for arguments.
- *
- * Common use case would be to use `Function.prototype.apply`.
- *
- *  ```js
- *  function f(x, y, z) {}
- *  var args = [1, 2, 3];
- *  f.apply(null, args);
- *  ```
- *
- * With `spread` this example can be re-written.
- *
- *  ```js
- *  spread(function(x, y, z) {})([1, 2, 3]);
- *  ```
- *
- * @param {Function} callback
- * @returns {Function}
- */ module.exports = function spread(callback) {
-    return function wrap(arr) {
-        return callback.apply(null, arr);
-    };
-};
-
-},{}],"1bzv8":[function(require,module,exports) {
-'use strict';
-/**
- * Determines whether the payload is an error thrown by Axios
- *
- * @param {*} payload The value to test
- * @returns {boolean} True if the payload is an error thrown by Axios, otherwise false
- */ module.exports = function isAxiosError(payload) {
-    return typeof payload === 'object' && payload.isAxiosError === true;
-};
-
-},{}],"1PMSK":[function(require,module,exports) {
+},{"react-refresh/runtime":"592mh"}],"1PMSK":[function(require,module,exports) {
 "use strict";
 module.exports = require("./cjs/react-router-dom.js");
 
@@ -27231,7 +25498,1894 @@ function hoistNonReactStatics(targetComponent, sourceComponent, blacklist) {
 }
 module.exports = hoistNonReactStatics;
 
-},{"react-is":"68QIU"}],"32KJG":[function(require,module,exports) {
+},{"react-is":"68QIU"}],"5iH6s":[function(require,module,exports) {
+var helpers = require("../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _axios = require("axios");
+var _axiosDefault = parcelHelpers.interopDefault(_axios);
+class Researcher extends _react.Component {
+    constructor(props){
+        super(props);
+        this.onChange = this.onChange.bind(this);
+        this.onSubmit = this.onSubmit.bind(this);
+        this.state = {
+            authorname: '',
+            papertitle: '',
+            email: '',
+            Designation: '',
+            noofauthors: 0,
+            researchfield: '',
+            referedby: '',
+            noofpages: 0,
+            url: '',
+            abstract: '',
+            status: "",
+            paid: "not paid"
+        };
+    }
+    onChange(e) {
+        this.setState({
+            [e.target.name]: e.target.value
+        });
+    }
+    onSubmit(e) {
+        e.preventDefault();
+        let subject = {
+            authorname: this.state.authorname,
+            papertitle: this.state.papertitle,
+            email: this.state.email,
+            Designation: this.state.Designation,
+            noofauthors: this.state.noofauthors,
+            researchfield: this.state.researchfield,
+            referedby: this.state.referedby,
+            noofpages: this.state.noofpages,
+            url: this.state.url,
+            abstract: this.state.abstract,
+            status: "null",
+            payment: this.state.paid
+        };
+        console.log('Data to send', subject);
+        _axiosDefault.default.post('http://localhost:9099/research/create', subject).then((response)=>{
+            alert('Data successfully inserted');
+        }).catch((error)=>{
+            console.log(error.message);
+            alert(error.message);
+        });
+    }
+    render() {
+        return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "container",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 64
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "col-md-6 offset-md-3",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 65
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("br", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 67
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "card card-outline-secondary p-3 mb-2 bg-secondary  text-white border-secondary mb-3",
+            color: "blue",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 68
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "card-body",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 69
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("h3", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 74
+            },
+            __self: this
+        }, "Use the form below to submit your paper for publication."), /*#__PURE__*/ _reactDefault.default.createElement("hr", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 74
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement("form", {
+            onSubmit: this.onSubmit,
+            class: "row g-3 ",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 76
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "col-md-6 ",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 77
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+            for: "inputEmail4",
+            class: "form-label",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 78
+            },
+            __self: this
+        }, "AuthorName"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+            type: "text",
+            class: "form-control",
+            id: "author",
+            name: "authorname",
+            value: this.state.authorname,
+            onChange: this.onChange,
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 79
+            },
+            __self: this
+        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "col-md-6",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 81
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+            for: "inputEmail4",
+            class: "form-label",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 82
+            },
+            __self: this
+        }, "Email"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+            type: "email",
+            class: "form-control",
+            id: "inputEmail4",
+            name: "email",
+            value: this.state.email,
+            onChange: this.onChange,
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 83
+            },
+            __self: this
+        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "col-12",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 85
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+            for: "inputAddress",
+            class: "form-label",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 86
+            },
+            __self: this
+        }, "Paper Title"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+            type: "text",
+            class: "form-control",
+            id: "inputAddress",
+            name: "papertitle",
+            value: this.state.papertitle,
+            onChange: this.onChange,
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 87
+            },
+            __self: this
+        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "col-md-4",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 89
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+            for: "inputState",
+            class: "form-label",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 90
+            },
+            __self: this
+        }, "Research Field"), /*#__PURE__*/ _reactDefault.default.createElement("select", {
+            id: "inputState",
+            class: "form-select",
+            name: "researchfield",
+            value: this.state.researchfield,
+            onChange: this.onChange,
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 91
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("option", {
+            selected: true,
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 92
+            },
+            __self: this
+        }, "Choose..."), /*#__PURE__*/ _reactDefault.default.createElement("option", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 93
+            },
+            __self: this
+        }, "IT"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 94
+            },
+            __self: this
+        }, "Agriculture"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 95
+            },
+            __self: this
+        }, "BioTechnology"))), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "col-md-4",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 99
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+            for: "inputEmail4",
+            class: "form-label",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 100
+            },
+            __self: this
+        }, "No of pages"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+            type: "Number",
+            class: "form-control",
+            id: "inputEmail4",
+            name: "noofpages",
+            value: this.state.noofpages,
+            onChange: this.onChange,
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 101
+            },
+            __self: this
+        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "col-md-4",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 104
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+            for: "inputState",
+            class: "form-label",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 105
+            },
+            __self: this
+        }, "Designation"), /*#__PURE__*/ _reactDefault.default.createElement("select", {
+            id: "inputState",
+            class: "form-select",
+            name: "Designation",
+            value: this.state.Designation,
+            onChange: this.onChange,
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 106
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("option", {
+            selected: true,
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 107
+            },
+            __self: this
+        }, "Choose..."), /*#__PURE__*/ _reactDefault.default.createElement("option", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 108
+            },
+            __self: this
+        }, "Student(Any degree)"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 109
+            },
+            __self: this
+        }, "Research Scholar"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 110
+            },
+            __self: this
+        }, "Assistant Professer"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 111
+            },
+            __self: this
+        }, " Professer"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 112
+            },
+            __self: this
+        }, " Doctrate Degree holder"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 113
+            },
+            __self: this
+        }, " Other"))), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "col-md-4",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 118
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+            for: "inputState",
+            class: "form-label",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 119
+            },
+            __self: this
+        }, "Refered By"), /*#__PURE__*/ _reactDefault.default.createElement("select", {
+            id: "inputState",
+            class: "form-select",
+            name: "referedby",
+            value: this.state.referedby,
+            onChange: this.onChange,
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 120
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("option", {
+            selected: true,
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 121
+            },
+            __self: this
+        }, "Choose..."), /*#__PURE__*/ _reactDefault.default.createElement("option", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 122
+            },
+            __self: this
+        }, "Search Engines"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 123
+            },
+            __self: this
+        }, "From facebook"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 124
+            },
+            __self: this
+        }, "Friend or Guide"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 125
+            },
+            __self: this
+        }, "Already an Author"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 126
+            },
+            __self: this
+        }, "Other"))), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "col-md-4",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 130
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+            for: "inputEmail4",
+            class: "form-label",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 131
+            },
+            __self: this
+        }, "No of Authors"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+            type: "Number",
+            class: "form-control",
+            id: "inputEmail4",
+            name: "noofauthors",
+            value: this.state.noofauthors,
+            onChange: this.onChange,
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 132
+            },
+            __self: this
+        })), /*#__PURE__*/ _reactDefault.default.createElement("label", {
+            for: "floatingTextarea",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 135
+            },
+            __self: this
+        }, "Paper abstract"), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "form-floating",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 136
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("textarea", {
+            class: "form-control",
+            placeholder: "Leave a comment here",
+            id: "floatingTextarea",
+            name: "abstract",
+            value: this.state.abstract,
+            onChange: this.onChange,
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 138
+            },
+            __self: this
+        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "col-12",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 141
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+            for: "inputAddress",
+            class: "form-label",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 142
+            },
+            __self: this
+        }, "URL"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+            type: "text",
+            class: "form-control",
+            id: "inputAddress",
+            name: "url",
+            value: this.state.url,
+            onChange: this.onChange,
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 143
+            },
+            __self: this
+        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "col-12",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 148
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "d-flex justify-content-center ",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 149
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("button", {
+            type: "submit",
+            class: "btn btn-primary",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
+                lineNumber: 150
+            },
+            __self: this
+        }, "Submit")))))))));
+    }
+}
+exports.default = Researcher;
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"3b2NM","axios":"7rA65","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"7rA65":[function(require,module,exports) {
+module.exports = require('./lib/axios');
+
+},{"./lib/axios":"4qfhW"}],"4qfhW":[function(require,module,exports) {
+'use strict';
+var utils = require('./utils');
+var bind = require('./helpers/bind');
+var Axios = require('./core/Axios');
+var mergeConfig = require('./core/mergeConfig');
+var defaults = require('./defaults');
+/**
+ * Create an instance of Axios
+ *
+ * @param {Object} defaultConfig The default config for the instance
+ * @return {Axios} A new instance of Axios
+ */ function createInstance(defaultConfig) {
+    var context = new Axios(defaultConfig);
+    var instance = bind(Axios.prototype.request, context);
+    // Copy axios.prototype to instance
+    utils.extend(instance, Axios.prototype, context);
+    // Copy context to instance
+    utils.extend(instance, context);
+    return instance;
+}
+// Create the default instance to be exported
+var axios = createInstance(defaults);
+// Expose Axios class to allow class inheritance
+axios.Axios = Axios;
+// Factory for creating new instances
+axios.create = function create(instanceConfig) {
+    return createInstance(mergeConfig(axios.defaults, instanceConfig));
+};
+// Expose Cancel & CancelToken
+axios.Cancel = require('./cancel/Cancel');
+axios.CancelToken = require('./cancel/CancelToken');
+axios.isCancel = require('./cancel/isCancel');
+// Expose all/spread
+axios.all = function all(promises) {
+    return Promise.all(promises);
+};
+axios.spread = require('./helpers/spread');
+// Expose isAxiosError
+axios.isAxiosError = require('./helpers/isAxiosError');
+module.exports = axios;
+// Allow use of default import syntax in TypeScript
+module.exports.default = axios;
+
+},{"./utils":"7J9rV","./helpers/bind":"78Fwk","./core/Axios":"26bz2","./core/mergeConfig":"42z1a","./defaults":"5j10E","./cancel/Cancel":"1Ql7i","./cancel/CancelToken":"hHamf","./cancel/isCancel":"3MAgn","./helpers/spread":"9FoXt","./helpers/isAxiosError":"1bzv8"}],"7J9rV":[function(require,module,exports) {
+'use strict';
+var bind = require('./helpers/bind');
+/*global toString:true*/ // utils is a library of generic helper functions non-specific to axios
+var toString = Object.prototype.toString;
+/**
+ * Determine if a value is an Array
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is an Array, otherwise false
+ */ function isArray(val) {
+    return toString.call(val) === '[object Array]';
+}
+/**
+ * Determine if a value is undefined
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if the value is undefined, otherwise false
+ */ function isUndefined(val) {
+    return typeof val === 'undefined';
+}
+/**
+ * Determine if a value is a Buffer
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is a Buffer, otherwise false
+ */ function isBuffer(val) {
+    return val !== null && !isUndefined(val) && val.constructor !== null && !isUndefined(val.constructor) && typeof val.constructor.isBuffer === 'function' && val.constructor.isBuffer(val);
+}
+/**
+ * Determine if a value is an ArrayBuffer
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is an ArrayBuffer, otherwise false
+ */ function isArrayBuffer(val) {
+    return toString.call(val) === '[object ArrayBuffer]';
+}
+/**
+ * Determine if a value is a FormData
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is an FormData, otherwise false
+ */ function isFormData(val) {
+    return typeof FormData !== 'undefined' && val instanceof FormData;
+}
+/**
+ * Determine if a value is a view on an ArrayBuffer
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is a view on an ArrayBuffer, otherwise false
+ */ function isArrayBufferView(val) {
+    var result;
+    if (typeof ArrayBuffer !== 'undefined' && ArrayBuffer.isView) result = ArrayBuffer.isView(val);
+    else result = val && val.buffer && val.buffer instanceof ArrayBuffer;
+    return result;
+}
+/**
+ * Determine if a value is a String
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is a String, otherwise false
+ */ function isString(val) {
+    return typeof val === 'string';
+}
+/**
+ * Determine if a value is a Number
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is a Number, otherwise false
+ */ function isNumber(val) {
+    return typeof val === 'number';
+}
+/**
+ * Determine if a value is an Object
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is an Object, otherwise false
+ */ function isObject(val) {
+    return val !== null && typeof val === 'object';
+}
+/**
+ * Determine if a value is a plain Object
+ *
+ * @param {Object} val The value to test
+ * @return {boolean} True if value is a plain Object, otherwise false
+ */ function isPlainObject(val) {
+    if (toString.call(val) !== '[object Object]') return false;
+    var prototype = Object.getPrototypeOf(val);
+    return prototype === null || prototype === Object.prototype;
+}
+/**
+ * Determine if a value is a Date
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is a Date, otherwise false
+ */ function isDate(val) {
+    return toString.call(val) === '[object Date]';
+}
+/**
+ * Determine if a value is a File
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is a File, otherwise false
+ */ function isFile(val) {
+    return toString.call(val) === '[object File]';
+}
+/**
+ * Determine if a value is a Blob
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is a Blob, otherwise false
+ */ function isBlob(val) {
+    return toString.call(val) === '[object Blob]';
+}
+/**
+ * Determine if a value is a Function
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is a Function, otherwise false
+ */ function isFunction(val) {
+    return toString.call(val) === '[object Function]';
+}
+/**
+ * Determine if a value is a Stream
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is a Stream, otherwise false
+ */ function isStream(val) {
+    return isObject(val) && isFunction(val.pipe);
+}
+/**
+ * Determine if a value is a URLSearchParams object
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is a URLSearchParams object, otherwise false
+ */ function isURLSearchParams(val) {
+    return typeof URLSearchParams !== 'undefined' && val instanceof URLSearchParams;
+}
+/**
+ * Trim excess whitespace off the beginning and end of a string
+ *
+ * @param {String} str The String to trim
+ * @returns {String} The String freed of excess whitespace
+ */ function trim(str) {
+    return str.replace(/^\s*/, '').replace(/\s*$/, '');
+}
+/**
+ * Determine if we're running in a standard browser environment
+ *
+ * This allows axios to run in a web worker, and react-native.
+ * Both environments support XMLHttpRequest, but not fully standard globals.
+ *
+ * web workers:
+ *  typeof window -> undefined
+ *  typeof document -> undefined
+ *
+ * react-native:
+ *  navigator.product -> 'ReactNative'
+ * nativescript
+ *  navigator.product -> 'NativeScript' or 'NS'
+ */ function isStandardBrowserEnv() {
+    if (typeof navigator !== 'undefined' && (navigator.product === 'ReactNative' || navigator.product === 'NativeScript' || navigator.product === 'NS')) return false;
+    return typeof window !== 'undefined' && typeof document !== 'undefined';
+}
+/**
+ * Iterate over an Array or an Object invoking a function for each item.
+ *
+ * If `obj` is an Array callback will be called passing
+ * the value, index, and complete array for each item.
+ *
+ * If 'obj' is an Object callback will be called passing
+ * the value, key, and complete object for each property.
+ *
+ * @param {Object|Array} obj The object to iterate
+ * @param {Function} fn The callback to invoke for each item
+ */ function forEach(obj, fn) {
+    // Don't bother if no value provided
+    if (obj === null || typeof obj === 'undefined') return;
+    // Force an array if not already something iterable
+    if (typeof obj !== 'object') /*eslint no-param-reassign:0*/ obj = [
+        obj
+    ];
+    if (isArray(obj)) // Iterate over array values
+    for(var i = 0, l = obj.length; i < l; i++)fn.call(null, obj[i], i, obj);
+    else {
+        // Iterate over object keys
+        for(var key in obj)if (Object.prototype.hasOwnProperty.call(obj, key)) fn.call(null, obj[key], key, obj);
+    }
+}
+/**
+ * Accepts varargs expecting each argument to be an object, then
+ * immutably merges the properties of each object and returns result.
+ *
+ * When multiple objects contain the same key the later object in
+ * the arguments list will take precedence.
+ *
+ * Example:
+ *
+ * ```js
+ * var result = merge({foo: 123}, {foo: 456});
+ * console.log(result.foo); // outputs 456
+ * ```
+ *
+ * @param {Object} obj1 Object to merge
+ * @returns {Object} Result of all merge properties
+ */ function merge() {
+    var result = {
+    };
+    function assignValue(val, key) {
+        if (isPlainObject(result[key]) && isPlainObject(val)) result[key] = merge(result[key], val);
+        else if (isPlainObject(val)) result[key] = merge({
+        }, val);
+        else if (isArray(val)) result[key] = val.slice();
+        else result[key] = val;
+    }
+    for(var i = 0, l = arguments.length; i < l; i++)forEach(arguments[i], assignValue);
+    return result;
+}
+/**
+ * Extends object a by mutably adding to it the properties of object b.
+ *
+ * @param {Object} a The object to be extended
+ * @param {Object} b The object to copy properties from
+ * @param {Object} thisArg The object to bind function to
+ * @return {Object} The resulting value of object a
+ */ function extend(a, b, thisArg) {
+    forEach(b, function assignValue(val, key) {
+        if (thisArg && typeof val === 'function') a[key] = bind(val, thisArg);
+        else a[key] = val;
+    });
+    return a;
+}
+/**
+ * Remove byte order marker. This catches EF BB BF (the UTF-8 BOM)
+ *
+ * @param {string} content with BOM
+ * @return {string} content value without BOM
+ */ function stripBOM(content) {
+    if (content.charCodeAt(0) === 65279) content = content.slice(1);
+    return content;
+}
+module.exports = {
+    isArray: isArray,
+    isArrayBuffer: isArrayBuffer,
+    isBuffer: isBuffer,
+    isFormData: isFormData,
+    isArrayBufferView: isArrayBufferView,
+    isString: isString,
+    isNumber: isNumber,
+    isObject: isObject,
+    isPlainObject: isPlainObject,
+    isUndefined: isUndefined,
+    isDate: isDate,
+    isFile: isFile,
+    isBlob: isBlob,
+    isFunction: isFunction,
+    isStream: isStream,
+    isURLSearchParams: isURLSearchParams,
+    isStandardBrowserEnv: isStandardBrowserEnv,
+    forEach: forEach,
+    merge: merge,
+    extend: extend,
+    trim: trim,
+    stripBOM: stripBOM
+};
+
+},{"./helpers/bind":"78Fwk"}],"78Fwk":[function(require,module,exports) {
+'use strict';
+module.exports = function bind(fn, thisArg) {
+    return function wrap() {
+        var args = new Array(arguments.length);
+        for(var i = 0; i < args.length; i++)args[i] = arguments[i];
+        return fn.apply(thisArg, args);
+    };
+};
+
+},{}],"26bz2":[function(require,module,exports) {
+'use strict';
+var utils = require('./../utils');
+var buildURL = require('../helpers/buildURL');
+var InterceptorManager = require('./InterceptorManager');
+var dispatchRequest = require('./dispatchRequest');
+var mergeConfig = require('./mergeConfig');
+/**
+ * Create a new instance of Axios
+ *
+ * @param {Object} instanceConfig The default config for the instance
+ */ function Axios(instanceConfig) {
+    this.defaults = instanceConfig;
+    this.interceptors = {
+        request: new InterceptorManager(),
+        response: new InterceptorManager()
+    };
+}
+/**
+ * Dispatch a request
+ *
+ * @param {Object} config The config specific for this request (merged with this.defaults)
+ */ Axios.prototype.request = function request(config) {
+    /*eslint no-param-reassign:0*/ // Allow for axios('example/url'[, config]) a la fetch API
+    if (typeof config === 'string') {
+        config = arguments[1] || {
+        };
+        config.url = arguments[0];
+    } else config = config || {
+    };
+    config = mergeConfig(this.defaults, config);
+    // Set config.method
+    if (config.method) config.method = config.method.toLowerCase();
+    else if (this.defaults.method) config.method = this.defaults.method.toLowerCase();
+    else config.method = 'get';
+    // Hook up interceptors middleware
+    var chain = [
+        dispatchRequest,
+        undefined
+    ];
+    var promise = Promise.resolve(config);
+    this.interceptors.request.forEach(function unshiftRequestInterceptors(interceptor) {
+        chain.unshift(interceptor.fulfilled, interceptor.rejected);
+    });
+    this.interceptors.response.forEach(function pushResponseInterceptors(interceptor) {
+        chain.push(interceptor.fulfilled, interceptor.rejected);
+    });
+    while(chain.length)promise = promise.then(chain.shift(), chain.shift());
+    return promise;
+};
+Axios.prototype.getUri = function getUri(config) {
+    config = mergeConfig(this.defaults, config);
+    return buildURL(config.url, config.params, config.paramsSerializer).replace(/^\?/, '');
+};
+// Provide aliases for supported request methods
+utils.forEach([
+    'delete',
+    'get',
+    'head',
+    'options'
+], function forEachMethodNoData(method) {
+    /*eslint func-names:0*/ Axios.prototype[method] = function(url, config) {
+        return this.request(mergeConfig(config || {
+        }, {
+            method: method,
+            url: url,
+            data: (config || {
+            }).data
+        }));
+    };
+});
+utils.forEach([
+    'post',
+    'put',
+    'patch'
+], function forEachMethodWithData(method) {
+    /*eslint func-names:0*/ Axios.prototype[method] = function(url, data, config) {
+        return this.request(mergeConfig(config || {
+        }, {
+            method: method,
+            url: url,
+            data: data
+        }));
+    };
+});
+module.exports = Axios;
+
+},{"./../utils":"7J9rV","../helpers/buildURL":"25KfR","./InterceptorManager":"33sRR","./dispatchRequest":"1mCjo","./mergeConfig":"42z1a"}],"25KfR":[function(require,module,exports) {
+'use strict';
+var utils = require('./../utils');
+function encode(val) {
+    return encodeURIComponent(val).replace(/%3A/gi, ':').replace(/%24/g, '$').replace(/%2C/gi, ',').replace(/%20/g, '+').replace(/%5B/gi, '[').replace(/%5D/gi, ']');
+}
+/**
+ * Build a URL by appending params to the end
+ *
+ * @param {string} url The base of the url (e.g., http://www.google.com)
+ * @param {object} [params] The params to be appended
+ * @returns {string} The formatted url
+ */ module.exports = function buildURL(url, params, paramsSerializer) {
+    /*eslint no-param-reassign:0*/ if (!params) return url;
+    var serializedParams;
+    if (paramsSerializer) serializedParams = paramsSerializer(params);
+    else if (utils.isURLSearchParams(params)) serializedParams = params.toString();
+    else {
+        var parts = [];
+        utils.forEach(params, function serialize(val, key) {
+            if (val === null || typeof val === 'undefined') return;
+            if (utils.isArray(val)) key = key + '[]';
+            else val = [
+                val
+            ];
+            utils.forEach(val, function parseValue(v) {
+                if (utils.isDate(v)) v = v.toISOString();
+                else if (utils.isObject(v)) v = JSON.stringify(v);
+                parts.push(encode(key) + '=' + encode(v));
+            });
+        });
+        serializedParams = parts.join('&');
+    }
+    if (serializedParams) {
+        var hashmarkIndex = url.indexOf('#');
+        if (hashmarkIndex !== -1) url = url.slice(0, hashmarkIndex);
+        url += (url.indexOf('?') === -1 ? '?' : '&') + serializedParams;
+    }
+    return url;
+};
+
+},{"./../utils":"7J9rV"}],"33sRR":[function(require,module,exports) {
+'use strict';
+var utils = require('./../utils');
+function InterceptorManager() {
+    this.handlers = [];
+}
+/**
+ * Add a new interceptor to the stack
+ *
+ * @param {Function} fulfilled The function to handle `then` for a `Promise`
+ * @param {Function} rejected The function to handle `reject` for a `Promise`
+ *
+ * @return {Number} An ID used to remove interceptor later
+ */ InterceptorManager.prototype.use = function use(fulfilled, rejected) {
+    this.handlers.push({
+        fulfilled: fulfilled,
+        rejected: rejected
+    });
+    return this.handlers.length - 1;
+};
+/**
+ * Remove an interceptor from the stack
+ *
+ * @param {Number} id The ID that was returned by `use`
+ */ InterceptorManager.prototype.eject = function eject(id) {
+    if (this.handlers[id]) this.handlers[id] = null;
+};
+/**
+ * Iterate over all the registered interceptors
+ *
+ * This method is particularly useful for skipping over any
+ * interceptors that may have become `null` calling `eject`.
+ *
+ * @param {Function} fn The function to call for each interceptor
+ */ InterceptorManager.prototype.forEach = function forEach(fn) {
+    utils.forEach(this.handlers, function forEachHandler(h) {
+        if (h !== null) fn(h);
+    });
+};
+module.exports = InterceptorManager;
+
+},{"./../utils":"7J9rV"}],"1mCjo":[function(require,module,exports) {
+'use strict';
+var utils = require('./../utils');
+var transformData = require('./transformData');
+var isCancel = require('../cancel/isCancel');
+var defaults = require('../defaults');
+/**
+ * Throws a `Cancel` if cancellation has been requested.
+ */ function throwIfCancellationRequested(config) {
+    if (config.cancelToken) config.cancelToken.throwIfRequested();
+}
+/**
+ * Dispatch a request to the server using the configured adapter.
+ *
+ * @param {object} config The config that is to be used for the request
+ * @returns {Promise} The Promise to be fulfilled
+ */ module.exports = function dispatchRequest(config) {
+    throwIfCancellationRequested(config);
+    // Ensure headers exist
+    config.headers = config.headers || {
+    };
+    // Transform request data
+    config.data = transformData(config.data, config.headers, config.transformRequest);
+    // Flatten headers
+    config.headers = utils.merge(config.headers.common || {
+    }, config.headers[config.method] || {
+    }, config.headers);
+    utils.forEach([
+        'delete',
+        'get',
+        'head',
+        'post',
+        'put',
+        'patch',
+        'common'
+    ], function cleanHeaderConfig(method) {
+        delete config.headers[method];
+    });
+    var adapter = config.adapter || defaults.adapter;
+    return adapter(config).then(function onAdapterResolution(response) {
+        throwIfCancellationRequested(config);
+        // Transform response data
+        response.data = transformData(response.data, response.headers, config.transformResponse);
+        return response;
+    }, function onAdapterRejection(reason) {
+        if (!isCancel(reason)) {
+            throwIfCancellationRequested(config);
+            // Transform response data
+            if (reason && reason.response) reason.response.data = transformData(reason.response.data, reason.response.headers, config.transformResponse);
+        }
+        return Promise.reject(reason);
+    });
+};
+
+},{"./../utils":"7J9rV","./transformData":"1ueU6","../cancel/isCancel":"3MAgn","../defaults":"5j10E"}],"1ueU6":[function(require,module,exports) {
+'use strict';
+var utils = require('./../utils');
+/**
+ * Transform the data for a request or a response
+ *
+ * @param {Object|String} data The data to be transformed
+ * @param {Array} headers The headers for the request or response
+ * @param {Array|Function} fns A single function or Array of functions
+ * @returns {*} The resulting transformed data
+ */ module.exports = function transformData(data, headers, fns) {
+    /*eslint no-param-reassign:0*/ utils.forEach(fns, function transform(fn) {
+        data = fn(data, headers);
+    });
+    return data;
+};
+
+},{"./../utils":"7J9rV"}],"3MAgn":[function(require,module,exports) {
+'use strict';
+module.exports = function isCancel(value) {
+    return !!(value && value.__CANCEL__);
+};
+
+},{}],"5j10E":[function(require,module,exports) {
+var process = require("process");
+'use strict';
+var utils = require('./utils');
+var normalizeHeaderName = require('./helpers/normalizeHeaderName');
+var DEFAULT_CONTENT_TYPE = {
+    'Content-Type': 'application/x-www-form-urlencoded'
+};
+function setContentTypeIfUnset(headers, value) {
+    if (!utils.isUndefined(headers) && utils.isUndefined(headers['Content-Type'])) headers['Content-Type'] = value;
+}
+function getDefaultAdapter() {
+    var adapter;
+    if (typeof XMLHttpRequest !== 'undefined') // For browsers use XHR adapter
+    adapter = require('./adapters/xhr');
+    else if (typeof process !== 'undefined' && Object.prototype.toString.call(process) === '[object process]') // For node use HTTP adapter
+    adapter = require('./adapters/http');
+    return adapter;
+}
+var defaults = {
+    adapter: getDefaultAdapter(),
+    transformRequest: [
+        function transformRequest(data, headers) {
+            normalizeHeaderName(headers, 'Accept');
+            normalizeHeaderName(headers, 'Content-Type');
+            if (utils.isFormData(data) || utils.isArrayBuffer(data) || utils.isBuffer(data) || utils.isStream(data) || utils.isFile(data) || utils.isBlob(data)) return data;
+            if (utils.isArrayBufferView(data)) return data.buffer;
+            if (utils.isURLSearchParams(data)) {
+                setContentTypeIfUnset(headers, 'application/x-www-form-urlencoded;charset=utf-8');
+                return data.toString();
+            }
+            if (utils.isObject(data)) {
+                setContentTypeIfUnset(headers, 'application/json;charset=utf-8');
+                return JSON.stringify(data);
+            }
+            return data;
+        }
+    ],
+    transformResponse: [
+        function transformResponse(data) {
+            /*eslint no-param-reassign:0*/ if (typeof data === 'string') try {
+                data = JSON.parse(data);
+            } catch (e) {
+            }
+            return data;
+        }
+    ],
+    /**
+   * A timeout in milliseconds to abort a request. If set to 0 (default) a
+   * timeout is not created.
+   */ timeout: 0,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: function validateStatus(status) {
+        return status >= 200 && status < 300;
+    }
+};
+defaults.headers = {
+    common: {
+        'Accept': 'application/json, text/plain, */*'
+    }
+};
+utils.forEach([
+    'delete',
+    'get',
+    'head'
+], function forEachMethodNoData(method) {
+    defaults.headers[method] = {
+    };
+});
+utils.forEach([
+    'post',
+    'put',
+    'patch'
+], function forEachMethodWithData(method) {
+    defaults.headers[method] = utils.merge(DEFAULT_CONTENT_TYPE);
+});
+module.exports = defaults;
+
+},{"process":"7AgFc","./utils":"7J9rV","./helpers/normalizeHeaderName":"5yMqL","./adapters/xhr":"6pJqL","./adapters/http":"6pJqL"}],"7AgFc":[function(require,module,exports) {
+// shim for using process in browser
+var process = module.exports = {
+};
+// cached from whatever global is present so that test runners that stub it
+// don't break things.  But we need to wrap it in a try catch in case it is
+// wrapped in strict mode code which doesn't define any globals.  It's inside a
+// function because try/catches deoptimize in certain engines.
+var cachedSetTimeout;
+var cachedClearTimeout;
+function defaultSetTimout() {
+    throw new Error('setTimeout has not been defined');
+}
+function defaultClearTimeout() {
+    throw new Error('clearTimeout has not been defined');
+}
+(function() {
+    try {
+        if (typeof setTimeout === 'function') cachedSetTimeout = setTimeout;
+        else cachedSetTimeout = defaultSetTimout;
+    } catch (e) {
+        cachedSetTimeout = defaultSetTimout;
+    }
+    try {
+        if (typeof clearTimeout === 'function') cachedClearTimeout = clearTimeout;
+        else cachedClearTimeout = defaultClearTimeout;
+    } catch (e) {
+        cachedClearTimeout = defaultClearTimeout;
+    }
+})();
+function runTimeout(fun) {
+    if (cachedSetTimeout === setTimeout) //normal enviroments in sane situations
+    return setTimeout(fun, 0);
+    // if setTimeout wasn't available but was latter defined
+    if ((cachedSetTimeout === defaultSetTimout || !cachedSetTimeout) && setTimeout) {
+        cachedSetTimeout = setTimeout;
+        return setTimeout(fun, 0);
+    }
+    try {
+        // when when somebody has screwed with setTimeout but no I.E. maddness
+        return cachedSetTimeout(fun, 0);
+    } catch (e) {
+        try {
+            // When we are in I.E. but the script has been evaled so I.E. doesn't trust the global object when called normally
+            return cachedSetTimeout.call(null, fun, 0);
+        } catch (e1) {
+            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error
+            return cachedSetTimeout.call(this, fun, 0);
+        }
+    }
+}
+function runClearTimeout(marker) {
+    if (cachedClearTimeout === clearTimeout) //normal enviroments in sane situations
+    return clearTimeout(marker);
+    // if clearTimeout wasn't available but was latter defined
+    if ((cachedClearTimeout === defaultClearTimeout || !cachedClearTimeout) && clearTimeout) {
+        cachedClearTimeout = clearTimeout;
+        return clearTimeout(marker);
+    }
+    try {
+        // when when somebody has screwed with setTimeout but no I.E. maddness
+        return cachedClearTimeout(marker);
+    } catch (e) {
+        try {
+            // When we are in I.E. but the script has been evaled so I.E. doesn't  trust the global object when called normally
+            return cachedClearTimeout.call(null, marker);
+        } catch (e1) {
+            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error.
+            // Some versions of I.E. have different rules for clearTimeout vs setTimeout
+            return cachedClearTimeout.call(this, marker);
+        }
+    }
+}
+var queue = [];
+var draining = false;
+var currentQueue;
+var queueIndex = -1;
+function cleanUpNextTick() {
+    if (!draining || !currentQueue) return;
+    draining = false;
+    if (currentQueue.length) queue = currentQueue.concat(queue);
+    else queueIndex = -1;
+    if (queue.length) drainQueue();
+}
+function drainQueue() {
+    if (draining) return;
+    var timeout = runTimeout(cleanUpNextTick);
+    draining = true;
+    var len = queue.length;
+    while(len){
+        currentQueue = queue;
+        queue = [];
+        while((++queueIndex) < len)if (currentQueue) currentQueue[queueIndex].run();
+        queueIndex = -1;
+        len = queue.length;
+    }
+    currentQueue = null;
+    draining = false;
+    runClearTimeout(timeout);
+}
+process.nextTick = function(fun) {
+    var args = new Array(arguments.length - 1);
+    if (arguments.length > 1) for(var i = 1; i < arguments.length; i++)args[i - 1] = arguments[i];
+    queue.push(new Item(fun, args));
+    if (queue.length === 1 && !draining) runTimeout(drainQueue);
+};
+// v8 likes predictible objects
+function Item(fun, array) {
+    this.fun = fun;
+    this.array = array;
+}
+Item.prototype.run = function() {
+    this.fun.apply(null, this.array);
+};
+process.title = 'browser';
+process.browser = true;
+process.env = {
+};
+process.argv = [];
+process.version = ''; // empty string to avoid regexp issues
+process.versions = {
+};
+function noop() {
+}
+process.on = noop;
+process.addListener = noop;
+process.once = noop;
+process.off = noop;
+process.removeListener = noop;
+process.removeAllListeners = noop;
+process.emit = noop;
+process.prependListener = noop;
+process.prependOnceListener = noop;
+process.listeners = function(name) {
+    return [];
+};
+process.binding = function(name) {
+    throw new Error('process.binding is not supported');
+};
+process.cwd = function() {
+    return '/';
+};
+process.chdir = function(dir) {
+    throw new Error('process.chdir is not supported');
+};
+process.umask = function() {
+    return 0;
+};
+
+},{}],"5yMqL":[function(require,module,exports) {
+'use strict';
+var utils = require('../utils');
+module.exports = function normalizeHeaderName(headers, normalizedName) {
+    utils.forEach(headers, function processHeader(value, name) {
+        if (name !== normalizedName && name.toUpperCase() === normalizedName.toUpperCase()) {
+            headers[normalizedName] = value;
+            delete headers[name];
+        }
+    });
+};
+
+},{"../utils":"7J9rV"}],"6pJqL":[function(require,module,exports) {
+'use strict';
+var utils = require('./../utils');
+var settle = require('./../core/settle');
+var cookies = require('./../helpers/cookies');
+var buildURL = require('./../helpers/buildURL');
+var buildFullPath = require('../core/buildFullPath');
+var parseHeaders = require('./../helpers/parseHeaders');
+var isURLSameOrigin = require('./../helpers/isURLSameOrigin');
+var createError = require('../core/createError');
+module.exports = function xhrAdapter(config) {
+    return new Promise(function dispatchXhrRequest(resolve, reject) {
+        var requestData = config.data;
+        var requestHeaders = config.headers;
+        if (utils.isFormData(requestData)) delete requestHeaders['Content-Type']; // Let the browser set it
+        var request = new XMLHttpRequest();
+        // HTTP basic authentication
+        if (config.auth) {
+            var username = config.auth.username || '';
+            var password = config.auth.password ? unescape(encodeURIComponent(config.auth.password)) : '';
+            requestHeaders.Authorization = 'Basic ' + btoa(username + ':' + password);
+        }
+        var fullPath = buildFullPath(config.baseURL, config.url);
+        request.open(config.method.toUpperCase(), buildURL(fullPath, config.params, config.paramsSerializer), true);
+        // Set the request timeout in MS
+        request.timeout = config.timeout;
+        // Listen for ready state
+        request.onreadystatechange = function handleLoad() {
+            if (!request || request.readyState !== 4) return;
+            // The request errored out and we didn't get a response, this will be
+            // handled by onerror instead
+            // With one exception: request that using file: protocol, most browsers
+            // will return status as 0 even though it's a successful request
+            if (request.status === 0 && !(request.responseURL && request.responseURL.indexOf('file:') === 0)) return;
+            // Prepare the response
+            var responseHeaders = 'getAllResponseHeaders' in request ? parseHeaders(request.getAllResponseHeaders()) : null;
+            var responseData = !config.responseType || config.responseType === 'text' ? request.responseText : request.response;
+            var response = {
+                data: responseData,
+                status: request.status,
+                statusText: request.statusText,
+                headers: responseHeaders,
+                config: config,
+                request: request
+            };
+            settle(resolve, reject, response);
+            // Clean up request
+            request = null;
+        };
+        // Handle browser request cancellation (as opposed to a manual cancellation)
+        request.onabort = function handleAbort() {
+            if (!request) return;
+            reject(createError('Request aborted', config, 'ECONNABORTED', request));
+            // Clean up request
+            request = null;
+        };
+        // Handle low level network errors
+        request.onerror = function handleError() {
+            // Real errors are hidden from us by the browser
+            // onerror should only fire if it's a network error
+            reject(createError('Network Error', config, null, request));
+            // Clean up request
+            request = null;
+        };
+        // Handle timeout
+        request.ontimeout = function handleTimeout() {
+            var timeoutErrorMessage = 'timeout of ' + config.timeout + 'ms exceeded';
+            if (config.timeoutErrorMessage) timeoutErrorMessage = config.timeoutErrorMessage;
+            reject(createError(timeoutErrorMessage, config, 'ECONNABORTED', request));
+            // Clean up request
+            request = null;
+        };
+        // Add xsrf header
+        // This is only done if running in a standard browser environment.
+        // Specifically not if we're in a web worker, or react-native.
+        if (utils.isStandardBrowserEnv()) {
+            // Add xsrf header
+            var xsrfValue = (config.withCredentials || isURLSameOrigin(fullPath)) && config.xsrfCookieName ? cookies.read(config.xsrfCookieName) : undefined;
+            if (xsrfValue) requestHeaders[config.xsrfHeaderName] = xsrfValue;
+        }
+        // Add headers to the request
+        if ('setRequestHeader' in request) utils.forEach(requestHeaders, function setRequestHeader(val, key) {
+            if (typeof requestData === 'undefined' && key.toLowerCase() === 'content-type') // Remove Content-Type if data is undefined
+            delete requestHeaders[key];
+            else // Otherwise add header to the request
+            request.setRequestHeader(key, val);
+        });
+        // Add withCredentials to request if needed
+        if (!utils.isUndefined(config.withCredentials)) request.withCredentials = !!config.withCredentials;
+        // Add responseType to request if needed
+        if (config.responseType) try {
+            request.responseType = config.responseType;
+        } catch (e) {
+            // Expected DOMException thrown by browsers not compatible XMLHttpRequest Level 2.
+            // But, this can be suppressed for 'json' type as it can be parsed by default 'transformResponse' function.
+            if (config.responseType !== 'json') throw e;
+        }
+        // Handle progress if needed
+        if (typeof config.onDownloadProgress === 'function') request.addEventListener('progress', config.onDownloadProgress);
+        // Not all browsers support upload events
+        if (typeof config.onUploadProgress === 'function' && request.upload) request.upload.addEventListener('progress', config.onUploadProgress);
+        if (config.cancelToken) // Handle cancellation
+        config.cancelToken.promise.then(function onCanceled(cancel) {
+            if (!request) return;
+            request.abort();
+            reject(cancel);
+            // Clean up request
+            request = null;
+        });
+        if (!requestData) requestData = null;
+        // Send the request
+        request.send(requestData);
+    });
+};
+
+},{"./../utils":"7J9rV","./../core/settle":"72M6J","./../helpers/cookies":"1m0F1","./../helpers/buildURL":"25KfR","../core/buildFullPath":"5fWja","./../helpers/parseHeaders":"1KizL","./../helpers/isURLSameOrigin":"6Gtz3","../core/createError":"7ETv1"}],"72M6J":[function(require,module,exports) {
+'use strict';
+var createError = require('./createError');
+/**
+ * Resolve or reject a Promise based on response status.
+ *
+ * @param {Function} resolve A function that resolves the promise.
+ * @param {Function} reject A function that rejects the promise.
+ * @param {object} response The response.
+ */ module.exports = function settle(resolve, reject, response) {
+    var validateStatus = response.config.validateStatus;
+    if (!response.status || !validateStatus || validateStatus(response.status)) resolve(response);
+    else reject(createError('Request failed with status code ' + response.status, response.config, null, response.request, response));
+};
+
+},{"./createError":"7ETv1"}],"7ETv1":[function(require,module,exports) {
+'use strict';
+var enhanceError = require('./enhanceError');
+/**
+ * Create an Error with the specified message, config, error code, request and response.
+ *
+ * @param {string} message The error message.
+ * @param {Object} config The config.
+ * @param {string} [code] The error code (for example, 'ECONNABORTED').
+ * @param {Object} [request] The request.
+ * @param {Object} [response] The response.
+ * @returns {Error} The created error.
+ */ module.exports = function createError(message, config, code, request, response) {
+    var error = new Error(message);
+    return enhanceError(error, config, code, request, response);
+};
+
+},{"./enhanceError":"2O2Ud"}],"2O2Ud":[function(require,module,exports) {
+'use strict';
+/**
+ * Update an Error with the specified config, error code, and response.
+ *
+ * @param {Error} error The error to update.
+ * @param {Object} config The config.
+ * @param {string} [code] The error code (for example, 'ECONNABORTED').
+ * @param {Object} [request] The request.
+ * @param {Object} [response] The response.
+ * @returns {Error} The error.
+ */ module.exports = function enhanceError(error, config, code, request, response) {
+    error.config = config;
+    if (code) error.code = code;
+    error.request = request;
+    error.response = response;
+    error.isAxiosError = true;
+    error.toJSON = function toJSON() {
+        return {
+            // Standard
+            message: this.message,
+            name: this.name,
+            // Microsoft
+            description: this.description,
+            number: this.number,
+            // Mozilla
+            fileName: this.fileName,
+            lineNumber: this.lineNumber,
+            columnNumber: this.columnNumber,
+            stack: this.stack,
+            // Axios
+            config: this.config,
+            code: this.code
+        };
+    };
+    return error;
+};
+
+},{}],"1m0F1":[function(require,module,exports) {
+'use strict';
+var utils = require('./../utils');
+module.exports = utils.isStandardBrowserEnv() ? // Standard browser envs support document.cookie
+(function standardBrowserEnv() {
+    return {
+        write: function write(name, value, expires, path, domain, secure) {
+            var cookie = [];
+            cookie.push(name + '=' + encodeURIComponent(value));
+            if (utils.isNumber(expires)) cookie.push('expires=' + new Date(expires).toGMTString());
+            if (utils.isString(path)) cookie.push('path=' + path);
+            if (utils.isString(domain)) cookie.push('domain=' + domain);
+            if (secure === true) cookie.push('secure');
+            document.cookie = cookie.join('; ');
+        },
+        read: function read(name) {
+            var match = document.cookie.match(new RegExp('(^|;\\s*)(' + name + ')=([^;]*)'));
+            return match ? decodeURIComponent(match[3]) : null;
+        },
+        remove: function remove(name) {
+            this.write(name, '', Date.now() - 86400000);
+        }
+    };
+})() : // Non standard browser env (web workers, react-native) lack needed support.
+(function nonStandardBrowserEnv() {
+    return {
+        write: function write() {
+        },
+        read: function read() {
+            return null;
+        },
+        remove: function remove() {
+        }
+    };
+})();
+
+},{"./../utils":"7J9rV"}],"5fWja":[function(require,module,exports) {
+'use strict';
+var isAbsoluteURL = require('../helpers/isAbsoluteURL');
+var combineURLs = require('../helpers/combineURLs');
+/**
+ * Creates a new URL by combining the baseURL with the requestedURL,
+ * only when the requestedURL is not already an absolute URL.
+ * If the requestURL is absolute, this function returns the requestedURL untouched.
+ *
+ * @param {string} baseURL The base URL
+ * @param {string} requestedURL Absolute or relative URL to combine
+ * @returns {string} The combined full path
+ */ module.exports = function buildFullPath(baseURL, requestedURL) {
+    if (baseURL && !isAbsoluteURL(requestedURL)) return combineURLs(baseURL, requestedURL);
+    return requestedURL;
+};
+
+},{"../helpers/isAbsoluteURL":"4FcN1","../helpers/combineURLs":"qMap4"}],"4FcN1":[function(require,module,exports) {
+'use strict';
+/**
+ * Determines whether the specified URL is absolute
+ *
+ * @param {string} url The URL to test
+ * @returns {boolean} True if the specified URL is absolute, otherwise false
+ */ module.exports = function isAbsoluteURL(url) {
+    // A URL is considered absolute if it begins with "<scheme>://" or "//" (protocol-relative URL).
+    // RFC 3986 defines scheme name as a sequence of characters beginning with a letter and followed
+    // by any combination of letters, digits, plus, period, or hyphen.
+    return /^([a-z][a-z\d\+\-\.]*:)?\/\//i.test(url);
+};
+
+},{}],"qMap4":[function(require,module,exports) {
+'use strict';
+/**
+ * Creates a new URL by combining the specified URLs
+ *
+ * @param {string} baseURL The base URL
+ * @param {string} relativeURL The relative URL
+ * @returns {string} The combined URL
+ */ module.exports = function combineURLs(baseURL, relativeURL) {
+    return relativeURL ? baseURL.replace(/\/+$/, '') + '/' + relativeURL.replace(/^\/+/, '') : baseURL;
+};
+
+},{}],"1KizL":[function(require,module,exports) {
+'use strict';
+var utils = require('./../utils');
+// Headers whose duplicates are ignored by node
+// c.f. https://nodejs.org/api/http.html#http_message_headers
+var ignoreDuplicateOf = [
+    'age',
+    'authorization',
+    'content-length',
+    'content-type',
+    'etag',
+    'expires',
+    'from',
+    'host',
+    'if-modified-since',
+    'if-unmodified-since',
+    'last-modified',
+    'location',
+    'max-forwards',
+    'proxy-authorization',
+    'referer',
+    'retry-after',
+    'user-agent'
+];
+/**
+ * Parse headers into an object
+ *
+ * ```
+ * Date: Wed, 27 Aug 2014 08:58:49 GMT
+ * Content-Type: application/json
+ * Connection: keep-alive
+ * Transfer-Encoding: chunked
+ * ```
+ *
+ * @param {String} headers Headers needing to be parsed
+ * @returns {Object} Headers parsed into an object
+ */ module.exports = function parseHeaders(headers) {
+    var parsed = {
+    };
+    var key;
+    var val;
+    var i;
+    if (!headers) return parsed;
+    utils.forEach(headers.split('\n'), function parser(line) {
+        i = line.indexOf(':');
+        key = utils.trim(line.substr(0, i)).toLowerCase();
+        val = utils.trim(line.substr(i + 1));
+        if (key) {
+            if (parsed[key] && ignoreDuplicateOf.indexOf(key) >= 0) return;
+            if (key === 'set-cookie') parsed[key] = (parsed[key] ? parsed[key] : []).concat([
+                val
+            ]);
+            else parsed[key] = parsed[key] ? parsed[key] + ', ' + val : val;
+        }
+    });
+    return parsed;
+};
+
+},{"./../utils":"7J9rV"}],"6Gtz3":[function(require,module,exports) {
+'use strict';
+var utils = require('./../utils');
+module.exports = utils.isStandardBrowserEnv() ? // Standard browser envs have full support of the APIs needed to test
+// whether the request URL is of the same origin as current location.
+(function standardBrowserEnv() {
+    var msie = /(msie|trident)/i.test(navigator.userAgent);
+    var urlParsingNode = document.createElement('a');
+    var originURL;
+    /**
+    * Parse a URL to discover it's components
+    *
+    * @param {String} url The URL to be parsed
+    * @returns {Object}
+    */ function resolveURL(url) {
+        var href = url;
+        if (msie) {
+            // IE needs attribute set twice to normalize properties
+            urlParsingNode.setAttribute('href', href);
+            href = urlParsingNode.href;
+        }
+        urlParsingNode.setAttribute('href', href);
+        // urlParsingNode provides the UrlUtils interface - http://url.spec.whatwg.org/#urlutils
+        return {
+            href: urlParsingNode.href,
+            protocol: urlParsingNode.protocol ? urlParsingNode.protocol.replace(/:$/, '') : '',
+            host: urlParsingNode.host,
+            search: urlParsingNode.search ? urlParsingNode.search.replace(/^\?/, '') : '',
+            hash: urlParsingNode.hash ? urlParsingNode.hash.replace(/^#/, '') : '',
+            hostname: urlParsingNode.hostname,
+            port: urlParsingNode.port,
+            pathname: urlParsingNode.pathname.charAt(0) === '/' ? urlParsingNode.pathname : '/' + urlParsingNode.pathname
+        };
+    }
+    originURL = resolveURL(window.location.href);
+    /**
+    * Determine if a URL shares the same origin as the current location
+    *
+    * @param {String} requestURL The URL to test
+    * @returns {boolean} True if URL shares the same origin, otherwise false
+    */ return function isURLSameOrigin(requestURL) {
+        var parsed = utils.isString(requestURL) ? resolveURL(requestURL) : requestURL;
+        return parsed.protocol === originURL.protocol && parsed.host === originURL.host;
+    };
+})() : // Non standard browser envs (web workers, react-native) lack needed support.
+(function nonStandardBrowserEnv() {
+    return function isURLSameOrigin() {
+        return true;
+    };
+})();
+
+},{"./../utils":"7J9rV"}],"42z1a":[function(require,module,exports) {
+'use strict';
+var utils = require('../utils');
+/**
+ * Config-specific merge-function which creates a new config-object
+ * by merging two configuration objects together.
+ *
+ * @param {Object} config1
+ * @param {Object} config2
+ * @returns {Object} New object resulting from merging config2 to config1
+ */ module.exports = function mergeConfig(config1, config2) {
+    // eslint-disable-next-line no-param-reassign
+    config2 = config2 || {
+    };
+    var config = {
+    };
+    var valueFromConfig2Keys = [
+        'url',
+        'method',
+        'data'
+    ];
+    var mergeDeepPropertiesKeys = [
+        'headers',
+        'auth',
+        'proxy',
+        'params'
+    ];
+    var defaultToConfig2Keys = [
+        'baseURL',
+        'transformRequest',
+        'transformResponse',
+        'paramsSerializer',
+        'timeout',
+        'timeoutMessage',
+        'withCredentials',
+        'adapter',
+        'responseType',
+        'xsrfCookieName',
+        'xsrfHeaderName',
+        'onUploadProgress',
+        'onDownloadProgress',
+        'decompress',
+        'maxContentLength',
+        'maxBodyLength',
+        'maxRedirects',
+        'transport',
+        'httpAgent',
+        'httpsAgent',
+        'cancelToken',
+        'socketPath',
+        'responseEncoding'
+    ];
+    var directMergeKeys = [
+        'validateStatus'
+    ];
+    function getMergedValue(target, source) {
+        if (utils.isPlainObject(target) && utils.isPlainObject(source)) return utils.merge(target, source);
+        else if (utils.isPlainObject(source)) return utils.merge({
+        }, source);
+        else if (utils.isArray(source)) return source.slice();
+        return source;
+    }
+    function mergeDeepProperties(prop) {
+        if (!utils.isUndefined(config2[prop])) config[prop] = getMergedValue(config1[prop], config2[prop]);
+        else if (!utils.isUndefined(config1[prop])) config[prop] = getMergedValue(undefined, config1[prop]);
+    }
+    utils.forEach(valueFromConfig2Keys, function valueFromConfig2(prop) {
+        if (!utils.isUndefined(config2[prop])) config[prop] = getMergedValue(undefined, config2[prop]);
+    });
+    utils.forEach(mergeDeepPropertiesKeys, mergeDeepProperties);
+    utils.forEach(defaultToConfig2Keys, function defaultToConfig2(prop) {
+        if (!utils.isUndefined(config2[prop])) config[prop] = getMergedValue(undefined, config2[prop]);
+        else if (!utils.isUndefined(config1[prop])) config[prop] = getMergedValue(undefined, config1[prop]);
+    });
+    utils.forEach(directMergeKeys, function merge(prop) {
+        if (prop in config2) config[prop] = getMergedValue(config1[prop], config2[prop]);
+        else if (prop in config1) config[prop] = getMergedValue(undefined, config1[prop]);
+    });
+    var axiosKeys = valueFromConfig2Keys.concat(mergeDeepPropertiesKeys).concat(defaultToConfig2Keys).concat(directMergeKeys);
+    var otherKeys = Object.keys(config1).concat(Object.keys(config2)).filter(function filterAxiosKeys(key) {
+        return axiosKeys.indexOf(key) === -1;
+    });
+    utils.forEach(otherKeys, mergeDeepProperties);
+    return config;
+};
+
+},{"../utils":"7J9rV"}],"1Ql7i":[function(require,module,exports) {
+'use strict';
+/**
+ * A `Cancel` is an object that is thrown when an operation is canceled.
+ *
+ * @class
+ * @param {string=} message The message.
+ */ function Cancel(message) {
+    this.message = message;
+}
+Cancel.prototype.toString = function toString() {
+    return 'Cancel' + (this.message ? ': ' + this.message : '');
+};
+Cancel.prototype.__CANCEL__ = true;
+module.exports = Cancel;
+
+},{}],"hHamf":[function(require,module,exports) {
+'use strict';
+var Cancel = require('./Cancel');
+/**
+ * A `CancelToken` is an object that can be used to request cancellation of an operation.
+ *
+ * @class
+ * @param {Function} executor The executor function.
+ */ function CancelToken(executor) {
+    if (typeof executor !== 'function') throw new TypeError('executor must be a function.');
+    var resolvePromise;
+    this.promise = new Promise(function promiseExecutor(resolve) {
+        resolvePromise = resolve;
+    });
+    var token = this;
+    executor(function cancel(message) {
+        if (token.reason) // Cancellation has already been requested
+        return;
+        token.reason = new Cancel(message);
+        resolvePromise(token.reason);
+    });
+}
+/**
+ * Throws a `Cancel` if cancellation has been requested.
+ */ CancelToken.prototype.throwIfRequested = function throwIfRequested() {
+    if (this.reason) throw this.reason;
+};
+/**
+ * Returns an object that contains a new `CancelToken` and a function that, when called,
+ * cancels the `CancelToken`.
+ */ CancelToken.source = function source() {
+    var cancel;
+    var token = new CancelToken(function executor(c) {
+        cancel = c;
+    });
+    return {
+        token: token,
+        cancel: cancel
+    };
+};
+module.exports = CancelToken;
+
+},{"./Cancel":"1Ql7i"}],"9FoXt":[function(require,module,exports) {
+'use strict';
+/**
+ * Syntactic sugar for invoking a function and expanding an array for arguments.
+ *
+ * Common use case would be to use `Function.prototype.apply`.
+ *
+ *  ```js
+ *  function f(x, y, z) {}
+ *  var args = [1, 2, 3];
+ *  f.apply(null, args);
+ *  ```
+ *
+ * With `spread` this example can be re-written.
+ *
+ *  ```js
+ *  spread(function(x, y, z) {})([1, 2, 3]);
+ *  ```
+ *
+ * @param {Function} callback
+ * @returns {Function}
+ */ module.exports = function spread(callback) {
+    return function wrap(arr) {
+        return callback.apply(null, arr);
+    };
+};
+
+},{}],"1bzv8":[function(require,module,exports) {
+'use strict';
+/**
+ * Determines whether the payload is an error thrown by Axios
+ *
+ * @param {*} payload The value to test
+ * @returns {boolean} True if the payload is an error thrown by Axios, otherwise false
+ */ module.exports = function isAxiosError(payload) {
+    return typeof payload === 'object' && payload.isAxiosError === true;
+};
+
+},{}],"32KJG":[function(require,module,exports) {
 var helpers = require("../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27575,266 +27729,979 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-class VerticalNavbar extends _react.Component {
-    constructor(props){
-        super(props);
-    }
-    render() {
-        return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
-            className: "navbar-nav sidebar accordion",
-            id: "accordionSidebar",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-                lineNumber: 10
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("ul", {
-            className: "navbar-nav bg-gradient-primary sidebar sidebar-dark accordion",
-            id: "accordionSidebar",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-                lineNumber: 11
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
-            class: "sidebar-brand d-flex align-items-center justify-content-center",
-            href: "index.html",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-                lineNumber: 12
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            class: "sidebar-brand-icon rotate-n-15",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-                lineNumber: 13
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("i", {
-            class: "fas fa-laugh-wink",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-                lineNumber: 14
-            },
-            __self: this
-        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            class: "sidebar-brand-text mx-3",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-                lineNumber: 16
-            },
-            __self: this
-        }, "Researcher")), /*#__PURE__*/ _reactDefault.default.createElement("hr", {
-            class: "sidebar-divider my-0",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-                lineNumber: 18
-            },
-            __self: this
-        }), /*#__PURE__*/ _reactDefault.default.createElement("li", {
-            class: "nav-item active",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-                lineNumber: 19
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
-            class: "nav-link",
-            href: "index.html",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-                lineNumber: 20
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("i", {
-            class: "fas fa-fw fa-tachometer-alt",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-                lineNumber: 21
-            },
-            __self: this
-        }), /*#__PURE__*/ _reactDefault.default.createElement("span", {
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-                lineNumber: 22
-            },
-            __self: this
-        }, "Dashboard"))), /*#__PURE__*/ _reactDefault.default.createElement("hr", {
-            class: "sidebar-divider",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-                lineNumber: 24
-            },
-            __self: this
-        }), /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            class: "sidebar-heading",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-                lineNumber: 25
-            },
-            __self: this
-        }, "Interface"), /*#__PURE__*/ _reactDefault.default.createElement("li", {
-            class: "nav-item",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-                lineNumber: 28
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
-            class: "nav-link collapsed",
-            href: "#",
-            "data-toggle": "collapse",
-            "data-target": "#collapseTwo",
-            "aria-expanded": "true",
-            "aria-controls": "collapseTwo",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-                lineNumber: 29
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("i", {
-            class: "fas fa-fw fa-cog",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-                lineNumber: 31
-            },
-            __self: this
-        }), /*#__PURE__*/ _reactDefault.default.createElement("span", {
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-                lineNumber: 32
-            },
-            __self: this
-        }, "View Papers")), /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            id: "collapseTwo",
-            class: "collapse",
-            "aria-labelledby": "headingTwo",
-            "data-parent": "#accordionSidebar",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-                lineNumber: 34
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            class: "bg-white py-2 collapse-inner rounded",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-                lineNumber: 35
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("h6", {
-            class: "collapse-header",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-                lineNumber: 36
-            },
-            __self: this
-        }, "Research papers:"), /*#__PURE__*/ _reactDefault.default.createElement("a", {
-            class: "collapse-item",
-            href: "/approve/:email",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-                lineNumber: 37
-            },
-            __self: this
-        }, "Approved"), /*#__PURE__*/ _reactDefault.default.createElement("a", {
-            class: "collapse-item",
-            href: "/login",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-                lineNumber: 38
-            },
-            __self: this
-        }, "Declined")))), /*#__PURE__*/ _reactDefault.default.createElement("li", {
-            class: "nav-item",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-                lineNumber: 42
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
-            class: "nav-link collapsed",
-            href: "#",
-            "data-toggle": "collapse",
-            "data-target": "#collapseUtilities",
-            "aria-expanded": "true",
-            "aria-controls": "collapseUtilities",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-                lineNumber: 43
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("i", {
-            class: "fas fa-fw fa-cog",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-                lineNumber: 45
-            },
-            __self: this
-        }), /*#__PURE__*/ _reactDefault.default.createElement("span", {
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-                lineNumber: 46
-            },
-            __self: this
-        }, "Submit Research papers")), /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            id: "collapseUtilities",
-            class: "collapse",
-            "aria-labelledby": "headingUtilities",
-            "data-parent": "#accordionSidebar",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-                lineNumber: 48
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            class: "bg-white py-2 collapse-inner rounded",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-                lineNumber: 50
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("h6", {
-            class: "collapse-header",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-                lineNumber: 51
-            },
-            __self: this
-        }, "Submit:"), /*#__PURE__*/ _reactDefault.default.createElement("a", {
-            class: "collapse-item",
-            href: "/create-researcher",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-                lineNumber: 52
-            },
-            __self: this
-        }, "Add paper")))), /*#__PURE__*/ _reactDefault.default.createElement("hr", {
-            class: "sidebar-divider",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-                lineNumber: 57
-            },
-            __self: this
-        }), /*#__PURE__*/ _reactDefault.default.createElement("hr", {
-            class: "sidebar-divider d-none d-md-block",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-                lineNumber: 61
-            },
-            __self: this
-        }))));
-    }
-}
+var _reactCookie = require("react-cookie");
+var _s = $RefreshSig$();
+const VerticalNavbar = ()=>{
+    _s();
+    const [name, setName] = _react.useState('');
+    const [pwd, setPwd] = _react.useState('');
+    const [cookies, setCookie] = _reactCookie.useCookies([
+        'user'
+    ]);
+    const handle = ()=>{
+        setCookie('Name', name, {
+            path: '/'
+        });
+        setCookie('Password', pwd, {
+            path: '/'
+        });
+    };
+    return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
+        className: "navbar-nav sidebar accordion",
+        id: "accordionSidebar",
+        __source: {
+            fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
+            lineNumber: 18
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("ul", {
+        className: "navbar-nav bg-gradient-primary sidebar sidebar-dark accordion",
+        id: "accordionSidebar",
+        __source: {
+            fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
+            lineNumber: 20
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
+        class: "sidebar-brand d-flex align-items-center justify-content-center",
+        href: "index.html",
+        __source: {
+            fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
+            lineNumber: 21
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        class: "sidebar-brand-icon rotate-n-15",
+        __source: {
+            fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
+            lineNumber: 22
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("i", {
+        class: "fas fa-laugh-wink",
+        __source: {
+            fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
+            lineNumber: 23
+        },
+        __self: undefined
+    })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        class: "sidebar-brand-text mx-3",
+        __source: {
+            fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
+            lineNumber: 25
+        },
+        __self: undefined
+    }, "Researcher "), /*#__PURE__*/ _reactDefault.default.createElement("br", {
+        __source: {
+            fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
+            lineNumber: 25
+        },
+        __self: undefined
+    })), /*#__PURE__*/ _reactDefault.default.createElement("hr", {
+        class: "sidebar-divider my-0",
+        __source: {
+            fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
+            lineNumber: 30
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement("li", {
+        class: "nav-item active",
+        __source: {
+            fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
+            lineNumber: 31
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
+        class: "nav-link",
+        href: "index.html",
+        __source: {
+            fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
+            lineNumber: 32
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("i", {
+        class: "fas fa-fw fa-tachometer-alt",
+        __source: {
+            fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
+            lineNumber: 33
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement("span", {
+        __source: {
+            fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
+            lineNumber: 34
+        },
+        __self: undefined
+    }, "DashBoard"))), /*#__PURE__*/ _reactDefault.default.createElement("hr", {
+        class: "sidebar-divider my-0",
+        __source: {
+            fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
+            lineNumber: 38
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement("li", {
+        class: "nav-item active",
+        __source: {
+            fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
+            lineNumber: 39
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
+        class: "nav-link",
+        href: "index.html",
+        __source: {
+            fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
+            lineNumber: 40
+        },
+        __self: undefined
+    }, cookies.Name)), /*#__PURE__*/ _reactDefault.default.createElement("hr", {
+        class: "sidebar-divider",
+        __source: {
+            fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
+            lineNumber: 45
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        class: "sidebar-heading",
+        __source: {
+            fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
+            lineNumber: 46
+        },
+        __self: undefined
+    }, "Interface"), /*#__PURE__*/ _reactDefault.default.createElement("li", {
+        class: "nav-item",
+        __source: {
+            fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
+            lineNumber: 50
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
+        class: "nav-link collapsed",
+        href: "/create-researcher",
+        __source: {
+            fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
+            lineNumber: 52
+        },
+        __self: undefined
+    }, "Submit Research Papers"), /*#__PURE__*/ _reactDefault.default.createElement("a", {
+        class: "nav-link collapsed",
+        href: "/approve/:email",
+        __source: {
+            fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
+            lineNumber: 53
+        },
+        __self: undefined
+    }, "View approved papers"), /*#__PURE__*/ _reactDefault.default.createElement("a", {
+        class: "nav-link collapsed",
+        href: "/notapprove/:email",
+        __source: {
+            fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
+            lineNumber: 54
+        },
+        __self: undefined
+    }, "View not approved papers")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
+        class: "nav-item",
+        __source: {
+            fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
+            lineNumber: 58
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        __source: {
+            fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
+            lineNumber: 60
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
+        class: "nav-link collapsed",
+        href: "/Login",
+        __source: {
+            fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
+            lineNumber: 61
+        },
+        __self: undefined
+    }, "Logout"))))));
+};
+_s(VerticalNavbar, "gEukdvsI2PQrL0Ou8zZDz7QQBxA=", false, function() {
+    return [_reactCookie.useCookies];
+});
+_c = VerticalNavbar;
 exports.default = VerticalNavbar;
+var _c;
+$RefreshReg$(_c, "VerticalNavbar");
 
   helpers.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"1aVv2":[function(require,module,exports) {
+},{"react":"3b2NM","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","react-cookie":"2PrC5"}],"2PrC5":[function(require,module,exports) {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+Object.defineProperty(exports, "Cookies", {
+    enumerable: true,
+    get: function get() {
+        return _Cookies["default"];
+    }
+});
+Object.defineProperty(exports, "CookiesProvider", {
+    enumerable: true,
+    get: function get() {
+        return _CookiesProvider["default"];
+    }
+});
+Object.defineProperty(exports, "withCookies", {
+    enumerable: true,
+    get: function get() {
+        return _withCookies["default"];
+    }
+});
+Object.defineProperty(exports, "useCookies", {
+    enumerable: true,
+    get: function get() {
+        return _useCookies["default"];
+    }
+});
+var _Cookies = _interopRequireDefault(require("./Cookies"));
+var _CookiesProvider = _interopRequireDefault(require("./CookiesProvider"));
+var _withCookies = _interopRequireDefault(require("./withCookies"));
+var _useCookies = _interopRequireDefault(require("./useCookies"));
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        "default": obj
+    };
+}
+
+},{"./Cookies":"2eXs3","./CookiesProvider":"DErj6","./withCookies":"6IpKq","./useCookies":"2odV0"}],"2eXs3":[function(require,module,exports) {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports["default"] = void 0;
+var _universalCookie = _interopRequireDefault(require("universal-cookie"));
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        "default": obj
+    };
+}
+var _default = _universalCookie["default"];
+exports["default"] = _default;
+module.exports = exports.default;
+
+},{"universal-cookie":"1Bxlv"}],"1Bxlv":[function(require,module,exports) {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports["default"] = void 0;
+var _Cookies = _interopRequireDefault(require("./Cookies"));
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        "default": obj
+    };
+}
+var _default = _Cookies["default"];
+exports["default"] = _default;
+module.exports = exports.default;
+
+},{"./Cookies":"2ZwUZ"}],"2ZwUZ":[function(require,module,exports) {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports["default"] = void 0;
+var cookie = _interopRequireWildcard(require("cookie"));
+var _utils = require("./utils");
+function _getRequireWildcardCache() {
+    if (typeof WeakMap !== "function") return null;
+    var cache = new WeakMap();
+    _getRequireWildcardCache = function _getRequireWildcardCache1() {
+        return cache;
+    };
+    return cache;
+}
+function _interopRequireWildcard(obj) {
+    if (obj && obj.__esModule) return obj;
+    if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") return {
+        "default": obj
+    };
+    var cache = _getRequireWildcardCache();
+    if (cache && cache.has(obj)) return cache.get(obj);
+    var newObj = {
+    };
+    var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
+    for(var key in obj)if (Object.prototype.hasOwnProperty.call(obj, key)) {
+        var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
+        if (desc && (desc.get || desc.set)) Object.defineProperty(newObj, key, desc);
+        else newObj[key] = obj[key];
+    }
+    newObj["default"] = obj;
+    if (cache) cache.set(obj, newObj);
+    return newObj;
+}
+function _typeof(obj) {
+    if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") _typeof = function _typeof1(obj1) {
+        return typeof obj1;
+    };
+    else _typeof = function _typeof2(obj1) {
+        return obj1 && typeof Symbol === "function" && obj1.constructor === Symbol && obj1 !== Symbol.prototype ? "symbol" : typeof obj1;
+    };
+    return _typeof(obj);
+}
+var __assign = function() {
+    __assign = Object.assign || function(t) {
+        for(var s, i = 1, n = arguments.length; i < n; i++){
+            s = arguments[i];
+            for(var p in s)if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var Cookies = /** @class */ function() {
+    function Cookies1(cookies, options) {
+        var _this = this;
+        this.changeListeners = [];
+        this.HAS_DOCUMENT_COOKIE = false;
+        this.cookies = _utils.parseCookies(cookies, options);
+        new Promise(function() {
+            _this.HAS_DOCUMENT_COOKIE = _utils.hasDocumentCookie();
+        })["catch"](function() {
+        });
+    }
+    Cookies1.prototype._updateBrowserValues = function(parseOptions) {
+        if (!this.HAS_DOCUMENT_COOKIE) return;
+        this.cookies = cookie.parse(document.cookie, parseOptions);
+    };
+    Cookies1.prototype._emitChange = function(params) {
+        for(var i = 0; i < this.changeListeners.length; ++i)this.changeListeners[i](params);
+    };
+    Cookies1.prototype.get = function(name, options, parseOptions) {
+        if (options === void 0) options = {
+        };
+        this._updateBrowserValues(parseOptions);
+        return _utils.readCookie(this.cookies[name], options);
+    };
+    Cookies1.prototype.getAll = function(options, parseOptions) {
+        if (options === void 0) options = {
+        };
+        this._updateBrowserValues(parseOptions);
+        var result = {
+        };
+        for(var name_1 in this.cookies)result[name_1] = _utils.readCookie(this.cookies[name_1], options);
+        return result;
+    };
+    Cookies1.prototype.set = function(name, value, options) {
+        var _a;
+        if (_typeof(value) === 'object') value = JSON.stringify(value);
+        this.cookies = __assign(__assign({
+        }, this.cookies), (_a = {
+        }, _a[name] = value, _a));
+        if (this.HAS_DOCUMENT_COOKIE) document.cookie = cookie.serialize(name, value, options);
+        this._emitChange({
+            name: name,
+            value: value,
+            options: options
+        });
+    };
+    Cookies1.prototype.remove = function(name, options) {
+        var finalOptions = options = __assign(__assign({
+        }, options), {
+            expires: new Date(1970, 1, 1, 0, 0, 1),
+            maxAge: 0
+        });
+        this.cookies = __assign({
+        }, this.cookies);
+        delete this.cookies[name];
+        if (this.HAS_DOCUMENT_COOKIE) document.cookie = cookie.serialize(name, '', finalOptions);
+        this._emitChange({
+            name: name,
+            value: undefined,
+            options: options
+        });
+    };
+    Cookies1.prototype.addChangeListener = function(callback) {
+        this.changeListeners.push(callback);
+    };
+    Cookies1.prototype.removeChangeListener = function(callback) {
+        var idx = this.changeListeners.indexOf(callback);
+        if (idx >= 0) this.changeListeners.splice(idx, 1);
+    };
+    return Cookies1;
+}();
+var _default = Cookies;
+exports["default"] = _default;
+module.exports = exports.default;
+
+},{"cookie":"1OWWk","./utils":"6GPkb"}],"1OWWk":[function(require,module,exports) {
+/*!
+ * cookie
+ * Copyright(c) 2012-2014 Roman Shtylman
+ * Copyright(c) 2015 Douglas Christopher Wilson
+ * MIT Licensed
+ */ 'use strict';
+/**
+ * Module exports.
+ * @public
+ */ exports.parse = parse;
+exports.serialize = serialize;
+/**
+ * Module variables.
+ * @private
+ */ var decode = decodeURIComponent;
+var encode = encodeURIComponent;
+var pairSplitRegExp = /; */;
+/**
+ * RegExp to match field-content in RFC 7230 sec 3.2
+ *
+ * field-content = field-vchar [ 1*( SP / HTAB ) field-vchar ]
+ * field-vchar   = VCHAR / obs-text
+ * obs-text      = %x80-FF
+ */ var fieldContentRegExp = /^[\u0009\u0020-\u007e\u0080-\u00ff]+$/;
+/**
+ * Parse a cookie header.
+ *
+ * Parse the given cookie header string into an object
+ * The object has the various cookies as keys(names) => values
+ *
+ * @param {string} str
+ * @param {object} [options]
+ * @return {object}
+ * @public
+ */ function parse(str, options) {
+    if (typeof str !== 'string') throw new TypeError('argument str must be a string');
+    var obj = {
+    };
+    var opt = options || {
+    };
+    var pairs = str.split(pairSplitRegExp);
+    var dec = opt.decode || decode;
+    for(var i = 0; i < pairs.length; i++){
+        var pair = pairs[i];
+        var eq_idx = pair.indexOf('=');
+        // skip things that don't look like key=value
+        if (eq_idx < 0) continue;
+        var key = pair.substr(0, eq_idx).trim();
+        var val = pair.substr(++eq_idx, pair.length).trim();
+        // quoted values
+        if ('"' == val[0]) val = val.slice(1, -1);
+        // only assign once
+        if (undefined == obj[key]) obj[key] = tryDecode(val, dec);
+    }
+    return obj;
+}
+/**
+ * Serialize data into a cookie header.
+ *
+ * Serialize the a name value pair into a cookie string suitable for
+ * http headers. An optional options object specified cookie parameters.
+ *
+ * serialize('foo', 'bar', { httpOnly: true })
+ *   => "foo=bar; httpOnly"
+ *
+ * @param {string} name
+ * @param {string} val
+ * @param {object} [options]
+ * @return {string}
+ * @public
+ */ function serialize(name, val, options) {
+    var opt = options || {
+    };
+    var enc = opt.encode || encode;
+    if (typeof enc !== 'function') throw new TypeError('option encode is invalid');
+    if (!fieldContentRegExp.test(name)) throw new TypeError('argument name is invalid');
+    var value = enc(val);
+    if (value && !fieldContentRegExp.test(value)) throw new TypeError('argument val is invalid');
+    var str = name + '=' + value;
+    if (null != opt.maxAge) {
+        var maxAge = opt.maxAge - 0;
+        if (isNaN(maxAge) || !isFinite(maxAge)) throw new TypeError('option maxAge is invalid');
+        str += '; Max-Age=' + Math.floor(maxAge);
+    }
+    if (opt.domain) {
+        if (!fieldContentRegExp.test(opt.domain)) throw new TypeError('option domain is invalid');
+        str += '; Domain=' + opt.domain;
+    }
+    if (opt.path) {
+        if (!fieldContentRegExp.test(opt.path)) throw new TypeError('option path is invalid');
+        str += '; Path=' + opt.path;
+    }
+    if (opt.expires) {
+        if (typeof opt.expires.toUTCString !== 'function') throw new TypeError('option expires is invalid');
+        str += '; Expires=' + opt.expires.toUTCString();
+    }
+    if (opt.httpOnly) str += '; HttpOnly';
+    if (opt.secure) str += '; Secure';
+    if (opt.sameSite) {
+        var sameSite = typeof opt.sameSite === 'string' ? opt.sameSite.toLowerCase() : opt.sameSite;
+        switch(sameSite){
+            case true:
+                str += '; SameSite=Strict';
+                break;
+            case 'lax':
+                str += '; SameSite=Lax';
+                break;
+            case 'strict':
+                str += '; SameSite=Strict';
+                break;
+            case 'none':
+                str += '; SameSite=None';
+                break;
+            default:
+                throw new TypeError('option sameSite is invalid');
+        }
+    }
+    return str;
+}
+/**
+ * Try decoding a string using a decoding function.
+ *
+ * @param {string} str
+ * @param {function} decode
+ * @private
+ */ function tryDecode(str, decode1) {
+    try {
+        return decode1(str);
+    } catch (e) {
+        return str;
+    }
+}
+
+},{}],"6GPkb":[function(require,module,exports) {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.hasDocumentCookie = hasDocumentCookie;
+exports.cleanCookies = cleanCookies;
+exports.parseCookies = parseCookies;
+exports.isParsingCookie = isParsingCookie;
+exports.readCookie = readCookie;
+var cookie = _interopRequireWildcard(require("cookie"));
+function _getRequireWildcardCache() {
+    if (typeof WeakMap !== "function") return null;
+    var cache = new WeakMap();
+    _getRequireWildcardCache = function _getRequireWildcardCache1() {
+        return cache;
+    };
+    return cache;
+}
+function _interopRequireWildcard(obj) {
+    if (obj && obj.__esModule) return obj;
+    if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") return {
+        "default": obj
+    };
+    var cache = _getRequireWildcardCache();
+    if (cache && cache.has(obj)) return cache.get(obj);
+    var newObj = {
+    };
+    var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
+    for(var key in obj)if (Object.prototype.hasOwnProperty.call(obj, key)) {
+        var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
+        if (desc && (desc.get || desc.set)) Object.defineProperty(newObj, key, desc);
+        else newObj[key] = obj[key];
+    }
+    newObj["default"] = obj;
+    if (cache) cache.set(obj, newObj);
+    return newObj;
+}
+function _typeof(obj) {
+    if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") _typeof = function _typeof1(obj1) {
+        return typeof obj1;
+    };
+    else _typeof = function _typeof2(obj1) {
+        return obj1 && typeof Symbol === "function" && obj1.constructor === Symbol && obj1 !== Symbol.prototype ? "symbol" : typeof obj1;
+    };
+    return _typeof(obj);
+}
+function hasDocumentCookie() {
+    // Can we get/set cookies on document.cookie?
+    return (typeof document === "undefined" ? "undefined" : _typeof(document)) === 'object' && typeof document.cookie === 'string';
+}
+function cleanCookies() {
+    document.cookie.split(';').forEach(function(c) {
+        document.cookie = c.replace(/^ +/, '').replace(/=.*/, '=;expires=' + new Date().toUTCString() + ';path=/');
+    });
+}
+function parseCookies(cookies, options) {
+    if (typeof cookies === 'string') return cookie.parse(cookies, options);
+    else if (_typeof(cookies) === 'object' && cookies !== null) return cookies;
+    else return {
+    };
+}
+function isParsingCookie(value, doNotParse) {
+    if (typeof doNotParse === 'undefined') // We guess if the cookie start with { or [, it has been serialized
+    doNotParse = !value || value[0] !== '{' && value[0] !== '[' && value[0] !== '"';
+    return !doNotParse;
+}
+function readCookie(value, options) {
+    if (options === void 0) options = {
+    };
+    var cleanValue = cleanupCookieValue(value);
+    if (isParsingCookie(cleanValue, options.doNotParse)) try {
+        return JSON.parse(cleanValue);
+    } catch (e) {
+    }
+     // Ignore clean value if we failed the deserialization
+    // It is not relevant anymore to trim those values
+    return value;
+}
+function cleanupCookieValue(value) {
+    // express prepend j: before serializing a cookie
+    if (value && value[0] === 'j' && value[1] === ':') return value.substr(2);
+    return value;
+}
+
+},{"cookie":"1OWWk"}],"DErj6":[function(require,module,exports) {
+"use strict";
+function _typeof(obj) {
+    if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") _typeof = function _typeof1(obj1) {
+        return typeof obj1;
+    };
+    else _typeof = function _typeof2(obj1) {
+        return obj1 && typeof Symbol === "function" && obj1.constructor === Symbol && obj1 !== Symbol.prototype ? "symbol" : typeof obj1;
+    };
+    return _typeof(obj);
+}
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports["default"] = void 0;
+var React = _interopRequireWildcard(require("react"));
+var _universalCookie = _interopRequireDefault(require("universal-cookie"));
+var _CookiesContext = require("./CookiesContext");
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        "default": obj
+    };
+}
+function _getRequireWildcardCache() {
+    if (typeof WeakMap !== "function") return null;
+    var cache = new WeakMap();
+    _getRequireWildcardCache = function _getRequireWildcardCache1() {
+        return cache;
+    };
+    return cache;
+}
+function _interopRequireWildcard(obj) {
+    if (obj && obj.__esModule) return obj;
+    if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") return {
+        "default": obj
+    };
+    var cache = _getRequireWildcardCache();
+    if (cache && cache.has(obj)) return cache.get(obj);
+    var newObj = {
+    };
+    var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
+    for(var key in obj)if (Object.prototype.hasOwnProperty.call(obj, key)) {
+        var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
+        if (desc && (desc.get || desc.set)) Object.defineProperty(newObj, key, desc);
+        else newObj[key] = obj[key];
+    }
+    newObj["default"] = obj;
+    if (cache) cache.set(obj, newObj);
+    return newObj;
+}
+var __extends = function() {
+    var _extendStatics = function extendStatics(d, b) {
+        _extendStatics = Object.setPrototypeOf || ({
+            __proto__: []
+        }) instanceof Array && function(d1, b1) {
+            d1.__proto__ = b1;
+        } || function(d1, b1) {
+            for(var p in b1)if (b1.hasOwnProperty(p)) d1[p] = b1[p];
+        };
+        return _extendStatics(d, b);
+    };
+    return function(d, b) {
+        _extendStatics(d, b);
+        function __() {
+            this.constructor = d;
+        }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+}();
+var CookiesProvider1 = /** @class */ function(_super) {
+    __extends(CookiesProvider2, _super);
+    function CookiesProvider2(props) {
+        var _this = _super.call(this, props) || this;
+        if (props.cookies) _this.cookies = props.cookies;
+        else _this.cookies = new _universalCookie["default"]();
+        return _this;
+    }
+    CookiesProvider2.prototype.render = function() {
+        return React.createElement(_CookiesContext.Provider, {
+            value: this.cookies
+        }, this.props.children);
+    };
+    return CookiesProvider2;
+}(React.Component);
+var _default = CookiesProvider1;
+exports["default"] = _default;
+module.exports = exports.default;
+
+},{"react":"3b2NM","universal-cookie":"1Bxlv","./CookiesContext":"4sjOu"}],"4sjOu":[function(require,module,exports) {
+"use strict";
+function _typeof(obj) {
+    if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") _typeof = function _typeof1(obj1) {
+        return typeof obj1;
+    };
+    else _typeof = function _typeof2(obj1) {
+        return obj1 && typeof Symbol === "function" && obj1.constructor === Symbol && obj1 !== Symbol.prototype ? "symbol" : typeof obj1;
+    };
+    return _typeof(obj);
+}
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports["default"] = exports.Consumer = exports.Provider = void 0;
+var React = _interopRequireWildcard(require("react"));
+var _Cookies = _interopRequireDefault(require("./Cookies"));
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        "default": obj
+    };
+}
+function _getRequireWildcardCache() {
+    if (typeof WeakMap !== "function") return null;
+    var cache = new WeakMap();
+    _getRequireWildcardCache = function _getRequireWildcardCache1() {
+        return cache;
+    };
+    return cache;
+}
+function _interopRequireWildcard(obj) {
+    if (obj && obj.__esModule) return obj;
+    if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") return {
+        "default": obj
+    };
+    var cache = _getRequireWildcardCache();
+    if (cache && cache.has(obj)) return cache.get(obj);
+    var newObj = {
+    };
+    var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
+    for(var key in obj)if (Object.prototype.hasOwnProperty.call(obj, key)) {
+        var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
+        if (desc && (desc.get || desc.set)) Object.defineProperty(newObj, key, desc);
+        else newObj[key] = obj[key];
+    }
+    newObj["default"] = obj;
+    if (cache) cache.set(obj, newObj);
+    return newObj;
+}
+var CookiesContext = React.createContext(new _Cookies["default"]());
+var Provider = CookiesContext.Provider, Consumer = CookiesContext.Consumer;
+exports.Consumer = Consumer;
+exports.Provider = Provider;
+var _default = CookiesContext;
+exports["default"] = _default;
+
+},{"react":"3b2NM","./Cookies":"2eXs3"}],"6IpKq":[function(require,module,exports) {
+"use strict";
+function _typeof(obj) {
+    if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") _typeof = function _typeof1(obj1) {
+        return typeof obj1;
+    };
+    else _typeof = function _typeof2(obj1) {
+        return obj1 && typeof Symbol === "function" && obj1.constructor === Symbol && obj1 !== Symbol.prototype ? "symbol" : typeof obj1;
+    };
+    return _typeof(obj);
+}
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports["default"] = withCookies;
+var React = _interopRequireWildcard(require("react"));
+var _CookiesContext = require("./CookiesContext");
+function _getRequireWildcardCache() {
+    if (typeof WeakMap !== "function") return null;
+    var cache = new WeakMap();
+    _getRequireWildcardCache = function _getRequireWildcardCache1() {
+        return cache;
+    };
+    return cache;
+}
+function _interopRequireWildcard(obj) {
+    if (obj && obj.__esModule) return obj;
+    if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") return {
+        "default": obj
+    };
+    var cache = _getRequireWildcardCache();
+    if (cache && cache.has(obj)) return cache.get(obj);
+    var newObj = {
+    };
+    var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
+    for(var key in obj)if (Object.prototype.hasOwnProperty.call(obj, key)) {
+        var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
+        if (desc && (desc.get || desc.set)) Object.defineProperty(newObj, key, desc);
+        else newObj[key] = obj[key];
+    }
+    newObj["default"] = obj;
+    if (cache) cache.set(obj, newObj);
+    return newObj;
+}
+var __extends = function() {
+    var _extendStatics = function extendStatics(d, b) {
+        _extendStatics = Object.setPrototypeOf || ({
+            __proto__: []
+        }) instanceof Array && function(d1, b1) {
+            d1.__proto__ = b1;
+        } || function(d1, b1) {
+            for(var p in b1)if (b1.hasOwnProperty(p)) d1[p] = b1[p];
+        };
+        return _extendStatics(d, b);
+    };
+    return function(d, b) {
+        _extendStatics(d, b);
+        function __() {
+            this.constructor = d;
+        }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+}();
+var __assign = function() {
+    __assign = Object.assign || function(t) {
+        for(var s, i = 1, n = arguments.length; i < n; i++){
+            s = arguments[i];
+            for(var p in s)if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __rest = function(s, e) {
+    var t = {
+    };
+    for(var p in s)if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function") for(var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++)if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
+    return t;
+};
+// Only way to make function modules work with both TypeScript and Rollup
+var hoistStatics = require('hoist-non-react-statics');
+function withCookies(WrappedComponent) {
+    // @ts-ignore
+    var name = WrappedComponent.displayName || WrappedComponent.name;
+    var CookieWrapper1 = /** @class */ function(_super) {
+        __extends(CookieWrapper2, _super);
+        function CookieWrapper2() {
+            var _this = _super !== null && _super.apply(this, arguments) || this;
+            _this.onChange = function() {
+                // Make sure to update children with new values
+                _this.forceUpdate();
+            };
+            return _this;
+        }
+        CookieWrapper2.prototype.listen = function() {
+            this.props.cookies.addChangeListener(this.onChange);
+        };
+        CookieWrapper2.prototype.unlisten = function(cookies) {
+            (cookies || this.props.cookies).removeChangeListener(this.onChange);
+        };
+        CookieWrapper2.prototype.componentDidMount = function() {
+            this.listen();
+        };
+        CookieWrapper2.prototype.componentDidUpdate = function(prevProps) {
+            if (prevProps.cookies !== this.props.cookies) {
+                this.unlisten(prevProps.cookies);
+                this.listen();
+            }
+        };
+        CookieWrapper2.prototype.componentWillUnmount = function() {
+            this.unlisten();
+        };
+        CookieWrapper2.prototype.render = function() {
+            var _a = this.props, forwardedRef = _a.forwardedRef, cookies = _a.cookies, restProps = __rest(_a, [
+                "forwardedRef",
+                "cookies"
+            ]);
+            var allCookies = cookies.getAll();
+            return React.createElement(WrappedComponent, __assign({
+            }, restProps, {
+                ref: forwardedRef,
+                cookies: cookies,
+                allCookies: allCookies
+            }));
+        };
+        CookieWrapper2.displayName = "withCookies(" + name + ")";
+        CookieWrapper2.WrappedComponent = WrappedComponent;
+        return CookieWrapper2;
+    }(React.Component);
+    var ForwardedComponent = React.forwardRef(function(props, ref) {
+        return React.createElement(_CookiesContext.Consumer, null, function(cookies) {
+            return React.createElement(CookieWrapper1, __assign({
+                cookies: cookies
+            }, props, {
+                forwardedRef: ref
+            }));
+        });
+    });
+    ForwardedComponent.displayName = CookieWrapper1.displayName;
+    ForwardedComponent.WrappedComponent = CookieWrapper1.WrappedComponent;
+    return hoistStatics(ForwardedComponent, WrappedComponent);
+}
+module.exports = exports.default;
+
+},{"react":"3b2NM","./CookiesContext":"4sjOu","hoist-non-react-statics":"3nUHV"}],"2odV0":[function(require,module,exports) {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports["default"] = useCookies;
+var _react = require("react");
+var _CookiesContext = _interopRequireDefault(require("./CookiesContext"));
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        "default": obj
+    };
+}
+function useCookies(dependencies) {
+    var cookies = _react.useContext(_CookiesContext["default"]);
+    if (!cookies) throw new Error('Missing <CookiesProvider>');
+    var initialCookies = cookies.getAll();
+    var _a = _react.useState(initialCookies), allCookies = _a[0], setCookies = _a[1];
+    var previousCookiesRef = _react.useRef(allCookies);
+    _react.useEffect(function() {
+        function onChange() {
+            var newCookies = cookies.getAll();
+            if (shouldUpdate(dependencies || null, newCookies, previousCookiesRef.current)) setCookies(newCookies);
+            previousCookiesRef.current = newCookies;
+        }
+        cookies.addChangeListener(onChange);
+        return function() {
+            cookies.removeChangeListener(onChange);
+        };
+    }, [
+        cookies
+    ]);
+    var setCookie = _react.useMemo(function() {
+        return cookies.set.bind(cookies);
+    }, [
+        cookies
+    ]);
+    var removeCookie = _react.useMemo(function() {
+        return cookies.remove.bind(cookies);
+    }, [
+        cookies
+    ]);
+    return [
+        allCookies,
+        setCookie,
+        removeCookie
+    ];
+}
+function shouldUpdate(dependencies, newCookies, oldCookies) {
+    if (!dependencies) return true;
+    for(var _i = 0, dependencies_1 = dependencies; _i < dependencies_1.length; _i++){
+        var dependency = dependencies_1[_i];
+        if (newCookies[dependency] !== oldCookies[dependency]) return true;
+    }
+    return false;
+}
+module.exports = exports.default;
+
+},{"react":"3b2NM","./CookiesContext":"4sjOu"}],"1aVv2":[function(require,module,exports) {
 var helpers = require("../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27845,93 +28712,103 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-class Login extends _react.Component {
-    constructor(props){
-        super(props);
-        this.onChange = this.onChange.bind(this);
-        this.state = {
-            email: ""
-        };
-    }
-    navigate(e, email) {
-        window.location = `/approve/${email}`;
-    }
-    onChange(e) {
-        this.setState({
-            [e.target.name]: e.target.value
+var _reactCookie = require("react-cookie");
+var _s = $RefreshSig$();
+const Login = ()=>{
+    _s();
+    const [name, setName] = _react.useState('');
+    const [pwd, setPwd] = _react.useState('');
+    const [cookies, setCookie] = _reactCookie.useCookies([
+        'user'
+    ]);
+    const navigate = (e, email)=>{
+        window.location = `/approve/${name}`;
+    };
+    const handle = ()=>{
+        setCookie('Name', name, {
+            path: '/'
         });
-    }
-    render() {
-        return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
-            className: "container",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\login.js",
-                lineNumber: 23
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\login.js",
-                lineNumber: 24
-            },
-            __self: this
-        }, "nive"), /*#__PURE__*/ _reactDefault.default.createElement("h3", {
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\login.js",
-                lineNumber: 25
-            },
-            __self: this
-        }, "dharu"), /*#__PURE__*/ _reactDefault.default.createElement("form", {
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\login.js",
-                lineNumber: 26
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\login.js",
-                lineNumber: 27
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
-            for: "inputEmail4",
-            class: "form-label",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\login.js",
-                lineNumber: 28
-            },
-            __self: this
-        }, "Useremail"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
-            type: "text",
-            class: "form-control",
-            id: "author",
-            name: "email",
-            value: this.state.email,
-            onChange: this.onChange,
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\login.js",
-                lineNumber: 29
-            },
-            __self: this
-        }))), /*#__PURE__*/ _reactDefault.default.createElement("button", {
-            onClick: (e)=>this.navigate(e, this.state.email)
-            ,
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\login.js",
-                lineNumber: 34
-            },
-            __self: this
-        }, "Login")));
-    }
-}
+        setCookie('Password', pwd, {
+            path: '/'
+        });
+    };
+    return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
+        className: "App",
+        __source: {
+            fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\login.js",
+            lineNumber: 20
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+        __source: {
+            fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\login.js",
+            lineNumber: 21
+        },
+        __self: undefined
+    }, "Name of the user:"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+        placeholder: "name",
+        value: name,
+        onChange: (e)=>setName(e.target.value)
+        ,
+        __source: {
+            fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\login.js",
+            lineNumber: 22
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+        __source: {
+            fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\login.js",
+            lineNumber: 27
+        },
+        __self: undefined
+    }, "Password of the user:"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+        type: "password",
+        placeholder: "name",
+        value: pwd,
+        onChange: (e)=>setPwd(e.target.value)
+        ,
+        __source: {
+            fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\login.js",
+            lineNumber: 28
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        __source: {
+            fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\login.js",
+            lineNumber: 34
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("button", {
+        onClick: handle,
+        __source: {
+            fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\login.js",
+            lineNumber: 35
+        },
+        __self: undefined
+    }, "Set Cookie"), /*#__PURE__*/ _reactDefault.default.createElement("button", {
+        onClick: (e)=>navigate(e, name)
+        ,
+        __source: {
+            fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\login.js",
+            lineNumber: 36
+        },
+        __self: undefined
+    }, "Login"))));
+};
+_s(Login, "gEukdvsI2PQrL0Ou8zZDz7QQBxA=", false, function() {
+    return [_reactCookie.useCookies];
+});
+_c = Login;
 exports.default = Login;
+var _c;
+$RefreshReg$(_c, "Login");
 
   helpers.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"6C06a":[function(require,module,exports) {
+},{"react":"3b2NM","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","react-cookie":"2PrC5"}],"6C06a":[function(require,module,exports) {
 var helpers = require("../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27944,12 +28821,18 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
+var _reactCookie = require("react-cookie");
 class approved extends _react.Component {
     constructor(props){
         super(props);
         this.state = {
+            name: '',
+            pwd: '',
             approvedPapers: []
         };
+        this.useCookies = [
+            'user'
+        ];
     }
     navigateSubject(e, paperid) {
         window.location = `/payment/${paperid}`;
@@ -27968,93 +28851,44 @@ class approved extends _react.Component {
         return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\approved.js",
-                lineNumber: 30
+                lineNumber: 43
             },
             __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("br", {
+        }, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\approved.js",
-                lineNumber: 30
+                lineNumber: 45
             },
             __self: this
-        }), /*#__PURE__*/ _reactDefault.default.createElement("h2", {
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\approved.js",
-                lineNumber: 31
-            },
-            __self: this
-        }, "Approved research papers"), /*#__PURE__*/ _reactDefault.default.createElement("hr", {
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\approved.js",
-                lineNumber: 31
-            },
-            __self: this
-        }), this.state.approvedPapers.length > 0 && this.state.approvedPapers.map((item, index)=>/*#__PURE__*/ _reactDefault.default.createElement("div", {
+        }, "Approved research papers"), _reactCookie.Cookies.Name, this.state.approvedPapers.length > 0 && this.state.approvedPapers.map((item, index)=>/*#__PURE__*/ _reactDefault.default.createElement("div", {
                 key: index,
+                className: "card mb-3",
                 __source: {
                     fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\approved.js",
-                    lineNumber: 33
-                },
-                __self: this
-            }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
-                class: "row",
-                __source: {
-                    fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\approved.js",
-                    lineNumber: 35
-                },
-                __self: this
-            }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
-                class: "col-sm-6",
-                __source: {
-                    fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\approved.js",
-                    lineNumber: 36
-                },
-                __self: this
-            }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
-                class: "card",
-                __source: {
-                    fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\approved.js",
-                    lineNumber: 37
-                },
-                __self: this
-            }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
-                class: "card-body",
-                __source: {
-                    fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\approved.js",
-                    lineNumber: 38
+                    lineNumber: 48
                 },
                 __self: this
             }, /*#__PURE__*/ _reactDefault.default.createElement("h5", {
-                class: "card-title",
                 __source: {
                     fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\approved.js",
-                    lineNumber: 39
+                    lineNumber: 49
                 },
                 __self: this
-            }, item.papertitle), item.payment.equals("not paid"), " ? (", /*#__PURE__*/ _reactDefault.default.createElement("button", {
+            }, item.papertitle), /*#__PURE__*/ _reactDefault.default.createElement("h5", {
+                __source: {
+                    fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\approved.js",
+                    lineNumber: 51
+                },
+                __self: this
+            }, item.payment), /*#__PURE__*/ _reactDefault.default.createElement("button", {
                 onClick: (e)=>this.navigateSubject(e, item._id)
                 ,
                 __source: {
                     fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\approved.js",
-                    lineNumber: 42
+                    lineNumber: 52
                 },
                 __self: this
-            }, "make payment"), ")", /*#__PURE__*/ _reactDefault.default.createElement("p", {
-                class: "card-text",
-                __source: {
-                    fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\approved.js",
-                    lineNumber: 44
-                },
-                __self: this
-            }), /*#__PURE__*/ _reactDefault.default.createElement("button", {
-                onClick: (e)=>this.navigateSubject(e, item._id)
-                ,
-                __source: {
-                    fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\approved.js",
-                    lineNumber: 46
-                },
-                __self: this
-            }, "make payment"))))))
+            }, "make payment"))
         )));
     }
 }
@@ -28065,7 +28899,211 @@ exports.default = approved;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","axios":"7rA65","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"55JIT":[function(require,module,exports) {
+},{"react":"3b2NM","axios":"7rA65","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","react-cookie":"2PrC5"}],"6AEJO":[function(require,module,exports) {
+var helpers = require("../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+class Navbar1 extends _react.Component {
+    constructor(props){
+        super(props);
+    }
+    render() {
+        return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\navbar1.js",
+                lineNumber: 10
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("nav", {
+            className: "navbar navbar-expand-lg navbar-light bg-light",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\navbar1.js",
+                lineNumber: 11
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "container-fluid",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\navbar1.js",
+                lineNumber: 12
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
+            className: "navbar-brand",
+            href: "#",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\navbar1.js",
+                lineNumber: 13
+            },
+            __self: this
+        }, "Navbar"), /*#__PURE__*/ _reactDefault.default.createElement("button", {
+            className: "navbar-toggler",
+            type: "button",
+            "data-bs-toggle": "collapse",
+            "data-bs-target": "#navbarNavDropdown",
+            "aria-controls": "navbarNavDropdown",
+            "aria-expanded": "false",
+            "aria-label": "Toggle navigation",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\navbar1.js",
+                lineNumber: 14
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("span", {
+            className: "navbar-toggler-icon",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\navbar1.js",
+                lineNumber: 15
+            },
+            __self: this
+        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "collapse navbar-collapse",
+            id: "navbarNavDropdown",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\navbar1.js",
+                lineNumber: 17
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("ul", {
+            className: "navbar-nav",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\navbar1.js",
+                lineNumber: 18
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("li", {
+            className: "nav-item",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\navbar1.js",
+                lineNumber: 19
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
+            className: "nav-link active",
+            "aria-current": "page",
+            href: "#",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\navbar1.js",
+                lineNumber: 20
+            },
+            __self: this
+        }, "Home")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
+            className: "nav-item",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\navbar1.js",
+                lineNumber: 22
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
+            className: "nav-link",
+            href: "/create-admin",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\navbar1.js",
+                lineNumber: 23
+            },
+            __self: this
+        }, "Create")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
+            className: "nav-item",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\navbar1.js",
+                lineNumber: 25
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
+            className: "nav-link",
+            href: "/view-admin",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\navbar1.js",
+                lineNumber: 26
+            },
+            __self: this
+        }, "View Admins")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
+            className: "nav-item dropdown",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\navbar1.js",
+                lineNumber: 28
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
+            className: "nav-link dropdown-toggle",
+            href: "#",
+            id: "navbarDropdownMenuLink",
+            role: "button",
+            "data-bs-toggle": "dropdown",
+            "aria-expanded": "false",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\navbar1.js",
+                lineNumber: 29
+            },
+            __self: this
+        }, "Dropdown link"), /*#__PURE__*/ _reactDefault.default.createElement("ul", {
+            className: "dropdown-menu",
+            "aria-labelledby": "navbarDropdownMenuLink",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\navbar1.js",
+                lineNumber: 32
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("li", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\navbar1.js",
+                lineNumber: 33
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
+            className: "dropdown-item",
+            href: "#",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\navbar1.js",
+                lineNumber: 33
+            },
+            __self: this
+        }, "Action")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\navbar1.js",
+                lineNumber: 34
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
+            className: "dropdown-item",
+            href: "#",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\navbar1.js",
+                lineNumber: 34
+            },
+            __self: this
+        }, "Another action")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\navbar1.js",
+                lineNumber: 35
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
+            className: "dropdown-item",
+            href: "#",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\navbar1.js",
+                lineNumber: 35
+            },
+            __self: this
+        }, "Something else here"))))))))));
+    }
+}
+exports.default = Navbar1;
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"3b2NM","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"55JIT":[function(require,module,exports) {
 var helpers = require("../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -28568,7 +29606,7 @@ exports.default = Payment;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","axios":"7rA65"}],"6DoV9":[function(require,module,exports) {
+},{"react":"3b2NM","axios":"7rA65","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"6DoV9":[function(require,module,exports) {
 /** @license Material-UI v4.11.4
  *
  * This source code is licensed under the MIT license found in the
@@ -67619,7 +68657,161 @@ Zoom.propTypes = {
 };
 exports.default = Zoom;
 
-},{"@babel/runtime/helpers/esm/extends":"5qnVv","@babel/runtime/helpers/esm/slicedToArray":"4Qm8F","@babel/runtime/helpers/esm/objectWithoutProperties":"5UtKX","react":"3b2NM","prop-types":"4dfy5","react-transition-group":"7Iywh","../styles/transitions":"6uLgv","../styles/useTheme":"WDbNZ","../transitions/utils":"5xVFa","../utils/useForkRef":"5XQwt","@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"6AEJO":[function(require,module,exports) {
+},{"@babel/runtime/helpers/esm/extends":"5qnVv","@babel/runtime/helpers/esm/slicedToArray":"4Qm8F","@babel/runtime/helpers/esm/objectWithoutProperties":"5UtKX","react":"3b2NM","prop-types":"4dfy5","react-transition-group":"7Iywh","../styles/transitions":"6uLgv","../styles/useTheme":"WDbNZ","../transitions/utils":"5xVFa","../utils/useForkRef":"5XQwt","@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"4Jrcf":[function(require,module,exports) {
+var helpers = require("./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _nav = require("./component/nav");
+var _navDefault = parcelHelpers.interopDefault(_nav);
+var _reactRouterDom = require("react-router-dom");
+var _researcher = require("./component/Researcher");
+var _researcherDefault = parcelHelpers.interopDefault(_researcher);
+var _reviewer = require("./component/Reviewer");
+var _reviewerDefault = parcelHelpers.interopDefault(_reviewer);
+var _paperDetails = require("./component/paperDetails");
+var _paperDetailsDefault = parcelHelpers.interopDefault(_paperDetails);
+var _normal = require("./component/normal");
+var _normalDefault = parcelHelpers.interopDefault(_normal);
+var _verticalnav = require("./component/verticalnav");
+var _verticalnavDefault = parcelHelpers.interopDefault(_verticalnav);
+var _login = require("./component/login");
+var _loginDefault = parcelHelpers.interopDefault(_login);
+var _approved = require("./component/approved");
+var _approvedDefault = parcelHelpers.interopDefault(_approved);
+var _navbar1 = require("./component/navbar1");
+var _navbar1Default = parcelHelpers.interopDefault(_navbar1);
+var _paymentform = require("./component/paymentform");
+var _paymentformDefault = parcelHelpers.interopDefault(_paymentform);
+var _core = require("@material-ui/core");
+var _loginnav = require("./loginnav");
+var _loginnavDefault = parcelHelpers.interopDefault(_loginnav);
+var _notApproved = require("./component/not approved");
+var _notApprovedDefault = parcelHelpers.interopDefault(_notApproved);
+class loginnav extends _reactDefault.default.Component {
+    constructor(props){
+        super(props);
+    }
+    // componentDidMount() {
+    //     const Email=`${this.props.match.params.email}`
+    //      this.setState({ email: Email });
+    //      console.log(this.state.email);
+    //  }
+    render() {
+        return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "App",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\loginnav.jsx",
+                lineNumber: 32
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.BrowserRouter, {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\loginnav.jsx",
+                lineNumber: 33
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "row",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\loginnav.jsx",
+                lineNumber: 36
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "col col-lg-2",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\loginnav.jsx",
+                lineNumber: 37
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement(_verticalnavDefault.default, {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\loginnav.jsx",
+                lineNumber: 37
+            },
+            __self: this
+        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "col",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\loginnav.jsx",
+                lineNumber: 38
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement(_core.Box, {
+            width: "100%",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\loginnav.jsx",
+                lineNumber: 40
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("section", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\loginnav.jsx",
+                lineNumber: 44
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Switch, {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\loginnav.jsx",
+                lineNumber: 46
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("span", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\loginnav.jsx",
+                lineNumber: 47
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
+            path: "/approve/:email",
+            component: _approvedDefault.default,
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\loginnav.jsx",
+                lineNumber: 49
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
+            path: "/notapprove/:email",
+            component: _notApprovedDefault.default,
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\loginnav.jsx",
+                lineNumber: 50
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
+            path: "/payment/:id",
+            component: _paymentformDefault.default,
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\loginnav.jsx",
+                lineNumber: 51
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
+            path: "/create-researcher",
+            component: _researcherDefault.default,
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\loginnav.jsx",
+                lineNumber: 52
+            },
+            __self: this
+        }))))))))));
+    }
+}
+exports.default = loginnav;
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"3b2NM","./component/nav":"6WGfd","react-router-dom":"1PMSK","./component/Researcher":"5iH6s","./component/Reviewer":"32KJG","./component/paperDetails":"2C8vX","./component/normal":"YTJQu","./component/verticalnav":"2qtY8","./component/login":"1aVv2","./component/approved":"6C06a","./component/navbar1":"6AEJO","./component/paymentform":"55JIT","@material-ui/core":"6DoV9","./loginnav":"4Jrcf","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./component/not approved":"os8XP"}],"os8XP":[function(require,module,exports) {
 var helpers = require("../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -67630,199 +68822,368 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-class Navbar1 extends _react.Component {
+var _axios = require("axios");
+var _axiosDefault = parcelHelpers.interopDefault(_axios);
+class notapproved extends _react.Component {
     constructor(props){
         super(props);
+        this.state = {
+            notapprovedPapers: []
+        };
+    }
+    componentDidMount() {
+        _axiosDefault.default.get(`http://localhost:9099/research/getnotapproval/${this.props.match.params.email}`).then((response)=>{
+            this.setState({
+                notapprovedPapers: response.data.data
+            });
+            console.log(this.state.approvedPapers);
+        }).catch((error)=>{
+            alert('error.message');
+        });
     }
     render() {
         return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
             __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\navbar1.js",
-                lineNumber: 10
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\not approved.js",
+                lineNumber: 27
             },
             __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("nav", {
-            className: "navbar navbar-expand-lg navbar-light bg-light",
+        }, /*#__PURE__*/ _reactDefault.default.createElement("br", {
             __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\navbar1.js",
-                lineNumber: 11
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\not approved.js",
+                lineNumber: 27
             },
             __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            className: "container-fluid",
+        }), /*#__PURE__*/ _reactDefault.default.createElement("h2", {
             __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\navbar1.js",
-                lineNumber: 12
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
-            className: "navbar-brand",
-            href: "#",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\navbar1.js",
-                lineNumber: 13
-            },
-            __self: this
-        }, "Navbar"), /*#__PURE__*/ _reactDefault.default.createElement("button", {
-            className: "navbar-toggler",
-            type: "button",
-            "data-bs-toggle": "collapse",
-            "data-bs-target": "#navbarNavDropdown",
-            "aria-controls": "navbarNavDropdown",
-            "aria-expanded": "false",
-            "aria-label": "Toggle navigation",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\navbar1.js",
-                lineNumber: 14
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("span", {
-            className: "navbar-toggler-icon",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\navbar1.js",
-                lineNumber: 15
-            },
-            __self: this
-        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            className: "collapse navbar-collapse",
-            id: "navbarNavDropdown",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\navbar1.js",
-                lineNumber: 17
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("ul", {
-            className: "navbar-nav",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\navbar1.js",
-                lineNumber: 18
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("li", {
-            className: "nav-item",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\navbar1.js",
-                lineNumber: 19
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
-            className: "nav-link active",
-            "aria-current": "page",
-            href: "#",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\navbar1.js",
-                lineNumber: 20
-            },
-            __self: this
-        }, "Home")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
-            className: "nav-item",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\navbar1.js",
-                lineNumber: 22
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
-            className: "nav-link",
-            href: "/create-admin",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\navbar1.js",
-                lineNumber: 23
-            },
-            __self: this
-        }, "Create")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
-            className: "nav-item",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\navbar1.js",
-                lineNumber: 25
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
-            className: "nav-link",
-            href: "/view-admin",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\navbar1.js",
-                lineNumber: 26
-            },
-            __self: this
-        }, "View Admins")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
-            className: "nav-item dropdown",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\navbar1.js",
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\not approved.js",
                 lineNumber: 28
             },
             __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
-            className: "nav-link dropdown-toggle",
-            href: "#",
-            id: "navbarDropdownMenuLink",
-            role: "button",
-            "data-bs-toggle": "dropdown",
-            "aria-expanded": "false",
+        }, "Not Approved research papers"), /*#__PURE__*/ _reactDefault.default.createElement("hr", {
             __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\navbar1.js",
-                lineNumber: 29
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\not approved.js",
+                lineNumber: 28
             },
             __self: this
-        }, "Dropdown link"), /*#__PURE__*/ _reactDefault.default.createElement("ul", {
-            className: "dropdown-menu",
-            "aria-labelledby": "navbarDropdownMenuLink",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\navbar1.js",
-                lineNumber: 32
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("li", {
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\navbar1.js",
-                lineNumber: 33
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
-            className: "dropdown-item",
-            href: "#",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\navbar1.js",
-                lineNumber: 33
-            },
-            __self: this
-        }, "Action")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\navbar1.js",
-                lineNumber: 34
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
-            className: "dropdown-item",
-            href: "#",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\navbar1.js",
-                lineNumber: 34
-            },
-            __self: this
-        }, "Another action")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\navbar1.js",
-                lineNumber: 35
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
-            className: "dropdown-item",
-            href: "#",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\navbar1.js",
-                lineNumber: 35
-            },
-            __self: this
-        }, "Something else here"))))))))));
+        }), this.state.notapprovedPapers.length > 0 && this.state.approvedPapers.map((item, index)=>/*#__PURE__*/ _reactDefault.default.createElement("div", {
+                key: index,
+                __source: {
+                    fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\not approved.js",
+                    lineNumber: 30
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+                class: "row",
+                __source: {
+                    fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\not approved.js",
+                    lineNumber: 32
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+                class: "col-sm-6",
+                __source: {
+                    fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\not approved.js",
+                    lineNumber: 33
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+                class: "card",
+                __source: {
+                    fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\not approved.js",
+                    lineNumber: 34
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+                class: "card-body",
+                __source: {
+                    fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\not approved.js",
+                    lineNumber: 35
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("h5", {
+                class: "card-title",
+                __source: {
+                    fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\not approved.js",
+                    lineNumber: 36
+                },
+                __self: this
+            }, item.papertitle))))))
+        )));
     }
 }
-exports.default = Navbar1;
+exports.default = notapproved;
 
   helpers.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}]},["1j6wU","4LpvO","5tDil"], "5tDil", "parcelRequire0de8")
+},{"react":"3b2NM","axios":"7rA65","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"69TXJ":[function(require,module,exports) {
+var helpers = require("../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactCookie = require("react-cookie");
+var _s = $RefreshSig$();
+const Retrieve = ()=>{
+    _s();
+    const [name, setName] = _react.useState('');
+    const [pwd, setPwd] = _react.useState('');
+    const [cookies, setCookie] = _reactCookie.useCookies([
+        'user'
+    ]);
+    return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
+        className: "App",
+        __source: {
+            fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\retrievecookie.js",
+            lineNumber: 11
+        },
+        __self: undefined
+    }, cookies.Name && /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        __source: {
+            fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\retrievecookie.js",
+            lineNumber: 16
+        },
+        __self: undefined
+    }, "Name: ", /*#__PURE__*/ _reactDefault.default.createElement("p", {
+        __source: {
+            fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\retrievecookie.js",
+            lineNumber: 17
+        },
+        __self: undefined
+    }, cookies.Name)), cookies.Password && /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        __source: {
+            fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\retrievecookie.js",
+            lineNumber: 21
+        },
+        __self: undefined
+    }, "Password: ", /*#__PURE__*/ _reactDefault.default.createElement("p", {
+        __source: {
+            fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\retrievecookie.js",
+            lineNumber: 22
+        },
+        __self: undefined
+    }, cookies.Password))));
+};
+_s(Retrieve, "gEukdvsI2PQrL0Ou8zZDz7QQBxA=", false, function() {
+    return [_reactCookie.useCookies];
+});
+_c = Retrieve;
+exports.default = Retrieve;
+var _c;
+$RefreshReg$(_c, "Retrieve");
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"3b2NM","react-cookie":"2PrC5","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"7IDXW":[function(require,module,exports) {
+var helpers = require("../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _axios = require("axios");
+var _axiosDefault = parcelHelpers.interopDefault(_axios);
+class paidallapproved extends _react.Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            approvedPapers: []
+        };
+    }
+    navigateSubject(e, paperid) {
+        window.location = `/onepaper/${paperid}`;
+    }
+    componentDidMount() {
+        _axiosDefault.default.get(`http://localhost:9099/research/getallapproved`).then((response)=>{
+            this.setState({
+                approvedPapers: response.data.data
+            });
+            console.log(this.state.approvedPapers);
+        }).catch((error)=>{
+            alert('error.message');
+        });
+    }
+    render() {
+        return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paidallapproved.js",
+                lineNumber: 39
+            },
+            __self: this
+        }, this.state.name, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paidallapproved.js",
+                lineNumber: 41
+            },
+            __self: this
+        }, "Approved research papers"), this.state.approvedPapers.length > 0 && this.state.approvedPapers.map((item, index)=>/*#__PURE__*/ _reactDefault.default.createElement("div", {
+                key: index,
+                className: "card mb-3",
+                onClick: (e)=>this.navigateSubject(e, item._id)
+                ,
+                __source: {
+                    fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paidallapproved.js",
+                    lineNumber: 43
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("h5", {
+                __source: {
+                    fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paidallapproved.js",
+                    lineNumber: 44
+                },
+                __self: this
+            }, item.papertitle))
+        )));
+    }
+}
+exports.default = paidallapproved;
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"3b2NM","axios":"7rA65","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"2FbfE":[function(require,module,exports) {
+var helpers = require("../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _axios = require("axios");
+var _axiosDefault = parcelHelpers.interopDefault(_axios);
+class onepaper extends _react.Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            Papers: ''
+        };
+    }
+    componentDidMount() {
+        _axiosDefault.default.get(`http://localhost:9099/research/${this.props.match.params.id}`).then((response)=>{
+            this.setState({
+                Papers: response.data.data
+            });
+            console.log(this.state.Papers);
+        }).catch((error)=>{
+            alert(error.message);
+        });
+    }
+    render() {
+        return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "container",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\onepaper.js",
+                lineNumber: 34
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("br", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\onepaper.js",
+                lineNumber: 34
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "card bg-light mb-3",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\onepaper.js",
+                lineNumber: 35
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "card-header",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\onepaper.js",
+                lineNumber: 36
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("h2", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\onepaper.js",
+                lineNumber: 36
+            },
+            __self: this
+        }, this.state.Papers.papertitle)), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "card-body",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\onepaper.js",
+                lineNumber: 37
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("h5", {
+            class: "card-title",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\onepaper.js",
+                lineNumber: 38
+            },
+            __self: this
+        }, "Abstract"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
+            class: "card-text",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\onepaper.js",
+                lineNumber: 39
+            },
+            __self: this
+        }, this.state.Papers.abstract, /*#__PURE__*/ _reactDefault.default.createElement("br", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\onepaper.js",
+                lineNumber: 39
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement("br", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\onepaper.js",
+                lineNumber: 39
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement("h3", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\onepaper.js",
+                lineNumber: 40
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
+            href: this.state.Papers.url,
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\onepaper.js",
+                lineNumber: 40
+            },
+            __self: this
+        }, "View the paper")), " "))), /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\onepaper.js",
+                lineNumber: 45
+            },
+            __self: this
+        })));
+    }
+}
+exports.default = onepaper;
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"3b2NM","axios":"7rA65","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}]},["1j6wU","4LpvO","5tDil"], "5tDil", "parcelRequire0de8")
 
 //# sourceMappingURL=index.a66d39b3.js.map

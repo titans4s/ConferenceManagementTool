@@ -1,8 +1,0 @@
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>_boxDefault.default
-);
-parcelHelpers.export(exports, "styleFunction", ()=>_box.styleFunction
-);
-var _box = require("./Box");
-var _boxDefault = parcelHelpers.interopDefault(_box);

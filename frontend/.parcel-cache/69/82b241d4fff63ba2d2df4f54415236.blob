@@ -1,6 +1,0 @@
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>_unstableTrapFocusDefault.default
-);
-var _unstableTrapFocus = require("./Unstable_TrapFocus");
-var _unstableTrapFocusDefault = parcelHelpers.interopDefault(_unstableTrapFocus);

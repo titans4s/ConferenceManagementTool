@@ -1,6 +1,0 @@
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>_outlinedInputDefault.default
-);
-var _outlinedInput = require("./OutlinedInput");
-var _outlinedInputDefault = parcelHelpers.interopDefault(_outlinedInput);

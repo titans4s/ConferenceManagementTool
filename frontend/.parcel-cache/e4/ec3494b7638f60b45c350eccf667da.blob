@@ -1,9 +1,0 @@
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _react = require("react");
-var _radioGroupContext = require("./RadioGroupContext");
-var _radioGroupContextDefault = parcelHelpers.interopDefault(_radioGroupContext);
-function useRadioGroup() {
-    return _react.useContext(_radioGroupContextDefault.default);
-}
-exports.default = useRadioGroup;

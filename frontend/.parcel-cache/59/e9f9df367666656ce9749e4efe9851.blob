@@ -1,6 +1,0 @@
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>_bottomNavigationDefault.default
-);
-var _bottomNavigation = require("./BottomNavigation");
-var _bottomNavigationDefault = parcelHelpers.interopDefault(_bottomNavigation);

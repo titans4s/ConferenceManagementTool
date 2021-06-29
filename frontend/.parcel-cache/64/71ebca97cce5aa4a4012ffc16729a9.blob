@@ -1,8 +1,0 @@
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _arrayLikeToArrayJs = require("./arrayLikeToArray.js");
-var _arrayLikeToArrayJsDefault = parcelHelpers.interopDefault(_arrayLikeToArrayJs);
-function _arrayWithoutHoles(arr) {
-    if (Array.isArray(arr)) return _arrayLikeToArrayJsDefault.default(arr);
-}
-exports.default = _arrayWithoutHoles;

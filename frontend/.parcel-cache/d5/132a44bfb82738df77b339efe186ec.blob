@@ -1,6 +1,0 @@
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>_snackbarDefault.default
-);
-var _snackbar = require("./Snackbar");
-var _snackbarDefault = parcelHelpers.interopDefault(_snackbar);

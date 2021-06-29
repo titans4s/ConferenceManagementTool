@@ -1,6 +1,0 @@
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>_mergeClassesDefault.default
-);
-var _mergeClasses = require("./mergeClasses");
-var _mergeClassesDefault = parcelHelpers.interopDefault(_mergeClasses);
