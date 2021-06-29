@@ -41,6 +41,31 @@ class WorkshopStatus extends Component {
                 console.log(error.message);
                 alert(error.message);
             })
+        
+            const btn = document.getElementById('button');
+
+            document.getElementById('form')
+             .addEventListener('submit', function(event) {
+               event.preventDefault();
+            
+               btn.value = 'Sending...';
+            
+               const serviceID = 'default_service';
+               const templateID = 'template_683bea9';
+            
+               emailjs.sendForm(serviceID, templateID, this)
+                .then(() => {
+                  btn.value = 'Send Email';
+                  alert('Sent!');
+                }, (err) => {
+                  btn.value = 'Send Email';
+                  alert(JSON.stringify(err));
+                });
+            });
+
+
+
+
     }
 
     onClickUnapprove() {
@@ -73,12 +98,18 @@ class WorkshopStatus extends Component {
                         <a href={this.state.workshop.link}>{this.state.workshop.link}</a>
                         <h5>{this.state.workshop.description}</h5>
                         <h3>{this.state.workshop.Status}</h3>
-                        <button type="submit" className="btn btn-primary" onClick={this.onClickApprove} >Approve</button>
-                            &nbsp;&nbsp;
+                        <form id="form">
+
+                        <input type="hidden" name="to_name" id="to_name"value={this.state.workshop.conductorName} />
+                        <input type="hidden" name="to_email" id="to_email" value={this.state.workshop.email}/>
+                        
+                        <button type="submit" className="btn btn-primary" id="button" onClick={this.onClickApprove} >Approve</button>
+                         &nbsp;&nbsp;
                         <button type="submit" className="btn btn-primary" onClick={this.onClickUnapprove}>Unapprove</button>
+                        </form>
                     </div>
                 </div>
-
+                <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
                 
             </div>
         )

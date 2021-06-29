@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-class showapprovedbyEmail extends Component {
+class showunapprovedbyEmail extends Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            approvedWorkshop: []
+            unapprovedWorkshop: []
         }
 
     }
@@ -14,10 +14,10 @@ class showapprovedbyEmail extends Component {
 
 
     componentDidMount() {
-        axios.get(`http://localhost:8087/workshop/email/approve/${this.props.match.params.email}`)
+        axios.get(`http://localhost:8087/workshop/email/unapprove/${this.props.match.params.email}`)
             .then(response => {
-                this.setState({ approvedWorkshop: response.data.data });
-                console.log(this.state.approvedWorkshop);
+                this.setState({ unapprovedWorkshop: response.data.data });
+                console.log(this.state.unapprovedWorkshop);
             }).catch(error => {
                 alert('error.message');
             })
@@ -26,13 +26,13 @@ class showapprovedbyEmail extends Component {
     render() {
         return (
             <div className="container"><br />
-                <h2>Approved Workshops</h2><hr />
-                {this.state.approvedWorkshop.length > 0 && this.state.approvedWorkshop.map((item, index) => (
+                <h2>Approved Workshops<span class="badge badge-secondary">New</span></h2><hr />
+                {this.state.unapprovedWorkshop.length > 0 && this.state.unapprovedWorkshop.map((item, index) => (
                     <div key={index}  >
 
 
                         <div className="card border-dark mb-3">
-                            <div >
+                            <div class="card-body text-dark">
                                 <h4 class="card-title">{item.title}</h4>
                                 <h6>{item.Oraganization}</h6>
                                 <h6>{item.conductorName}</h6>
@@ -66,4 +66,4 @@ class showapprovedbyEmail extends Component {
 
 
 
-export default showapprovedbyEmail;
+export default showunapprovedbyEmail;

@@ -7,6 +7,7 @@ import GetWorkshopByID from './src/component/getworkshop/workshopStatus';
 import ShowApproved from './src/component/getworkshop/showapproved';
 import Viewdetails from './src/component/getworkshop/viewdetails'
 import GetApproveEmail from './src/component/getworkshop/showapprovedbyEmail'
+import GetUnApproveEmail from './src/component/getworkshop/showunapprovebyEmail'
 
 
 export default class App extends React.Component { 
@@ -26,6 +27,8 @@ export default class App extends React.Component {
                      <Route path ="/" component={ShowApproved} exact />
                      <Route path ="/shows/:id" component={Viewdetails}  />
                      <Route path ="/approve/:email" component={GetApproveEmail}  />
+                     <Route path ="/unapprove/:email" component={GetUnApproveEmail}  />
+
                 </Switch>   
                  </section>
 
