@@ -10,8 +10,17 @@ const VerticalNavbar= () => {
    const handle = () => {
       setCookie('Name', name, { path: '/' });
       setCookie('Password', pwd, { path: '/' });
-   }
-
+    }
+    
+    const navigate=(e, email)=> {
+      
+        window.location=`/approve/${cookies.Name}`
+    };
+    
+    const navigate1=(e, email)=> {
+      
+        window.location=`/notapprove/${cookies.Name}`
+        };
 
         return (
            
@@ -47,11 +56,12 @@ const VerticalNavbar= () => {
            Interface
        </div>
      
-       <li class="nav-item">
+                    <li class="nav-item">
+                       
           
                    <a class="nav-link collapsed" href="/create-researcher">Submit Research Papers</a>
-                   <a class="nav-link collapsed" href="/approve/:email">View approved papers</a>
-                   <a class="nav-link collapsed" href="/notapprove/:email">View not approved papers</a>
+                        <a class="nav-link collapsed" onClick={e=>navigate(e,name)}>View approved papers</a>
+                   <a class="nav-link collapsed" onClick={e=>navigate1(e,name)}>View not approved papers</a>
                    
              
                     </li>

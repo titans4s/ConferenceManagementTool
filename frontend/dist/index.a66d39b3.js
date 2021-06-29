@@ -22031,233 +22031,244 @@ class Navbar extends _react.Component {
         super(props);
     }
     render() {
-        return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
+        return(/*#__PURE__*/ _reactDefault.default.createElement("nav", {
+            class: "navbar navbar-expand-lg navbar navbar-dark bg-dark",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
                 lineNumber: 10
             },
             __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("nav", {
-            className: "navbar navbar-inverse",
+        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
+            class: "navbar-brand",
+            href: "#",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
                 lineNumber: 11
             },
             __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            className: "container-fluid",
+        }, "Navbar"), /*#__PURE__*/ _reactDefault.default.createElement("button", {
+            class: "navbar-toggler",
+            type: "button",
+            "data-toggle": "collapse",
+            "data-target": "#navbarSupportedContent",
+            "aria-controls": "navbarSupportedContent",
+            "aria-expanded": "false",
+            "aria-label": "Toggle navigation",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
                 lineNumber: 12
             },
             __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("ul", {
-            className: "nav navbar-nav",
+        }, /*#__PURE__*/ _reactDefault.default.createElement("span", {
+            class: "navbar-toggler-icon",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
                 lineNumber: 13
             },
             __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("li", {
-            className: "active",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
-                lineNumber: 14
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
-            href: "#",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
-                lineNumber: 14
-            },
-            __self: this
-        }, "Home")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
-            className: "dropdown",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
-                lineNumber: 15
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
-            className: "dropdown-toggle",
-            "data-toggle": "dropdown",
-            href: "#",
+        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "collapse navbar-collapse",
+            id: "navbarSupportedContent",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
                 lineNumber: 16
             },
             __self: this
-        }, "Workshop", /*#__PURE__*/ _reactDefault.default.createElement("span", {
-            className: "caret",
+        }, /*#__PURE__*/ _reactDefault.default.createElement("ul", {
+            class: "navbar-nav mr-auto",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
                 lineNumber: 17
             },
             __self: this
-        })), /*#__PURE__*/ _reactDefault.default.createElement("ul", {
-            className: "dropdown-menu",
+        }, /*#__PURE__*/ _reactDefault.default.createElement("li", {
+            class: "nav-item active",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
                 lineNumber: 18
             },
             __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("li", {
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
-                lineNumber: 19
-            },
-            __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
+            class: "nav-link",
             href: "#",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
                 lineNumber: 19
             },
             __self: this
-        }, "Workshop details")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
+        }, "Home ", /*#__PURE__*/ _reactDefault.default.createElement("span", {
+            class: "sr-only",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
-                lineNumber: 20
+                lineNumber: 19
+            },
+            __self: this
+        }, "(current)"))), /*#__PURE__*/ _reactDefault.default.createElement("li", {
+            class: "nav-item dropdown",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
+                lineNumber: 23
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
+            class: "nav-link dropdown-toggle",
             href: "#",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
-                lineNumber: 20
-            },
-            __self: this
-        }, "Downloads Page")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
-                lineNumber: 21
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
-            href: "#",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
-                lineNumber: 21
-            },
-            __self: this
-        }, "Upload Workshop")))), /*#__PURE__*/ _reactDefault.default.createElement("li", {
-            className: "dropdown",
+            id: "navbarDropdown",
+            role: "button",
+            "data-toggle": "dropdown",
+            "aria-haspopup": "true",
+            "aria-expanded": "false",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
                 lineNumber: 24
             },
             __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
-            className: "dropdown-toggle",
-            "data-toggle": "dropdown",
-            href: "#",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
-                lineNumber: 25
-            },
-            __self: this
-        }, "Researches", /*#__PURE__*/ _reactDefault.default.createElement("span", {
-            className: "caret",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
-                lineNumber: 26
-            },
-            __self: this
-        })), /*#__PURE__*/ _reactDefault.default.createElement("ul", {
-            className: "dropdown-menu",
+        }, "Researcher"), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "dropdown-menu",
+            "aria-labelledby": "navbarDropdown",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
                 lineNumber: 27
             },
             __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("li", {
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
-                lineNumber: 28
-            },
-            __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
+            class: "dropdown-item",
             href: "/approvedpaid",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
                 lineNumber: 28
             },
             __self: this
-        }, "Research Papers")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
-                lineNumber: 29
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
+        }, "Research Papers"), /*#__PURE__*/ _reactDefault.default.createElement("a", {
+            class: "dropdown-item",
             href: "#",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
                 lineNumber: 29
             },
             __self: this
-        }, "Downloads Page")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
+        }, "Download page"), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "dropdown-divider",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
                 lineNumber: 30
             },
             __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
+        }), /*#__PURE__*/ _reactDefault.default.createElement("a", {
+            class: "dropdown-item",
             href: "/login",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
-                lineNumber: 30
+                lineNumber: 31
             },
             __self: this
-        }, "Upload Research Papers"))))), /*#__PURE__*/ _reactDefault.default.createElement("ul", {
-            className: "nav navbar-nav navbar-right",
+        }, "Upload Research papers"))), /*#__PURE__*/ _reactDefault.default.createElement("li", {
+            class: "nav-item dropdown",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
-                lineNumber: 34
+                lineNumber: 35
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
+            class: "nav-link dropdown-toggle",
+            href: "#",
+            id: "navbarDropdown",
+            role: "button",
+            "data-toggle": "dropdown",
+            "aria-haspopup": "true",
+            "aria-expanded": "false",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
+                lineNumber: 36
+            },
+            __self: this
+        }, "Workshoper"), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "dropdown-menu",
+            "aria-labelledby": "navbarDropdown",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
+                lineNumber: 39
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
+            class: "dropdown-item",
+            href: "#",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
+                lineNumber: 40
+            },
+            __self: this
+        }, "Workshop details"), /*#__PURE__*/ _reactDefault.default.createElement("a", {
+            class: "dropdown-item",
+            href: "#",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
+                lineNumber: 41
+            },
+            __self: this
+        }, "Download page"), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "dropdown-divider",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
+                lineNumber: 42
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement("a", {
+            class: "dropdown-item",
+            href: "#",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
+                lineNumber: 43
+            },
+            __self: this
+        }, "Upload Workshop")))), /*#__PURE__*/ _reactDefault.default.createElement("form", {
+            class: "form-inline my-2 my-lg-0",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
+                lineNumber: 50
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("li", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
-                lineNumber: 35
+                lineNumber: 51
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
             href: "#",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
-                lineNumber: 35
+                lineNumber: 51
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("span", {
             className: "glyphicon glyphicon-user",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
-                lineNumber: 35
+                lineNumber: 51
             },
             __self: this
         }), " Sign Up")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
-                lineNumber: 36
+                lineNumber: 52
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
             href: "/login",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
-                lineNumber: 36
+                lineNumber: 52
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("span", {
             className: "glyphicon glyphicon-log-in",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
-                lineNumber: 36
+                lineNumber: 52
             },
             __self: this
-        }), " Login")))))));
+        }), " Login"))))));
     }
 }
 exports.default = Navbar;
@@ -27746,12 +27757,18 @@ const VerticalNavbar = ()=>{
             path: '/'
         });
     };
+    const navigate = (e, email)=>{
+        window.location = `/approve/${cookies.Name}`;
+    };
+    const navigate1 = (e, email)=>{
+        window.location = `/notapprove/${cookies.Name}`;
+    };
     return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "navbar-nav sidebar accordion",
         id: "accordionSidebar",
         __source: {
             fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-            lineNumber: 18
+            lineNumber: 27
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("ul", {
@@ -27759,7 +27776,7 @@ const VerticalNavbar = ()=>{
         id: "accordionSidebar",
         __source: {
             fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-            lineNumber: 20
+            lineNumber: 29
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
@@ -27767,48 +27784,48 @@ const VerticalNavbar = ()=>{
         href: "index.html",
         __source: {
             fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-            lineNumber: 21
+            lineNumber: 30
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
         class: "sidebar-brand-icon rotate-n-15",
         __source: {
             fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-            lineNumber: 22
+            lineNumber: 31
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("i", {
         class: "fas fa-laugh-wink",
         __source: {
             fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-            lineNumber: 23
+            lineNumber: 32
         },
         __self: undefined
     })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         class: "sidebar-brand-text mx-3",
         __source: {
             fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-            lineNumber: 25
+            lineNumber: 34
         },
         __self: undefined
     }, "Researcher "), /*#__PURE__*/ _reactDefault.default.createElement("br", {
         __source: {
             fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-            lineNumber: 25
+            lineNumber: 34
         },
         __self: undefined
     })), /*#__PURE__*/ _reactDefault.default.createElement("hr", {
         class: "sidebar-divider my-0",
         __source: {
             fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-            lineNumber: 30
+            lineNumber: 39
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement("li", {
         class: "nav-item active",
         __source: {
             fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-            lineNumber: 31
+            lineNumber: 40
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
@@ -27816,34 +27833,34 @@ const VerticalNavbar = ()=>{
         href: "index.html",
         __source: {
             fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-            lineNumber: 32
+            lineNumber: 41
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("i", {
         class: "fas fa-fw fa-tachometer-alt",
         __source: {
             fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-            lineNumber: 33
+            lineNumber: 42
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement("span", {
         __source: {
             fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-            lineNumber: 34
+            lineNumber: 43
         },
         __self: undefined
     }, "DashBoard"))), /*#__PURE__*/ _reactDefault.default.createElement("hr", {
         class: "sidebar-divider my-0",
         __source: {
             fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-            lineNumber: 38
+            lineNumber: 47
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement("li", {
         class: "nav-item active",
         __source: {
             fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-            lineNumber: 39
+            lineNumber: 48
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
@@ -27851,28 +27868,28 @@ const VerticalNavbar = ()=>{
         href: "index.html",
         __source: {
             fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-            lineNumber: 40
+            lineNumber: 49
         },
         __self: undefined
     }, cookies.Name)), /*#__PURE__*/ _reactDefault.default.createElement("hr", {
         class: "sidebar-divider",
         __source: {
             fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-            lineNumber: 45
+            lineNumber: 54
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         class: "sidebar-heading",
         __source: {
             fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-            lineNumber: 46
+            lineNumber: 55
         },
         __self: undefined
     }, "Interface"), /*#__PURE__*/ _reactDefault.default.createElement("li", {
         class: "nav-item",
         __source: {
             fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-            lineNumber: 50
+            lineNumber: 59
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
@@ -27880,36 +27897,38 @@ const VerticalNavbar = ()=>{
         href: "/create-researcher",
         __source: {
             fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-            lineNumber: 52
+            lineNumber: 62
         },
         __self: undefined
     }, "Submit Research Papers"), /*#__PURE__*/ _reactDefault.default.createElement("a", {
         class: "nav-link collapsed",
-        href: "/approve/:email",
+        onClick: (e)=>navigate(e, name)
+        ,
         __source: {
             fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-            lineNumber: 53
+            lineNumber: 63
         },
         __self: undefined
     }, "View approved papers"), /*#__PURE__*/ _reactDefault.default.createElement("a", {
         class: "nav-link collapsed",
-        href: "/notapprove/:email",
+        onClick: (e)=>navigate1(e, name)
+        ,
         __source: {
             fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-            lineNumber: 54
+            lineNumber: 64
         },
         __self: undefined
     }, "View not approved papers")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
         class: "nav-item",
         __source: {
             fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-            lineNumber: 58
+            lineNumber: 68
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
         __source: {
             fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-            lineNumber: 60
+            lineNumber: 70
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
@@ -27917,7 +27936,7 @@ const VerticalNavbar = ()=>{
         href: "/Login",
         __source: {
             fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
-            lineNumber: 61
+            lineNumber: 71
         },
         __self: undefined
     }, "Logout"))))));
@@ -28822,6 +28841,7 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
 var _reactCookie = require("react-cookie");
+var _s = $RefreshSig$();
 class approved extends _react.Component {
     constructor(props){
         super(props);
@@ -28834,6 +28854,16 @@ class approved extends _react.Component {
             'user'
         ];
     }
+    Retrieve = _s(()=>{
+        _s();
+        const [name, setName] = _react.useState('');
+        const [pwd, setPwd] = _react.useState('');
+        const [cookies, setCookie] = _reactCookie.useCookies([
+            'user'
+        ]);
+    }, "gEukdvsI2PQrL0Ou8zZDz7QQBxA=", false, function() {
+        return [_reactCookie.useCookies];
+    });
     navigateSubject(e, paperid) {
         window.location = `/payment/${paperid}`;
     }
@@ -28851,13 +28881,13 @@ class approved extends _react.Component {
         return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\approved.js",
-                lineNumber: 43
+                lineNumber: 48
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\approved.js",
-                lineNumber: 45
+                lineNumber: 50
             },
             __self: this
         }, "Approved research papers"), _reactCookie.Cookies.Name, this.state.approvedPapers.length > 0 && this.state.approvedPapers.map((item, index)=>/*#__PURE__*/ _reactDefault.default.createElement("div", {
@@ -28865,19 +28895,19 @@ class approved extends _react.Component {
                 className: "card mb-3",
                 __source: {
                     fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\approved.js",
-                    lineNumber: 48
+                    lineNumber: 53
                 },
                 __self: this
             }, /*#__PURE__*/ _reactDefault.default.createElement("h5", {
                 __source: {
                     fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\approved.js",
-                    lineNumber: 49
+                    lineNumber: 54
                 },
                 __self: this
             }, item.papertitle), /*#__PURE__*/ _reactDefault.default.createElement("h5", {
                 __source: {
                     fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\approved.js",
-                    lineNumber: 51
+                    lineNumber: 56
                 },
                 __self: this
             }, item.payment), /*#__PURE__*/ _reactDefault.default.createElement("button", {
@@ -28885,7 +28915,7 @@ class approved extends _react.Component {
                 ,
                 __source: {
                     fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\approved.js",
-                    lineNumber: 52
+                    lineNumber: 57
                 },
                 __self: this
             }, "make payment"))
