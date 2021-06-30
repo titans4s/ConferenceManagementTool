@@ -4,7 +4,7 @@ import axios from 'axios';
 import React, { useState } from 'react';
 import { Cookies, useCookies } from 'react-cookie';
 
-
+//Displays approved Research papers of a specific email
 class approved extends Component {
 
     constructor(props) {
