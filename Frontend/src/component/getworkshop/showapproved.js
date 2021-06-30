@@ -30,6 +30,7 @@ class showapprovedworkshop extends Component {
                 <h4 class="card-header">{item.title}</h4>
                 <br/>
                 <h5 class="card-text" class="text-dark">{item.Oraganization}</h5>
+                <h5 class="card-text" class="text-dark">{item.conductorName}</h5>
               </div>
             ))}
 
