@@ -6,6 +6,6 @@ const Controller = require('../controller/paymentController');
 
 
 module.exports = function () {
-    router.post('/create',Controller.Createpayment);
+    router.post('/create', Controller.Createpayment);
     return router;
 }

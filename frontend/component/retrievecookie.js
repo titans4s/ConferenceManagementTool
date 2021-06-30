@@ -6,22 +6,22 @@ const Retrieve = () => {
    const [pwd, setPwd] = useState('');
    const [cookies, setCookie] = useCookies(['user']);
 
-  
+
    return (
       <div className="App">
-    
-   
-      
-      {cookies.Name && (
-      <div>
-         Name: <p>{cookies.Name}</p>
-      </div>
-      )}
-      {cookies.Password && (
-      <div>
-         Password: <p>{cookies.Password}</p>
-      </div>
-      )}
+
+
+
+         {cookies.Name && (
+            <div>
+               Name: <p>{cookies.Name}</p>
+            </div>
+         )}
+         {cookies.Password && (
+            <div>
+               Password: <p>{cookies.Password}</p>
+            </div>
+         )}
       </div>
    );
 };

@@ -34,13 +34,13 @@ mongoose.connection.once('open', () => {
     console.log('Database synched');
 });
 
-app.route('/').get((req,res)=>{
+app.route('/').get((req, res) => {
     res.send('SLIIT AF FINAL API BY SE2020');
 });
 
 app.use('/research', ResearcherApi());
-app.use('/payment',paymentApi());
+app.use('/payment', paymentApi());
 
-app.listen(PORT,() => {
+app.listen(PORT, () => {
     console.log('Server is up and running on ' + PORT);
 });

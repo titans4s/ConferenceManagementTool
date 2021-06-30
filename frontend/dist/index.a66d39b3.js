@@ -22042,7 +22042,7 @@ class Navbar extends _react.Component {
     }
     render() {
         return(/*#__PURE__*/ _reactDefault.default.createElement("nav", {
-            class: "navbar navbar-expand-lg navbar navbar-dark bg-dark",
+            class: "navbar navbar-expand-lg navbar  navbar-dark bg-dark ",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\nav.js",
                 lineNumber: 10
@@ -25608,20 +25608,20 @@ class Researcher extends _react.Component {
             className: "container",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 64
+                lineNumber: 63
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
             class: "col-md-6 offset-md-3",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 65
+                lineNumber: 64
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("br", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 67
+                lineNumber: 66
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement("div", {
@@ -25629,41 +25629,41 @@ class Researcher extends _react.Component {
             color: "blue",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 68
+                lineNumber: 67
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
             class: "card-body",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 69
+                lineNumber: 68
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("h3", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 74
+                lineNumber: 73
             },
             __self: this
         }, "Use the form below to submit your paper for publication."), /*#__PURE__*/ _reactDefault.default.createElement("hr", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 74
+                lineNumber: 73
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement("form", {
             onSubmit: this.onSubmit,
-            class: "row g-3 ",
+            class: "row g-2 ",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 76
+                lineNumber: 75
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
             class: "col-md-6 ",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 77
+                lineNumber: 76
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
@@ -25671,7 +25671,7 @@ class Researcher extends _react.Component {
             class: "form-label",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 78
+                lineNumber: 77
             },
             __self: this
         }, "AuthorName"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -25683,14 +25683,14 @@ class Researcher extends _react.Component {
             onChange: this.onChange,
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 79
+                lineNumber: 78
             },
             __self: this
         })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
             class: "col-md-6",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 81
+                lineNumber: 80
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
@@ -25698,7 +25698,7 @@ class Researcher extends _react.Component {
             class: "form-label",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 82
+                lineNumber: 81
             },
             __self: this
         }, "Email"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -25710,14 +25710,14 @@ class Researcher extends _react.Component {
             onChange: this.onChange,
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 83
+                lineNumber: 82
             },
             __self: this
         })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
             class: "col-12",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 85
+                lineNumber: 84
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
@@ -25725,7 +25725,7 @@ class Researcher extends _react.Component {
             class: "form-label",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 86
+                lineNumber: 85
             },
             __self: this
         }, "Paper Title"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -25737,14 +25737,14 @@ class Researcher extends _react.Component {
             onChange: this.onChange,
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 87
+                lineNumber: 86
             },
             __self: this
         })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
             class: "col-md-4",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 89
+                lineNumber: 88
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
@@ -25752,7 +25752,7 @@ class Researcher extends _react.Component {
             class: "form-label",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 90
+                lineNumber: 89
             },
             __self: this
         }, "Research Field"), /*#__PURE__*/ _reactDefault.default.createElement("select", {
@@ -25763,39 +25763,39 @@ class Researcher extends _react.Component {
             onChange: this.onChange,
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 91
+                lineNumber: 90
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("option", {
             selected: true,
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 92
+                lineNumber: 91
             },
             __self: this
         }, "Choose..."), /*#__PURE__*/ _reactDefault.default.createElement("option", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 93
+                lineNumber: 92
             },
             __self: this
         }, "IT"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 94
+                lineNumber: 93
             },
             __self: this
         }, "Agriculture"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 95
+                lineNumber: 94
             },
             __self: this
         }, "BioTechnology"))), /*#__PURE__*/ _reactDefault.default.createElement("div", {
             class: "col-md-4",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 99
+                lineNumber: 98
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
@@ -25803,7 +25803,7 @@ class Researcher extends _react.Component {
             class: "form-label",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 100
+                lineNumber: 99
             },
             __self: this
         }, "No of pages"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -25815,14 +25815,14 @@ class Researcher extends _react.Component {
             onChange: this.onChange,
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 101
+                lineNumber: 100
             },
             __self: this
         })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
             class: "col-md-4",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 104
+                lineNumber: 103
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
@@ -25830,7 +25830,7 @@ class Researcher extends _react.Component {
             class: "form-label",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 105
+                lineNumber: 104
             },
             __self: this
         }, "Designation"), /*#__PURE__*/ _reactDefault.default.createElement("select", {
@@ -25841,57 +25841,57 @@ class Researcher extends _react.Component {
             onChange: this.onChange,
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 106
+                lineNumber: 105
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("option", {
             selected: true,
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 107
+                lineNumber: 106
             },
             __self: this
         }, "Choose..."), /*#__PURE__*/ _reactDefault.default.createElement("option", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 108
+                lineNumber: 107
             },
             __self: this
         }, "Student(Any degree)"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 109
+                lineNumber: 108
             },
             __self: this
         }, "Research Scholar"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 110
+                lineNumber: 109
             },
             __self: this
         }, "Assistant Professer"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 111
+                lineNumber: 110
             },
             __self: this
         }, " Professer"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 112
+                lineNumber: 111
             },
             __self: this
         }, " Doctrate Degree holder"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 113
+                lineNumber: 112
             },
             __self: this
         }, " Other"))), /*#__PURE__*/ _reactDefault.default.createElement("div", {
             class: "col-md-4",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 118
+                lineNumber: 117
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
@@ -25899,7 +25899,7 @@ class Researcher extends _react.Component {
             class: "form-label",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 119
+                lineNumber: 118
             },
             __self: this
         }, "Refered By"), /*#__PURE__*/ _reactDefault.default.createElement("select", {
@@ -25910,51 +25910,51 @@ class Researcher extends _react.Component {
             onChange: this.onChange,
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 120
+                lineNumber: 119
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("option", {
             selected: true,
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 121
+                lineNumber: 120
             },
             __self: this
         }, "Choose..."), /*#__PURE__*/ _reactDefault.default.createElement("option", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 122
+                lineNumber: 121
             },
             __self: this
         }, "Search Engines"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 123
+                lineNumber: 122
             },
             __self: this
         }, "From facebook"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 124
+                lineNumber: 123
             },
             __self: this
         }, "Friend or Guide"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 125
+                lineNumber: 124
             },
             __self: this
         }, "Already an Author"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 126
+                lineNumber: 125
             },
             __self: this
         }, "Other"))), /*#__PURE__*/ _reactDefault.default.createElement("div", {
             class: "col-md-4",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 130
+                lineNumber: 129
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
@@ -25962,7 +25962,7 @@ class Researcher extends _react.Component {
             class: "form-label",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 131
+                lineNumber: 130
             },
             __self: this
         }, "No of Authors"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -25974,21 +25974,21 @@ class Researcher extends _react.Component {
             onChange: this.onChange,
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 132
+                lineNumber: 131
             },
             __self: this
         })), /*#__PURE__*/ _reactDefault.default.createElement("label", {
             for: "floatingTextarea",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 135
+                lineNumber: 134
             },
             __self: this
         }, "Paper abstract"), /*#__PURE__*/ _reactDefault.default.createElement("div", {
             class: "form-floating",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 136
+                lineNumber: 135
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("textarea", {
@@ -26000,14 +26000,14 @@ class Researcher extends _react.Component {
             onChange: this.onChange,
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 138
+                lineNumber: 137
             },
             __self: this
         })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
             class: "col-12",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 141
+                lineNumber: 140
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
@@ -26015,7 +26015,7 @@ class Researcher extends _react.Component {
             class: "form-label",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 142
+                lineNumber: 141
             },
             __self: this
         }, "URL"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -26027,21 +26027,21 @@ class Researcher extends _react.Component {
             onChange: this.onChange,
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 143
+                lineNumber: 142
             },
             __self: this
         })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
             class: "col-12",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 148
+                lineNumber: 147
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
             class: "d-flex justify-content-center ",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 149
+                lineNumber: 148
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("button", {
@@ -26049,7 +26049,7 @@ class Researcher extends _react.Component {
             class: "btn btn-primary",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Researcher.js",
-                lineNumber: 150
+                lineNumber: 149
             },
             __self: this
         }, "Submit")))))))));
@@ -27555,6 +27555,8 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
+var _emailjsCom = require("emailjs-com");
+var _emailjsComDefault = parcelHelpers.interopDefault(_emailjsCom);
 class Paper extends _react.Component {
     constructor(props){
         super(props);
@@ -27563,6 +27565,7 @@ class Paper extends _react.Component {
         this.state = {
             Papers: ''
         };
+        _emailjsComDefault.default.init('user_POwld6FyKa1zfCwDXeUOV');
     }
     componentDidUpdate() {
         this.onDelete;
@@ -27582,6 +27585,20 @@ class Paper extends _react.Component {
         }).catch((error)=>{
             console.log(error.message);
             alert(error.message);
+        });
+        const btn = document.getElementById('button');
+        document.getElementById('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            btn.value = 'Sending...';
+            const serviceID = 'default_service';
+            const templateID = 'template_5ch6pli';
+            _emailjsComDefault.default.sendForm(serviceID, templateID, this).then(()=>{
+                btn.value = 'Send Email';
+                alert('Sent!');
+            }, (err)=>{
+                btn.value = 'Send Email';
+                alert(JSON.stringify(err));
+            });
         });
     }
     onUpdatenotapproval() {
@@ -27607,94 +27624,122 @@ class Paper extends _react.Component {
             className: "container",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paperDetails.js",
-                lineNumber: 66
+                lineNumber: 89
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("br", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paperDetails.js",
-                lineNumber: 66
+                lineNumber: 89
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement("div", {
             class: "card bg-light mb-3",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paperDetails.js",
-                lineNumber: 67
+                lineNumber: 90
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
             class: "card-header",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paperDetails.js",
-                lineNumber: 68
+                lineNumber: 91
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("h2", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paperDetails.js",
-                lineNumber: 68
+                lineNumber: 91
             },
             __self: this
         }, this.state.Papers.papertitle)), /*#__PURE__*/ _reactDefault.default.createElement("div", {
             class: "card-body",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paperDetails.js",
-                lineNumber: 69
+                lineNumber: 92
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("h5", {
             class: "card-title",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paperDetails.js",
-                lineNumber: 70
+                lineNumber: 93
             },
             __self: this
         }, "Abstract"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
             class: "card-text",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paperDetails.js",
-                lineNumber: 71
+                lineNumber: 94
             },
             __self: this
         }, this.state.Papers.abstract, /*#__PURE__*/ _reactDefault.default.createElement("br", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paperDetails.js",
-                lineNumber: 71
+                lineNumber: 94
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement("br", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paperDetails.js",
-                lineNumber: 71
+                lineNumber: 94
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement("h3", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paperDetails.js",
-                lineNumber: 72
+                lineNumber: 95
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
             href: this.state.Papers.url,
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paperDetails.js",
-                lineNumber: 72
+                lineNumber: 95
             },
             __self: this
         }, "View the paper")), " "))), /*#__PURE__*/ _reactDefault.default.createElement("h1", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paperDetails.js",
-                lineNumber: 77
+                lineNumber: 100
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement("form", {
+            id: "form",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paperDetails.js",
+                lineNumber: 101
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("input", {
+            type: "hidden",
+            name: "to_name",
+            id: "to_name",
+            value: this.state.Papers.authorname,
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paperDetails.js",
+                lineNumber: 102
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+            type: "hidden",
+            name: "to_email",
+            id: "to_email",
+            value: this.state.Papers.email,
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paperDetails.js",
+                lineNumber: 103
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement("button", {
-            type: "button",
+            type: "submit",
+            id: "button",
             class: "btn btn-outline-dark",
             onClick: this.onUpdate,
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paperDetails.js",
-                lineNumber: 79
+                lineNumber: 104
             },
             __self: this
         }, "Approve"), "\xa0\xa0\xa0", /*#__PURE__*/ _reactDefault.default.createElement("button", {
@@ -27703,7 +27748,7 @@ class Paper extends _react.Component {
             onClick: this.onUpdatenotapproval,
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paperDetails.js",
-                lineNumber: 81
+                lineNumber: 107
             },
             __self: this
         }, "disApprove"), "\xa0\xa0\xa0", /*#__PURE__*/ _reactDefault.default.createElement("button", {
@@ -27712,10 +27757,18 @@ class Paper extends _react.Component {
             onClick: this.onDelete,
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paperDetails.js",
-                lineNumber: 83
+                lineNumber: 109
             },
             __self: this
-        }, "Delete")));
+        }, "Delete")), /*#__PURE__*/ _reactDefault.default.createElement("script", {
+            type: "text/javascript",
+            src: "https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paperDetails.js",
+                lineNumber: 111
+            },
+            __self: this
+        })));
     }
 }
 exports.default = Paper;
@@ -27725,7 +27778,146 @@ exports.default = Paper;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","axios":"7rA65","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"YTJQu":[function(require,module,exports) {
+},{"react":"3b2NM","axios":"7rA65","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","emailjs-com":"ia8T0"}],"ia8T0":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "init", ()=>_init.init
+);
+parcelHelpers.export(exports, "send", ()=>_send.send
+);
+parcelHelpers.export(exports, "sendForm", ()=>_sendForm.sendForm
+);
+var _init = require("./methods/init/init");
+var _send = require("./methods/send/send");
+var _sendForm = require("./methods/sendForm/sendForm");
+exports.default = {
+    init: _init.init,
+    send: _send.send,
+    sendForm: _sendForm.sendForm
+};
+
+},{"./methods/init/init":"4rQLp","./methods/send/send":"7p89s","./methods/sendForm/sendForm":"3F0Gf","@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"4rQLp":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "init", ()=>init
+);
+var _store = require("../../store/store");
+const init = (userID, origin = 'https://api.emailjs.com')=>{
+    _store.store._userID = userID;
+    _store.store._origin = origin;
+};
+
+},{"../../store/store":"5AEMQ","@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"5AEMQ":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "store", ()=>store
+);
+const store = {
+    _origin: 'https://api.emailjs.com'
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"7p89s":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "send", ()=>send
+);
+var _store = require("../../store/store");
+var _validateParams = require("../../utils/validateParams");
+var _sendPost = require("../../api/sendPost");
+const send = (serviceID, templateID, templatePrams, userID)=>{
+    const uID = userID || _store.store._userID;
+    _validateParams.validateParams(uID, serviceID, templateID);
+    const params = {
+        lib_version: '3.1.0',
+        user_id: uID,
+        service_id: serviceID,
+        template_id: templateID,
+        template_params: templatePrams
+    };
+    return _sendPost.sendPost('/api/v1.0/email/send', JSON.stringify(params), {
+        'Content-type': 'application/json'
+    });
+};
+
+},{"../../store/store":"5AEMQ","../../utils/validateParams":"3uBfY","../../api/sendPost":"1DnHR","@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"3uBfY":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "validateParams", ()=>validateParams
+);
+const validateParams = (userID, serviceID, templateID)=>{
+    if (!userID) throw 'The user ID is required. Visit https://dashboard.emailjs.com/admin/integration';
+    if (!serviceID) throw 'The service ID is required. Visit https://dashboard.emailjs.com/admin';
+    if (!templateID) throw 'The template ID is required. Visit https://dashboard.emailjs.com/admin/templates';
+    return true;
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"1DnHR":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "sendPost", ()=>sendPost
+);
+var _emailJSResponseStatus = require("../models/EmailJSResponseStatus");
+var _store = require("../store/store");
+const sendPost = (url, data, headers = {
+})=>{
+    return new Promise((resolve, reject)=>{
+        const xhr = new XMLHttpRequest();
+        xhr.addEventListener('load', ({ target  })=>{
+            const responseStatus = new _emailJSResponseStatus.EmailJSResponseStatus(target);
+            if (responseStatus.status === 200 || responseStatus.text === 'OK') resolve(responseStatus);
+            else reject(responseStatus);
+        });
+        xhr.addEventListener('error', ({ target  })=>{
+            reject(new _emailJSResponseStatus.EmailJSResponseStatus(target));
+        });
+        xhr.open('POST', _store.store._origin + url, true);
+        Object.keys(headers).forEach((key)=>{
+            xhr.setRequestHeader(key, headers[key]);
+        });
+        xhr.send(data);
+    });
+};
+
+},{"../models/EmailJSResponseStatus":"1Ug4Z","../store/store":"5AEMQ","@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"1Ug4Z":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "EmailJSResponseStatus", ()=>EmailJSResponseStatus
+);
+class EmailJSResponseStatus {
+    constructor(httpResponse){
+        this.status = httpResponse.status;
+        this.text = httpResponse.responseText;
+    }
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"3F0Gf":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "sendForm", ()=>sendForm
+);
+var _store = require("../../store/store");
+var _validateParams = require("../../utils/validateParams");
+var _sendPost = require("../../api/sendPost");
+const findHTMLForm = (form)=>{
+    let currentForm;
+    if (typeof form === 'string') currentForm = document.querySelector(form);
+    else currentForm = form;
+    if (!currentForm || currentForm.nodeName !== 'FORM') throw 'The 3rd parameter is expected to be the HTML form element or the style selector of form';
+    return currentForm;
+};
+const sendForm = (serviceID, templateID, form, userID)=>{
+    const uID = userID || _store.store._userID;
+    const currentForm = findHTMLForm(form);
+    _validateParams.validateParams(uID, serviceID, templateID);
+    const formData = new FormData(currentForm);
+    formData.append('lib_version', '3.1.0');
+    formData.append('service_id', serviceID);
+    formData.append('template_id', templateID);
+    formData.append('user_id', uID);
+    return _sendPost.sendPost('/api/v1.0/email/send-form', formData);
+};
+
+},{"../../store/store":"5AEMQ","../../utils/validateParams":"3uBfY","../../api/sendPost":"1DnHR","@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"YTJQu":[function(require,module,exports) {
 var helpers = require("../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27804,7 +27996,7 @@ const VerticalNavbar = ()=>{
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("ul", {
-        className: "navbar-nav bg-gradient-primary sidebar sidebar-dark accordion",
+        className: "navbar-nav bg-dark sidebar sidebar-dark accordion",
         id: "accordionSidebar",
         __source: {
             fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\verticalnav.js",
@@ -28916,33 +29108,55 @@ class approved extends _react.Component {
                 lineNumber: 48
             },
             __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+        }, /*#__PURE__*/ _reactDefault.default.createElement("br", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\approved.js",
+                lineNumber: 49
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement("h1", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\approved.js",
                 lineNumber: 50
             },
             __self: this
-        }, "Approved research papers"), _reactCookie.Cookies.Name, this.state.approvedPapers.length > 0 && this.state.approvedPapers.map((item, index)=>/*#__PURE__*/ _reactDefault.default.createElement("div", {
+        }, "Approved research papers"), /*#__PURE__*/ _reactDefault.default.createElement("br", {
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\approved.js",
+                lineNumber: 50
+            },
+            __self: this
+        }), _reactCookie.Cookies.Name, this.state.approvedPapers.length > 0 && this.state.approvedPapers.map((item, index)=>/*#__PURE__*/ _reactDefault.default.createElement("div", {
                 key: index,
-                className: "card mb-3",
+                className: "card card bg-light mb-3",
                 __source: {
                     fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\approved.js",
                     lineNumber: 53
                 },
                 __self: this
-            }, /*#__PURE__*/ _reactDefault.default.createElement("h5", {
+            }, /*#__PURE__*/ _reactDefault.default.createElement("h4", {
+                class: "card-title",
                 __source: {
                     fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\approved.js",
-                    lineNumber: 54
+                    lineNumber: 55
                 },
                 __self: this
-            }, item.papertitle), /*#__PURE__*/ _reactDefault.default.createElement("h5", {
+            }, " ", item.papertitle), /*#__PURE__*/ _reactDefault.default.createElement("h6", {
+                class: "card-subtitle mb-2 text-muted",
                 __source: {
                     fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\approved.js",
                     lineNumber: 56
                 },
                 __self: this
-            }, item.payment), /*#__PURE__*/ _reactDefault.default.createElement("button", {
+            }, item.payment), /*#__PURE__*/ _reactDefault.default.createElement("p", {
+                class: "card-text",
+                __source: {
+                    fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\approved.js",
+                    lineNumber: 57
+                },
+                __self: this
+            }, " ", item.payment == "not paid" && /*#__PURE__*/ _reactDefault.default.createElement("button", {
+                class: "btn btn-outline-primary",
                 onClick: (e)=>this.navigateSubject(e, item._id)
                 ,
                 __source: {
@@ -28950,7 +29164,7 @@ class approved extends _react.Component {
                     lineNumber: 57
                 },
                 __self: this
-            }, "make payment"))
+            }, "make payment")))
         )));
     }
 }
@@ -29178,6 +29392,8 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
+var _emailjsCom = require("emailjs-com");
+var _emailjsComDefault = parcelHelpers.interopDefault(_emailjsCom);
 class Payment extends _react.Component {
     constructor(props){
         super(props);
@@ -29193,6 +29409,7 @@ class Payment extends _react.Component {
             year: "",
             cvc: ""
         };
+        _emailjsComDefault.default.init('user_POwld6FyKa1zfCwDXeUOV');
     }
     onUpdate() {
         _axiosDefault.default.put(`http://localhost:9099/research/updatepayment/${this.props.match.params.id}`).then((response)=>{
@@ -29200,6 +29417,20 @@ class Payment extends _react.Component {
         }).catch((error)=>{
             console.log(error.message);
             alert(error.message);
+        });
+        const btn = document.getElementById('button');
+        document.getElementById('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            btn.value = 'Sending...';
+            const serviceID = 'default_service';
+            const templateID = 'template_pcbvlbl';
+            _emailjsComDefault.default.sendForm(serviceID, templateID, this).then(()=>{
+                btn.value = 'Send Email';
+                alert('Sent!');
+            }, (err)=>{
+                btn.value = 'Send Email';
+                alert(JSON.stringify(err));
+            });
         });
     }
     onSubmit(e) {
@@ -29220,12 +29451,6 @@ class Payment extends _react.Component {
             console.log(error.message);
             alert(error.message);
         });
-        _axiosDefault.default.put(`http://localhost:9099/research/updatepayment/${this.props.match.params.id}`).then((response)=>{
-            alert('Payment status changed');
-        }).catch((error)=>{
-            console.log(error.message);
-            alert(error.message);
-        });
     }
     onChange(e) {
         this.setState({
@@ -29236,63 +29461,54 @@ class Payment extends _react.Component {
         return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 69
+                lineNumber: 86
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
             class: "col-md-6 offset-md-3",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 70
+                lineNumber: 87
             },
             __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("span", {
-            class: "anchor",
-            id: "formPayment",
+        }, /*#__PURE__*/ _reactDefault.default.createElement("br", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 71
-            },
-            __self: this
-        }), /*#__PURE__*/ _reactDefault.default.createElement("hr", {
-            class: "my-5",
-            __source: {
-                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 72
+                lineNumber: 88
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement("div", {
             class: "card card-outline-secondary",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 74
+                lineNumber: 90
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
             class: "card-body",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 75
+                lineNumber: 91
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("h3", {
             class: "text-center",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 76
+                lineNumber: 92
             },
             __self: this
         }, "Credit Card Payment"), /*#__PURE__*/ _reactDefault.default.createElement("hr", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 77
+                lineNumber: 93
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement("div", {
             class: "alert alert-info p-2 pb-3",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 78
+                lineNumber: 94
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
@@ -29301,36 +29517,37 @@ class Payment extends _react.Component {
             href: "#",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 79
+                lineNumber: 95
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("samp", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 79
+                lineNumber: 95
             },
             __self: this
         }, "\xd7")), "CVC code is required."), /*#__PURE__*/ _reactDefault.default.createElement("form", {
             class: "form",
             role: "form",
+            id: "form",
             onSubmit: this.onSubmit,
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 84
+                lineNumber: 100
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
             class: "form-group",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 85
+                lineNumber: 101
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
             for: "cc_name",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 86
+                lineNumber: 102
             },
             __self: this
         }, "Email address"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -29343,21 +29560,21 @@ class Payment extends _react.Component {
             onChange: this.onChange,
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 87
+                lineNumber: 103
             },
             __self: this
         })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
             class: "form-group",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 90
+                lineNumber: 106
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
             for: "cc_name",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 91
+                lineNumber: 107
             },
             __self: this
         }, "Card Holder's Name"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -29370,20 +29587,20 @@ class Payment extends _react.Component {
             onChange: this.onChange,
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 92
+                lineNumber: 108
             },
             __self: this
         })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
             class: "form-group",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 95
+                lineNumber: 111
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 96
+                lineNumber: 112
             },
             __self: this
         }, "Card Number"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -29397,28 +29614,28 @@ class Payment extends _react.Component {
             onChange: this.onChange,
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 97
+                lineNumber: 113
             },
             __self: this
         })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
             class: "form-group row",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 99
+                lineNumber: 115
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
             class: "col-md-12",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 100
+                lineNumber: 116
             },
             __self: this
         }, "Card Exp. Date"), /*#__PURE__*/ _reactDefault.default.createElement("div", {
             class: "col-md-4",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 101
+                lineNumber: 117
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("select", {
@@ -29429,98 +29646,98 @@ class Payment extends _react.Component {
             onChange: this.onChange,
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 102
+                lineNumber: 118
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("option", {
             value: "01",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 103
+                lineNumber: 119
             },
             __self: this
         }, "01"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
             value: "02",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 104
+                lineNumber: 120
             },
             __self: this
         }, "02"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
             value: "03",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 105
+                lineNumber: 121
             },
             __self: this
         }, "03"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
             value: "04",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 106
+                lineNumber: 122
             },
             __self: this
         }, "04"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
             value: "05",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 107
+                lineNumber: 123
             },
             __self: this
         }, "05"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
             value: "06",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 108
+                lineNumber: 124
             },
             __self: this
         }, "06"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
             value: "07",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 109
+                lineNumber: 125
             },
             __self: this
         }, "07"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
             value: "08",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 110
+                lineNumber: 126
             },
             __self: this
         }, "08"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
             value: "09",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 111
+                lineNumber: 127
             },
             __self: this
         }, "09"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
             value: "10",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 112
+                lineNumber: 128
             },
             __self: this
         }, "10"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
             value: "11",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 113
+                lineNumber: 129
             },
             __self: this
         }, "11"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
             value: "12",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 114
+                lineNumber: 130
             },
             __self: this
         }, "12"))), /*#__PURE__*/ _reactDefault.default.createElement("div", {
             class: "col-md-4",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 117
+                lineNumber: 133
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("select", {
@@ -29531,44 +29748,44 @@ class Payment extends _react.Component {
             onChange: this.onChange,
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 118
+                lineNumber: 134
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("option", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 119
+                lineNumber: 135
             },
             __self: this
         }, "2018"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 120
+                lineNumber: 136
             },
             __self: this
         }, "2019"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 121
+                lineNumber: 137
             },
             __self: this
         }, "2020"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 122
+                lineNumber: 138
             },
             __self: this
         }, "2021"), /*#__PURE__*/ _reactDefault.default.createElement("option", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 123
+                lineNumber: 139
             },
             __self: this
         }, "2022"))), /*#__PURE__*/ _reactDefault.default.createElement("div", {
             class: "col-md-4",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 126
+                lineNumber: 142
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -29584,81 +29801,96 @@ class Payment extends _react.Component {
             onChange: this.onChange,
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 127
+                lineNumber: 143
             },
             __self: this
         }))), /*#__PURE__*/ _reactDefault.default.createElement("div", {
             class: "row",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 130
+                lineNumber: 146
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
             class: "col-md-12",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 131
+                lineNumber: 147
             },
             __self: this
         }, "Amount")), /*#__PURE__*/ _reactDefault.default.createElement("div", {
             class: "form-row",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 134
+                lineNumber: 150
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
             class: "col-md-12",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 135
+                lineNumber: 151
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
             class: "form-control total btn btn-info",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 136
+                lineNumber: 152
             },
             __self: this
         }, "Total:", /*#__PURE__*/ _reactDefault.default.createElement("span", {
             class: "amount",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 138
+                lineNumber: 154
             },
             __self: this
         }, "Rs.300")))), /*#__PURE__*/ _reactDefault.default.createElement("hr", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 143
+                lineNumber: 159
             },
             __self: this
-        }), /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            class: "form-group row",
+        }), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+            type: "hidden",
+            name: "to_name",
+            id: "to_name",
+            value: this.state.cardholder,
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 145
+                lineNumber: 166
             },
             __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            class: "col-md-6",
+        }), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+            type: "hidden",
+            name: "to_email",
+            id: "to_email",
+            value: this.state.email,
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 147
+                lineNumber: 167
             },
             __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("button", {
+        }), /*#__PURE__*/ _reactDefault.default.createElement("button", {
             type: "submit",
+            id: "button",
             class: "btn btn-success btn-lg btn-block",
             onClick: this.onUpdate,
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
-                lineNumber: 148
+                lineNumber: 169
             },
             __self: this
-        }, "Submit")))))))));
+        }, "Submit"), /*#__PURE__*/ _reactDefault.default.createElement("script", {
+            type: "text/javascript",
+            src: "https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js",
+            __source: {
+                fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paymentform.js",
+                lineNumber: 172
+            },
+            __self: this
+        })))))));
     }
 }
 exports.default = Payment;
@@ -29668,7 +29900,7 @@ exports.default = Payment;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","axios":"7rA65","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"6DoV9":[function(require,module,exports) {
+},{"react":"3b2NM","axios":"7rA65","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","emailjs-com":"ia8T0"}],"6DoV9":[function(require,module,exports) {
 /** @license Material-UI v4.11.4
  *
  * This source code is licensed under the MIT license found in the
@@ -68928,49 +69160,22 @@ class notapproved extends _react.Component {
                 lineNumber: 28
             },
             __self: this
-        }), this.state.notapprovedPapers.length > 0 && this.state.approvedPapers.map((item, index)=>/*#__PURE__*/ _reactDefault.default.createElement("div", {
+        }), this.state.notapprovedPapers.length > 0 && this.state.notapprovedPapers.map((item, index)=>/*#__PURE__*/ _reactDefault.default.createElement("div", {
                 key: index,
+                className: "card card bg-light mb-3",
                 __source: {
                     fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\not approved.js",
                     lineNumber: 30
-                },
-                __self: this
-            }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
-                class: "row",
-                __source: {
-                    fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\not approved.js",
-                    lineNumber: 32
-                },
-                __self: this
-            }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
-                class: "col-sm-6",
-                __source: {
-                    fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\not approved.js",
-                    lineNumber: 33
-                },
-                __self: this
-            }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
-                class: "card",
-                __source: {
-                    fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\not approved.js",
-                    lineNumber: 34
-                },
-                __self: this
-            }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
-                class: "card-body",
-                __source: {
-                    fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\not approved.js",
-                    lineNumber: 35
                 },
                 __self: this
             }, /*#__PURE__*/ _reactDefault.default.createElement("h5", {
                 class: "card-title",
                 __source: {
                     fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\not approved.js",
-                    lineNumber: 36
+                    lineNumber: 33
                 },
                 __self: this
-            }, item.papertitle))))))
+            }, item.papertitle))
         )));
     }
 }
