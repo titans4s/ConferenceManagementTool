@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import emailjs from 'emailjs-com';
 
+
+//Display details of a specific research paper
 class Paper extends Component {
     constructor(props) {
         super(props);

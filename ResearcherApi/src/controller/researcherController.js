@@ -1,6 +1,6 @@
 const Researcher = require('../model/researcher');
 
-
+//store research paper details in the dataabase
 const CreateResearcher = async (req, res) => {
     if (req.body) {
         const research = new Researcher(req.body);
@@ -13,6 +13,7 @@ const CreateResearcher = async (req, res) => {
     }
 }
 
+//update the status of research paper as approved
 const approval = async (req, res) => {
     if (req.params && req.params.id) {
         let userid = req.params.id;
@@ -27,6 +28,9 @@ const approval = async (req, res) => {
     }
 
 }
+
+
+//Retrive all the approved and paid research papers
 const getapprovedpaid = async (req, res) => {
     await Researcher.find({ status: "approved", payment: "paid" })
         .then(data => {
@@ -36,6 +40,7 @@ const getapprovedpaid = async (req, res) => {
         });
 }
 
+//update the payment status
 const updatepayment = async (req, res) => {
     if (req.params && req.params.id) {
         let paperid = req.params.id;
@@ -50,6 +55,7 @@ const updatepayment = async (req, res) => {
     }
 }
 
+//Retrieve the approved research paper of a specific email address
 const findapproval = async (req, res) => {
     if (req.params && req.params.email) {
         const Email = req.params.email;
@@ -63,6 +69,8 @@ const findapproval = async (req, res) => {
     }
 }
 
+
+//Retrieve the not approved research paper of a specific email address
 const findnotapproval = async (req, res) => {
     if (req.params && req.params.email) {
         const Email = req.params.email;
@@ -76,6 +84,7 @@ const findnotapproval = async (req, res) => {
     }
 }
 
+//Delete Research paper
 const ondelete = async (req, res) => {
     if (req.params && req.params.id) {
         let paperid = req.params.id;
@@ -89,7 +98,7 @@ const ondelete = async (req, res) => {
     }
 }
 
-
+//Update the status of research paper as not approved
 const disapproval = async (req, res) => {
     if (req.params && req.params.id) {
         let userid = req.params.id;
@@ -104,6 +113,8 @@ const disapproval = async (req, res) => {
     }
 
 }
+
+//Retrieve all research papers
 const getAllReseracher = async (req, res) => {
     await Researcher.find({})
         .then(data => {
@@ -113,6 +124,7 @@ const getAllReseracher = async (req, res) => {
         });
 }
 
+//Retrive details of one research paper
 const getOneSubjectResearch = async (req, res) => {
     if (req.params && req.params.id) {
         await Researcher.findById(req.params.id)

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
+//Displays Research paper templates
 class Paper extends Component {
     constructor(props) {
         super(props);

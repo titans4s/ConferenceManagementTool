@@ -3,7 +3,7 @@ import axios from 'axios';
 
 
 
-
+//Displays all approved and  Research papers 
 class paidallapproved extends Component {
 
     constructor(props) {

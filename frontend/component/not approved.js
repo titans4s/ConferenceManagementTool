@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
+//Displays not approved Research papers of a specific email
 class notapproved extends Component {
     constructor(props) {
         super(props);

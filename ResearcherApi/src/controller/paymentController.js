@@ -1,6 +1,6 @@
 const Payment = require('../model/payment');
 
-
+//store payment details in the database
 const Createpayment = async (req, res) => {
     if (req.body) {
         const payment = new Payment(req.body);
