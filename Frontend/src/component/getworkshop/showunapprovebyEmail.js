@@ -26,7 +26,7 @@ class showunapprovedbyEmail extends Component {
     render() {
         return (
             <div className="container"><br />
-                <h2>Approved Workshops<span class="badge badge-secondary">New</span></h2><hr />
+                <h2><span class="badge badge-secondary">Unapproved Workshops</span></h2><hr />
                 {this.state.unapprovedWorkshop.length > 0 && this.state.unapprovedWorkshop.map((item, index) => (
                     <div key={index}  >
 

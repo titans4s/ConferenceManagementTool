@@ -86,7 +86,7 @@ class WorkshopStatus extends Component {
     render() {
         return (
             <div className="container">
-                <h1>Workshop</h1>
+                <h1><span class="badge badge-secondary">Workshop</span></h1>
                 <div className="card mb-3">
                     <div className="p-3">
                         <h2>{this.state.workshop.title}</h2>

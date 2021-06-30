@@ -24,11 +24,12 @@ class showapprovedworkshop extends Component {
   render() {
       return(
           <div className="container">
-            <h1>Workshops</h1>
+            <h1><span class="badge badge-secondary">Workshops</span></h1>
             {this.state.workshop.length > 0 && this.state.workshop.map((item,index) =>(
               <div key={index} className ="card mb-3" onClick={e => this.navigateSubjectPage(e, item._id)}>
-                <h4>{item.title}</h4>
-                <h5>{item.Oraganization}</h5>
+                <h4 class="card-header">{item.title}</h4>
+                <br/>
+                <h5 class="card-text" class="text-dark">{item.Oraganization}</h5>
               </div>
             ))}
 

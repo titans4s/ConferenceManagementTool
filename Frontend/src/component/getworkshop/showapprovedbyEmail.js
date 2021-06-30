@@ -26,7 +26,7 @@ class showapprovedbyEmail extends Component {
     render() {
         return (
             <div className="container"><br />
-                <h2>Approved Workshops</h2><hr />
+                <h2><span class="badge badge-secondary">Approved Workshops</span></h2><hr />
                 {this.state.approvedWorkshop.length > 0 && this.state.approvedWorkshop.map((item, index) => (
                     <div key={index}  >
 
