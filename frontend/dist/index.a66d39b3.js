@@ -27557,6 +27557,7 @@ var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
 var _emailjsCom = require("emailjs-com");
 var _emailjsComDefault = parcelHelpers.interopDefault(_emailjsCom);
+//Display details of a specific research paper
 class Paper extends _react.Component {
     constructor(props){
         super(props);
@@ -27624,92 +27625,92 @@ class Paper extends _react.Component {
             className: "container",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paperDetails.js",
-                lineNumber: 89
+                lineNumber: 91
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("br", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paperDetails.js",
-                lineNumber: 89
+                lineNumber: 91
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement("div", {
             class: "card bg-light mb-3",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paperDetails.js",
-                lineNumber: 90
+                lineNumber: 92
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
             class: "card-header",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paperDetails.js",
-                lineNumber: 91
+                lineNumber: 93
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("h2", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paperDetails.js",
-                lineNumber: 91
+                lineNumber: 93
             },
             __self: this
         }, this.state.Papers.papertitle)), /*#__PURE__*/ _reactDefault.default.createElement("div", {
             class: "card-body",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paperDetails.js",
-                lineNumber: 92
+                lineNumber: 94
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("h5", {
             class: "card-title",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paperDetails.js",
-                lineNumber: 93
+                lineNumber: 95
             },
             __self: this
         }, "Abstract"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
             class: "card-text",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paperDetails.js",
-                lineNumber: 94
+                lineNumber: 96
             },
             __self: this
         }, this.state.Papers.abstract, /*#__PURE__*/ _reactDefault.default.createElement("br", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paperDetails.js",
-                lineNumber: 94
+                lineNumber: 96
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement("br", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paperDetails.js",
-                lineNumber: 94
+                lineNumber: 96
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement("h3", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paperDetails.js",
-                lineNumber: 95
+                lineNumber: 97
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
             href: this.state.Papers.url,
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paperDetails.js",
-                lineNumber: 95
+                lineNumber: 97
             },
             __self: this
         }, "View the paper")), " "))), /*#__PURE__*/ _reactDefault.default.createElement("h1", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paperDetails.js",
-                lineNumber: 100
+                lineNumber: 102
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement("form", {
             id: "form",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paperDetails.js",
-                lineNumber: 101
+                lineNumber: 103
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -27719,7 +27720,7 @@ class Paper extends _react.Component {
             value: this.state.Papers.authorname,
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paperDetails.js",
-                lineNumber: 102
+                lineNumber: 104
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -27729,7 +27730,7 @@ class Paper extends _react.Component {
             value: this.state.Papers.email,
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paperDetails.js",
-                lineNumber: 103
+                lineNumber: 105
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement("button", {
@@ -27739,7 +27740,7 @@ class Paper extends _react.Component {
             onClick: this.onUpdate,
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paperDetails.js",
-                lineNumber: 104
+                lineNumber: 106
             },
             __self: this
         }, "Approve"), "\xa0\xa0\xa0", /*#__PURE__*/ _reactDefault.default.createElement("button", {
@@ -27748,7 +27749,7 @@ class Paper extends _react.Component {
             onClick: this.onUpdatenotapproval,
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paperDetails.js",
-                lineNumber: 107
+                lineNumber: 109
             },
             __self: this
         }, "disApprove"), "\xa0\xa0\xa0", /*#__PURE__*/ _reactDefault.default.createElement("button", {
@@ -27757,7 +27758,7 @@ class Paper extends _react.Component {
             onClick: this.onDelete,
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paperDetails.js",
-                lineNumber: 109
+                lineNumber: 111
             },
             __self: this
         }, "Delete")), /*#__PURE__*/ _reactDefault.default.createElement("script", {
@@ -27765,7 +27766,7 @@ class Paper extends _react.Component {
             src: "https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\paperDetails.js",
-                lineNumber: 111
+                lineNumber: 113
             },
             __self: this
         })));
@@ -29066,6 +29067,7 @@ var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
 var _reactCookie = require("react-cookie");
 var _s = $RefreshSig$();
+//Displays approved Research papers of a specific email
 class approved extends _react.Component {
     constructor(props){
         super(props);
@@ -69118,6 +69120,7 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
+//Displays not approved Research papers of a specific email
 class notapproved extends _react.Component {
     constructor(props){
         super(props);
@@ -69139,25 +69142,25 @@ class notapproved extends _react.Component {
         return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\not approved.js",
-                lineNumber: 27
+                lineNumber: 28
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("br", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\not approved.js",
-                lineNumber: 27
+                lineNumber: 28
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement("h2", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\not approved.js",
-                lineNumber: 28
+                lineNumber: 29
             },
             __self: this
         }, "Not Approved research papers"), /*#__PURE__*/ _reactDefault.default.createElement("hr", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\not approved.js",
-                lineNumber: 28
+                lineNumber: 29
             },
             __self: this
         }), this.state.notapprovedPapers.length > 0 && this.state.notapprovedPapers.map((item, index)=>/*#__PURE__*/ _reactDefault.default.createElement("div", {
@@ -69165,14 +69168,14 @@ class notapproved extends _react.Component {
                 className: "card card bg-light mb-3",
                 __source: {
                     fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\not approved.js",
-                    lineNumber: 30
+                    lineNumber: 31
                 },
                 __self: this
             }, /*#__PURE__*/ _reactDefault.default.createElement("h5", {
                 class: "card-title",
                 __source: {
                     fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\not approved.js",
-                    lineNumber: 33
+                    lineNumber: 34
                 },
                 __self: this
             }, item.papertitle))
@@ -69265,6 +69268,7 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
+//Displays all approved and  Research papers 
 class paidallapproved extends _react.Component {
     constructor(props){
         super(props);
@@ -69504,6 +69508,7 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
+//Displays Research paper templates
 class Paper extends _react.Component {
     constructor(props){
         super(props);
@@ -69515,57 +69520,57 @@ class Paper extends _react.Component {
         return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
-                lineNumber: 18
+                lineNumber: 19
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("br", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
-                lineNumber: 19
+                lineNumber: 20
             },
             __self: this
         }), " ", /*#__PURE__*/ _reactDefault.default.createElement("br", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
-                lineNumber: 19
+                lineNumber: 20
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement("h1", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
-                lineNumber: 20
+                lineNumber: 21
             },
             __self: this
         }, "Research Paper Outline Templates"), " ", /*#__PURE__*/ _reactDefault.default.createElement("br", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
-                lineNumber: 20
+                lineNumber: 21
             },
             __self: this
         }), " ", /*#__PURE__*/ _reactDefault.default.createElement("br", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
-                lineNumber: 20
+                lineNumber: 21
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement("div", {
             class: "card-group",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
-                lineNumber: 21
+                lineNumber: 22
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
             class: "card",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
-                lineNumber: 22
+                lineNumber: 23
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("h2", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
-                lineNumber: 23
+                lineNumber: 24
             },
             __self: this
         }, "Career Research Paper Outline"), /*#__PURE__*/ _reactDefault.default.createElement("img", {
@@ -69574,55 +69579,55 @@ class Paper extends _react.Component {
             alt: "Card image cap",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
-                lineNumber: 24
+                lineNumber: 25
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement("div", {
             class: "card-body",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
-                lineNumber: 25
+                lineNumber: 26
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("h5", {
             class: "card-title",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
-                lineNumber: 26
+                lineNumber: 27
             },
             __self: this
         }, "Details"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
             class: "card-text",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
-                lineNumber: 27
+                lineNumber: 28
             },
             __self: this
         }, "File format : PDF"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
             class: "card-text",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
-                lineNumber: 28
+                lineNumber: 29
             },
             __self: this
         }, "Size: 63KB"), /*#__PURE__*/ _reactDefault.default.createElement("a", {
             href: "https://images.template.net/wp-content/uploads/2017/06/Career-Research-Paper-Outline1.zip",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
-                lineNumber: 29
+                lineNumber: 30
             },
             __self: this
         }, "Download"))), /*#__PURE__*/ _reactDefault.default.createElement("div", {
             class: "card",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
-                lineNumber: 32
+                lineNumber: 33
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("h2", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
-                lineNumber: 33
+                lineNumber: 34
             },
             __self: this
         }, "Basic Research Paper Outline"), /*#__PURE__*/ _reactDefault.default.createElement("img", {
@@ -69631,55 +69636,55 @@ class Paper extends _react.Component {
             alt: "Card image cap",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
-                lineNumber: 34
+                lineNumber: 35
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement("div", {
             class: "card-body",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
-                lineNumber: 35
+                lineNumber: 36
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("h5", {
             class: "card-title",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
-                lineNumber: 36
+                lineNumber: 37
             },
             __self: this
         }, "Details"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
             class: "card-text",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
-                lineNumber: 37
+                lineNumber: 38
             },
             __self: this
         }, "File format : PDF"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
             class: "card-text",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
-                lineNumber: 38
+                lineNumber: 39
             },
             __self: this
         }, "Size: 47KB"), /*#__PURE__*/ _reactDefault.default.createElement("a", {
             href: "https://images.template.net/wp-content/uploads/2017/06/Basic-Research-Paper-Outline.zip",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
-                lineNumber: 39
+                lineNumber: 40
             },
             __self: this
         }, "Download"))), /*#__PURE__*/ _reactDefault.default.createElement("div", {
             class: "card",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
-                lineNumber: 42
+                lineNumber: 43
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("h2", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
-                lineNumber: 43
+                lineNumber: 44
             },
             __self: this
         }, " Business Research Paper Outline"), /*#__PURE__*/ _reactDefault.default.createElement("img", {
@@ -69688,55 +69693,55 @@ class Paper extends _react.Component {
             alt: "Card image cap",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
-                lineNumber: 44
+                lineNumber: 45
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement("div", {
             class: "card-body",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
-                lineNumber: 45
+                lineNumber: 46
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("h5", {
             class: "card-title",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
-                lineNumber: 46
+                lineNumber: 47
             },
             __self: this
         }, "Details"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
             class: "card-text",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
-                lineNumber: 47
+                lineNumber: 48
             },
             __self: this
         }, "File format : PDF"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
             class: "card-text",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
-                lineNumber: 48
+                lineNumber: 49
             },
             __self: this
         }, "Size: 71KB"), /*#__PURE__*/ _reactDefault.default.createElement("a", {
             href: "https://images.template.net/wp-content/uploads/2017/06/International-Business-Research-Paper.zip",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
-                lineNumber: 49
+                lineNumber: 50
             },
             __self: this
         }, "Download"))), /*#__PURE__*/ _reactDefault.default.createElement("div", {
             class: "card",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
-                lineNumber: 53
+                lineNumber: 54
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("h2", {
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
-                lineNumber: 54
+                lineNumber: 55
             },
             __self: this
         }, " Business School Research Paper Outline"), /*#__PURE__*/ _reactDefault.default.createElement("img", {
@@ -69745,42 +69750,42 @@ class Paper extends _react.Component {
             alt: "Card image cap",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
-                lineNumber: 55
+                lineNumber: 56
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement("div", {
             class: "card-body",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
-                lineNumber: 56
+                lineNumber: 57
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("h5", {
             class: "card-title",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
-                lineNumber: 57
+                lineNumber: 58
             },
             __self: this
         }, "Details"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
             class: "card-text",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
-                lineNumber: 58
+                lineNumber: 59
             },
             __self: this
         }, "File format : PDF"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
             class: "card-text",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
-                lineNumber: 59
+                lineNumber: 60
             },
             __self: this
         }, "Size: 61KB"), /*#__PURE__*/ _reactDefault.default.createElement("a", {
             href: "https://images.template.net/wp-content/uploads/2017/06/Business-School-Research-Paper1.zip",
             __source: {
                 fileName: "C:\\Users\\Nive files important for se\\SE lectures\\AF\\Researcher\\frontend\\component\\Download.js",
-                lineNumber: 60
+                lineNumber: 61
             },
             __self: this
         }, "Download"))))));
