@@ -7,8 +7,9 @@ const Login = () => {
    const [cookies, setCookie] = useCookies(['user']);
 
     const navigate=(e, email)=> {
-      
-    window.location=`/approve/${name}`
+     
+
+      window.location=`/approve/${name}`
     };
    const handle = () => {
       setCookie('Name', name, { path: '/' });
